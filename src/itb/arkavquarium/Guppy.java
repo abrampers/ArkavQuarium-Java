@@ -16,8 +16,14 @@ public class Guppy extends Fish implements Aquatic {
     /* -------------- Attributes -------------- */
     /*------------------------------------------*/
 
+    private Pellet nearestPellet;
+    private double lastDropCoin;
+
+
+    /* ---------- Aquatic Attributes ---------- */
     private Aquarium aquarium;
-    private double x, y;
+    private double x;
+    private double y;
     private double lastCurrTime;
     private double lastProgressTime;
     private final double MOVE_SPEED; /* Movement Speed per second */
@@ -27,8 +33,39 @@ public class Guppy extends Fish implements Aquatic {
     /*------------------------------------------*/
     /* ------------- Constructors ------------- */
     /*------------------------------------------*/
-    public Guppy() {
 
+    /** A constructor.
+     * Constructs a new Guppy object.
+     * @param aquarium The Aquarium the Guppy is in.
+     * */
+    public Guppy(Aquarium aquarium) {
+        super(
+            Constants.GUPPY_FOOD_THRES,
+            Constants.GUPPY_EAT_RADIUS,
+            Constants.GUPPY_FULL_INTERVAL,
+            Constants.GUPPY_HUNGER_INTERVAL,
+            aquarium.getCurrTime()
+        );
+
+        /* Aquatic attribute initialization */
+        this.aquarium = aquarium;
+        this.x = /* Random double from xMin to xMax */;
+        this.y = /* Random double from yMin to yMax */;
+        this.lastCurrTime = aquarium.getCurrTime();
+        this.lastProgressTime = aquarium.getCurrTime();
+        this.MOVE_SPEED = Constants.GUPPY_MOVE_SPEED;
+        this.currState = State.movingRight;
+        this.progress = 0;
+        /* Initialize random movement */
+        double rad = /* Random double from 0 to 2 * pi */;
+        this.setXDir(Math.cos(rad));
+        this.setYDir(Math.sin(rad));
+        State state = this.getXDir() >= 0 ? State.movingRight : State.movingLeft;
+        this.setState(state);
+
+        /* Guppy attribute initialization */
+        this.nearestPellet = null;
+        this.lastDropCoin = aquarium.getCurrTime();
     }
 
     /*------------------------------------------*/
@@ -168,6 +205,32 @@ public class Guppy extends Fish implements Aquatic {
     /*------------------------------------------*/
     /* ---------------- Methods --------------- */
     /*------------------------------------------*/
+
+    private double distanceToPellet(Pellet p) {
+        double guppyXPosition = this.getX();
+        double guppyYPosition = this.getY();
+        double pelletXPosition = p.getX();
+        double pelletYPosition = p.getY();
+
+        return Math.sqrt(
+                (guppyXPosition - pelletXPosition) * (guppyXPosition - pelletXPosition)
+                + (guppyYPosition - pelletYPosition) * (guppyYPosition - pelletYPosition)
+        );
+    }
+
+    private void findNearestPellet() {
+        /* TODO: Tunggu implementasi LinkedList */
+    }
+
+    private boolean nearestPelletInRange() {
+        if(nearestPellet == null) {
+            return false;
+        } else if(distanceToPellet(nearestPellet) < this->getEatRadius()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     /**
      * Moves the object independently
