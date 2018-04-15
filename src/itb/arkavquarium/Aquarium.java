@@ -90,35 +90,35 @@ public class Aquarium {
     /** Getter for contentPiranha.
      * @return The contentPiranha list
      * */
-    public ArrayList<Piranha> getContentPiranha() {
+    public LinkedList<Piranha> getContentPiranha() {
         return contentPiranha;
     }
 
     /** Getter for contentGuppy.
      * @return The contentGuppy list
      * */
-    public ArrayList<Guppy> getContentGuppy() {
+    public LinkedList<Guppy> getContentGuppy() {
         return contentGuppy;
     }
 
     /** Getter for contentSnail.
      * @return The contentSnail list
      * */
-    public ArrayList<Snail> getContentSnail() {
+    public LinkedList<Snail> getContentSnail() {
         return contentSnail;
     }
 
     /** Getter for contentPellet.
      * @return The contentPellet list
      * */
-    public ArrayList<Pellet> getContentPellet() {
+    public LinkedList<Pellet> getContentPellet() {
         return contentPellet;
     }
 
     /** Getter for contentCoin.
      * @return The contentCoin list
      * */
-    public ArrayList<Coin> getContentCoin() {
+    public LinkedList<Coin> getContentCoin() {
         return contentCoin;
     }
 
@@ -137,7 +137,7 @@ public class Aquarium {
      * @param current_time The new current time
      * */
     public void updateState(double current_time) {
-        // TODO: Implement
+        // TODO: Tunggu implementasi LinkedList
     }
 
     /** Create Piranha.

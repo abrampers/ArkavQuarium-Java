@@ -33,6 +33,7 @@ public abstract class Fish {
     /*------------------------------------------*/
     /* ------------- Constructors ------------- */
     /*------------------------------------------*/
+
     /** A constructor.
      * Constructs a new Fish object.
      * @param foodThres Number of food to level up.
@@ -42,7 +43,16 @@ public abstract class Fish {
      * @param createdTime
      * */
     public Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout, double createdTime) {
-
+        this.FOOD_THRES = foodThres;
+        this.EAT_RADIUS = eatRadius;
+        this.FULL_INTERVAL = fullInterval;
+        this.HUNGER_TIMEOUT = hungerTimeout;
+        this.lastEatTime = createdTime;
+        this.lastRandomTime = createdTime;
+        this.lastHungerTime = createdTime;
+        this.foodEaten = 0;
+        this.hungry = false;
+        this.level = 1;
     }
 
     /*------------------------------------------*/
@@ -161,29 +171,29 @@ public abstract class Fish {
         return HUNGER_TIMEOUT;
     }
 
-    /** Getter for X_MIN.
-     * @return The value of X_MIN
+    /** Getter for xDir.
+     * @return The x-axis direction of the Fish.
      * */
     public double getXDir() {
         return xDir;
     }
 
-    /** Setter for currentTime.
-     * @param currTime  The value of the new current time
+    /** Setter for xDir.
+     * @param xDir  The new x-axis direction of the Fish
      * */
     public void setXDir(double xDir) {
         this.xDir = xDir;
     }
 
-    /** Getter for X_MIN.
-     * @return The value of X_MIN
+    /** Getter for yDir.
+     * @return The y-axis direction of the Fish.
      * */
     public double getYDir() {
         return yDir;
     }
 
-    /** Setter for currentTime.
-     * @param currTime  The value of the new current time
+    /** Setter for yDir.
+     * @param yDir  The new y-axis direction of the Fish
      * */
     public void setYDir(double yDir) {
         this.yDir = yDir;
@@ -192,6 +202,7 @@ public abstract class Fish {
     /*------------------------------------------*/
     /* ---------------- Methods --------------- */
     /*------------------------------------------*/
+
     /** Eat object.
      * Eat food if the food is in range
      * */
