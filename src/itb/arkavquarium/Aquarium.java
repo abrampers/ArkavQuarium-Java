@@ -1,7 +1,5 @@
 package itb.arkavquarium;
 
-import java.util.ArrayList;
-
 /**
  * <h1>Aquarium!</h1>
  * The Aquarium class implements and updates all objects in Aquarium.
@@ -15,9 +13,10 @@ import java.util.ArrayList;
  * @since   2018-04-15
  */
 public class Aquarium {
-    /*------------*/
-    /* Attributes */
-    /*------------*/
+    /*------------------------------------------*/
+    /* -------------- Attributes -------------- */
+    /*------------------------------------------*/
+
     private final double X_MIN;
     private final double Y_MIN;
     private final double X_MAX;
@@ -29,9 +28,10 @@ public class Aquarium {
     private LinkedList<Pellet> contentPellet;
     private LinkedList<Coin> contentCoin;
 
-    /*--------------*/
-    /* Constructors */
-    /*--------------*/
+    /*------------------------------------------*/
+    /* ------------- Constructors ------------- */
+    /*------------------------------------------*/
+
     /** A constructor.
      * Constructs a new Aquarium object.
      * @param xMin Minium x value in the aquarium.
@@ -48,7 +48,10 @@ public class Aquarium {
         this.createGuppy();
     }
 
-    /* Setter & Getter */
+    /*------------------------------------------*/
+    /* ------------ Setter & Getter ----------- */
+    /*------------------------------------------*/
+
     /** Getter for X_MIN.
      * @return The value of X_MIN
      * */
@@ -126,9 +129,10 @@ public class Aquarium {
         this.currTime = currTime;
     }
 
-    /*---------*/
-    /* Methods */
-    /*---------*/
+    /*------------------------------------------*/
+    /* ---------------- Methods --------------- */
+    /*------------------------------------------*/
+
     /** Updates all the aquarium object state.
      * @param current_time The new current time
      * */
