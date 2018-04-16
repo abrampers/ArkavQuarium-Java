@@ -37,10 +37,10 @@ public abstract class Fish {
     /** A constructor.
      * Constructs a new Fish object.
      * @param foodThres Number of food to level up.
-     * @param eatRadius
+     * @param eatRadius Eat radius of the fish.
      * @param fullInterval Full to hungry interval.
      * @param hungerTimeout Hungry to dead interval if there's no food.
-     * @param createdTime
+     * @param createdTime Time created Fish
      * */
     public Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout, double createdTime) {
         this.FOOD_THRES = foodThres;
@@ -115,20 +115,6 @@ public abstract class Fish {
         this.foodEaten = foodEaten;
     }
 
-    /** Getter for hungry.
-     * @return The value of hungry
-     * */
-    public boolean isHungry() {
-        return hungry;
-    }
-
-    /** Setter for hungry.
-     * @param hungry The value of the new hungry
-     * */
-    public void setHungry(boolean hungry) {
-        this.hungry = hungry;
-    }
-
     /** Getter for level.
      * @return The Fish's level
      * */
@@ -197,6 +183,20 @@ public abstract class Fish {
      * */
     public void setYDir(double yDir) {
         this.yDir = yDir;
+    }
+
+    /** Getter for hungry.
+     * @return The hunger status of the Fish.
+     * */
+    public boolean getHungry() {
+        return hungry;
+    }
+
+    /** Setter for hungru.
+     * @param hungry  The new hunger state of the Fish
+     * */
+    public void setHungry(boolean hungry) {
+        this.hungry = hungry;
     }
 
     /*------------------------------------------*/
