@@ -1,14 +1,16 @@
 package itb.arkavquarium;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class FishTest {
 
-    @org.junit.Test
+    @Test
     public void eat() {
     }
 
-    @org.junit.Test
+    @Test
     public void dropCoin() {
     }
 }
