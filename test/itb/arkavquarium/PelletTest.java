@@ -1,22 +1,24 @@
 package itb.arkavquarium;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class PelletTest {
 
-    @org.junit.Test
+    @Test
     public void move() {
     }
 
-    @org.junit.Test
+    @Test
     public void updateState() {
     }
 
-    @org.junit.Test
+    @Test
     public void updateProgress() {
     }
 
-    @org.junit.Test
+    @Test
     public void dead() {
     }
 }
