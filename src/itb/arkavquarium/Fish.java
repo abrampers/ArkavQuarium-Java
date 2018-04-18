@@ -33,16 +33,26 @@ public abstract class Fish {
     /*------------------------------------------*/
     /* ------------- Constructors ------------- */
     /*------------------------------------------*/
+
     /** A constructor.
      * Constructs a new Fish object.
      * @param foodThres Number of food to level up.
-     * @param eatRadius
+     * @param eatRadius Eat radius of the fish.
      * @param fullInterval Full to hungry interval.
      * @param hungerTimeout Hungry to dead interval if there's no food.
-     * @param createdTime
+     * @param createdTime Time created Fish
      * */
     public Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout, double createdTime) {
-
+        this.FOOD_THRES = foodThres;
+        this.EAT_RADIUS = eatRadius;
+        this.FULL_INTERVAL = fullInterval;
+        this.HUNGER_TIMEOUT = hungerTimeout;
+        this.lastEatTime = createdTime;
+        this.lastRandomTime = createdTime;
+        this.lastHungerTime = createdTime;
+        this.foodEaten = 0;
+        this.hungry = false;
+        this.level = 1;
     }
 
     /*------------------------------------------*/
@@ -105,20 +115,6 @@ public abstract class Fish {
         this.foodEaten = foodEaten;
     }
 
-    /** Getter for hungry.
-     * @return The value of hungry
-     * */
-    public boolean isHungry() {
-        return hungry;
-    }
-
-    /** Setter for hungry.
-     * @param hungry The value of the new hungry
-     * */
-    public void setHungry(boolean hungry) {
-        this.hungry = hungry;
-    }
-
     /** Getter for level.
      * @return The Fish's level
      * */
@@ -161,37 +157,52 @@ public abstract class Fish {
         return HUNGER_TIMEOUT;
     }
 
-    /** Getter for X_MIN.
-     * @return The value of X_MIN
+    /** Getter for xDir.
+     * @return The x-axis direction of the Fish.
      * */
     public double getXDir() {
         return xDir;
     }
 
-    /** Setter for currentTime.
-     * @param currTime  The value of the new current time
+    /** Setter for xDir.
+     * @param xDir  The new x-axis direction of the Fish
      * */
     public void setXDir(double xDir) {
         this.xDir = xDir;
     }
 
-    /** Getter for X_MIN.
-     * @return The value of X_MIN
+    /** Getter for yDir.
+     * @return The y-axis direction of the Fish.
      * */
     public double getYDir() {
         return yDir;
     }
 
-    /** Setter for currentTime.
-     * @param currTime  The value of the new current time
+    /** Setter for yDir.
+     * @param yDir  The new y-axis direction of the Fish
      * */
     public void setYDir(double yDir) {
         this.yDir = yDir;
     }
 
+    /** Getter for hungry.
+     * @return The hunger status of the Fish.
+     * */
+    public boolean getHungry() {
+        return hungry;
+    }
+
+    /** Setter for hungru.
+     * @param hungry  The new hunger state of the Fish
+     * */
+    public void setHungry(boolean hungry) {
+        this.hungry = hungry;
+    }
+
     /*------------------------------------------*/
     /* ---------------- Methods --------------- */
     /*------------------------------------------*/
+
     /** Eat object.
      * Eat food if the food is in range
      * */
