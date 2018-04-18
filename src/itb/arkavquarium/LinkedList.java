@@ -10,7 +10,7 @@ import java.util.*;
  * @author  Senapati Sang Diwangkara
  * @author  Yusuf Rahmat Pratama
  * @version 0.0
- * @since   2018-04-15
+ * @since   2018-04-17
  */
 public class LinkedList<E> {
 	/*------------------------------------------*/
@@ -33,19 +33,76 @@ public class LinkedList<E> {
 		this.length = 0;
 	}
 
+	/*------------------------------------------*/
+    /* ------------ Setter & Getter ----------- */
+    /*------------------------------------------*/
 
+	/**
+     * Getter for Length
+     *
+     * @return int length of list (excluding dummy)
+     */
+	int getLength() { return this.length; }
 
+	/*------------------------------------------*/
+   	/* ---------------- Methods --------------- */
+    /*------------------------------------------*/
 
+    /**
+     * Check if list is empty
+     * @return true if list is empty
+     */
+    public boolean isEmpty() {
+    	return this.head.getNext() == null;
+    }
 
+    /**
+     * Add new element
+     * 
+     */
+	public void add(E e) {
+		Node<E> n = new Node<E>(e);
+		Node<E> currNode = this.head;
+		while (currNode.getNext() != null) {
+			currNode = currNode.getNext();
+		}
+		currNode.setNext(n);
+		n.setPrev(currNode);
+		this.length += 1;
+	}
 
+	/**
+     * Remove element, do nothing if element not found
+     * 
+     */
+	public void remove(E e) {
+		if (!this.isEmpty()) {
+			Node<E> currNode = this.head;
+			while (currNode.getNext() != null) {
+				currNode = currNode.getNext();
+			}
+			Node<E> prevNode = currNode.getPrev();
+			Node<E> nextNode = currNode.getNext();
+			prevNode.setNext(nextNode);
+			if (currNode.getNext() != null) {
+				nextNode.setPrev(prevNode);
+			}
+			length -= 1;
+		}
+	}
 
-
-
+	/**
+     * Returns an iterator over the elements in the list in proper sequence
+     * @return an iterator for the linkedlist
+     */
+	public Iterator<E> iterator() {
+		return new LLIterator();
+	}
 
 	/**
 	* Private Class For Iterator
 	*/
-	private class LLIterator<E> implements Iterator<E> {
+	private class LLIterator implements Iterator<E> {
 
 		/*------------------------------------------*/
 	    /* -------------- Attributes -------------- */
@@ -59,11 +116,11 @@ public class LinkedList<E> {
 	    /*------------------------------------------*/
 
 	    /** A constructor.
-	     * Constructs a new LinkedList object.
+	     * Constructs a new Iterator object.
 	     *
 	     * */
 	    public LLIterator() {
-			this.cursor = head.getNext();
+			this.cursor = LinkedList.this.head;
 			this.lastRet = -1;
 		}
 
@@ -72,34 +129,15 @@ public class LinkedList<E> {
 	    /*------------------------------------------*/
 
 		/**
-	     * Implementation of ListIterator
-	     * Add new element
-	     */
-		public void add(E e) {
-			Node<E> n = new Node<E>(e);
-			Node<E> currNode = this.head;
-			if (this.head.getNext() == null) {
-				this.cursor = n;
-				this.cursorIndex = 0;
-			}
-			while (currNode.getNext() != null) {
-				currNode = currNode.getNext();
-			}
-			this.length += 1;
-			currNode.setNext(n);
-			n.setPrev(currNode);
-		}
-
-		/**
-	     * Implementation of ListIterator
+	     * Implementation of Iterator
 	     * check if there is next element
 	     */
 		public boolean hasNext() {
-			return cursor.getNext() != null;
+			return (this.cursor.getNext() != null);
 		}
 
 		/**
-	     * Implementation of ListIterator
+	     * Implementation of Iterator
 	     * get next element
 	     * @return value of next element
 	     */
@@ -109,120 +147,105 @@ public class LinkedList<E> {
 			}
 			else {
 				this.cursor = this.cursor.getNext();
+				this.lastRet = 0;
 				return this.cursor.getValue();
 			}
 		}
 
 		/**
-	     * Implementation of ListIterator
-	     * get index of next element, or list size if cursor is at the end of list
-	     * @return index of next element, or list size if cursor is at the end of list
-	     */
-		public int nextIndex() {
-			if (!this.hasNext()) {
-				return this.length;
-			}
-			else {
-				return (this.cursorIndex + 1);
-			}
-		}
-
-		/**
-	     * Implementation of ListIterator
-	     * get prev element
-	     * @return value of prev element
-	     */
-		public E prev() {
-			if (!this.hasPrev()) {
-				throw new NoSuchElementException();
-			}
-			else {
-				this.cursor = this.cursor.getPrev();
-				this.cursorIndex -= 1;
-				return this.cursor.getValue();
-			}
-		}
-
-		/**
-	     * Implementation of ListIterator
-	     * get index of next element, or -1 if cursor is at the beginning of list
-	     * @return index of next element, or -1 if cursor is at the beginning of list
-	     */
-		public int prevIndex() {
-			if (!this.hasPrev()) {
-				return -1;
-			}
-			else {
-				return (this.cursorIndex - 1);
-			}
-		}
-
-		/**
-	     * Implementation of ListIterator
-	     * remove element in cursor, can only be called only after next() and prev() and not after add() has been called
-	     * Set current cursor to the next element, or prev element if there is no next element, or null if there is no element
+	     * Implementation of Iterator
+	     * remove element in cursor, can only be called only after next() has been called
+	     * Set current cursor to prev element
 	     */
 		public void remove() {
-			if (this.isEmpty()) {
+			if (this.lastRet < 0) {
 				throw new IllegalStateException();
 			}
 			else {
-				Node<E> prevNode = this.cursor.getPrev();
-				Node<E> nextNode = this.cursor.getNext();
-				prevNode.setNext(nextNode);
-				if (this.hasNext()) {
-					nextNode.setPrev(prevNode);
-					this.cursor = nextNode;
-				}
-				else {
-					this.cursor = prevNode;
-					this.cursorIndex -= 1;
-					if (this.cursorIndex < 0) {
-						this.cursor = null;
-					}
-				}
-				this.length -= 1;
+				LinkedList.this.remove(this.cursor.getValue());
+				this.cursor = this.cursor.getPrev();
+				this.lastRet = -1;
 			}
-		}
-
-		/**
-	     * Implementation of ListIterator
-	     * set new element in cursor, can only be called only after next() and prev() and not after add() has been called
-	     */
-		public void set(E e) {
-			if (this.isEmpty()) {
-				throw new IllegalStateException();
-			}
-			else {
-				this.cursor.setValue(e);
-			}
-		}
-
-		/**
-	     * Return value of first element and Reset cursor to first element
-	     * @return value of first element
-	     */
-		public E getFirst() {
-			if (this.isEmpty()) {
-				throw new NoSuchElementException();
-			}
-			else {
-				this.cursor = this.head.getNext();
-				this.cursorIndex = 0;
-				return this.cursor.getValue();
-			}
-		}
-
-		/**
-	     * Check if list is empty (excluding dummy head)
-	     * @return status of emptiness of list
-	     */
-		public boolean isEmpty() {
-			return (this.length <= 0);
 		}
 	}
 
+	private class Node<E> {
+		/*------------------------------------------*/
+	    /* -------------- Attributes -------------- */
+	    /*------------------------------------------*/
 
+		private E value;
+		private Node<E> prev;
+		private Node<E> next;
 
+		/*------------------------------------------*/
+	    /* ------------- Constructors ------------- */
+	    /*------------------------------------------*/
 
+	    /** Default constructor.
+	     * Constructs a new Node object.
+	     *
+	     * */
+	    public Node() {
+	    	this.value = null;
+	    	this.prev = null;
+	    	this.next = null;
+	    }
+
+	    /** User-defined constructor.
+	     * Constructs a new Node object.
+	     * @param value The Value of the Node.
+	     * */
+	    public Node(E value) {
+	    	this.value = value;
+	    	this.prev = null;
+	    	this.next = null;
+	    }
+
+	    /*------------------------------------------*/
+	    /* ------------ Setter & Getter ----------- */
+	    /*------------------------------------------*/
+
+		/**
+	     * Setter for Value
+	     *
+	     * @param value New value of the node
+	     */
+		void setValue(E value) { this.value = value; }
+
+		/**
+	     * Setter for Previous Node
+	     *
+	     * @param p New Node for previous
+	     */
+		void setPrev(Node<E> p) { this.prev = p; }
+
+		/**
+	     * Setter for Next Node
+	     *
+	     * @param n New Node for next
+	     */
+		void setNext(Node<E> n) { this.next = n; }
+
+		/**
+	     * Getter for Value
+	     *
+	     * @return The value of the Node
+	     */
+		E getValue() { return this.value; }
+
+		/**
+	     * Getter for Next Node
+	     *
+	     * @return The next Node
+	     */
+		Node<E> getNext() { return this.next; }
+
+		/**
+	     * Getter for Prev Node
+	     *
+	     * @return The previous Node
+	     */
+		Node<E> getPrev() { return this.prev; }
+	}
 }
