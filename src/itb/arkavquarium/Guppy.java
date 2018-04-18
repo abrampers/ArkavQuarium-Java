@@ -16,8 +16,14 @@ public class Guppy extends Fish implements Aquatic {
     /* -------------- Attributes -------------- */
     /*------------------------------------------*/
 
+    private Pellet nearestPellet;
+    private double lastDropCoin;
+
+
+    /* ---------- Aquatic Attributes ---------- */
     private Aquarium aquarium;
-    private double x, y;
+    private double x;
+    private double y;
     private double lastCurrTime;
     private double lastProgressTime;
     private final double MOVE_SPEED; /* Movement Speed per second */
@@ -27,8 +33,39 @@ public class Guppy extends Fish implements Aquatic {
     /*------------------------------------------*/
     /* ------------- Constructors ------------- */
     /*------------------------------------------*/
-    public Guppy() {
 
+    /** A constructor.
+     * Constructs a new Guppy object.
+     * @param aquarium The Aquarium the Guppy is in.
+     * */
+    public Guppy(Aquarium aquarium) {
+        super(
+            Constants.GUPPY_FOOD_THRES,
+            Constants.GUPPY_EAT_RADIUS,
+            Constants.GUPPY_FULL_INTERVAL,
+            Constants.GUPPY_HUNGER_INTERVAL,
+            aquarium.getCurrTime()
+        );
+
+        /* Aquatic attribute initialization */
+        this.aquarium = aquarium;
+        this.x = Constants.random(aquarium.getXMin(), aquarium.getXMax());
+        this.y = Constants.random(aquarium.getYMin(), aquarium.getYMax());
+        this.lastCurrTime = aquarium.getCurrTime();
+        this.lastProgressTime = aquarium.getCurrTime();
+        this.MOVE_SPEED = Constants.GUPPY_MOVE_SPEED;
+        this.currState = State.movingRight;
+        this.progress = 0;
+        /* Initialize random movement */
+        double rad = Constants.random(0, 2 * Math.PI);
+        this.setXDir(Math.cos(rad));
+        this.setYDir(Math.sin(rad));
+        State state = this.getXDir() >= 0 ? State.movingRight : State.movingLeft;
+        this.setState(state);
+
+        /* Guppy attribute initialization */
+        this.nearestPellet = null;
+        this.lastDropCoin = aquarium.getCurrTime();
     }
 
     /*------------------------------------------*/
@@ -169,12 +206,117 @@ public class Guppy extends Fish implements Aquatic {
     /* ---------------- Methods --------------- */
     /*------------------------------------------*/
 
+    private double distanceToPellet(Pellet p) {
+        double guppyXPosition = this.getX();
+        double guppyYPosition = this.getY();
+        double pelletXPosition = p.getX();
+        double pelletYPosition = p.getY();
+
+        return Math.sqrt(
+                (guppyXPosition - pelletXPosition) * (guppyXPosition - pelletXPosition)
+                + (guppyYPosition - pelletYPosition) * (guppyYPosition - pelletYPosition)
+        );
+    }
+
+    private void findNearestPellet() {
+        /* TODO: Tunggu implementasi LinkedList */
+    }
+
+    private boolean nearestPelletInRange() {
+        if(nearestPellet == null) {
+            return false;
+        } else if(distanceToPellet(nearestPellet) < this.getEatRadius()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     /**
      * Moves the object independently
      */
     @Override
     public void move() {
+        double currentTime = this.getAquarium().getCurrTime();
+        if(this.getState() != State.turningRight && this.getState() != State.turningLeft) {
+            if(nearestPellet != null && this.getHungry()) {
+                double xDirection = nearestPellet.getX() - this.getX();
+                double yDirection = nearestPellet.getY() - this.getY();
+                double distance = distanceToPellet(nearestPellet);
 
+                /* Check if this need to change */
+                double dx = (xDirection / distance) * this.getMoveSpeed() * ((currentTime - this.getLastCurrTime()));
+                double dy = (yDirection / distance) * this.getMoveSpeed() * ((currentTime - this.getLastCurrTime()));
+
+                if(xDirection >= 0 && this.getXDir() < 0) {
+                    this.setState(State.turningRight);
+                    this.setLastProgressTime(currentTime);
+                    this.setProgress(0);
+                }
+
+                if(xDirection < 0 && this.getXDir() >= 0) {
+                    this.setState(State.turningLeft);
+                    this.setLastProgressTime(currentTime);
+                    this.setProgress(0);
+                }
+
+                this.setX(this.getX() + dx);
+                this.setY(this.getY() + dy);
+                this.setXDir(xDirection / distance);
+                this.setYDir(yDirection / distance);
+            } else {
+                /* Randomize move direction after some interval */
+                if(currentTime - this.getLastRandomTime() > Constants.RANDOM_MOVE_INTERVAL) {
+                    this.setLastRandomTime(currentTime);
+                    double rad = Constants.random(0.1, 1.9 * Math.PI);
+
+                    double xDirection = Math.cos(rad);
+                    if(xDirection >= 0 && this.getXDir() < 0) {
+                        this.setState(State.turningRight);
+                        this.setLastProgressTime(currentTime);
+                        this.setProgress(0);
+                    }
+
+                    if(xDirection < 0 && this.getXDir() >= 0) {
+                        this.setState(State.turningLeft);
+                        this.setLastProgressTime(currentTime);
+                        this.setProgress(0);
+                    }
+
+                    this.setXDir(xDirection);
+                    this.setYDir(Math.sin(rad));
+                }
+
+
+                /* Continue movement */
+                double dx = this.getXDir() * this.getMoveSpeed() * (currentTime - this.getLastCurrTime());
+                double dy = this.getYDir() * this.getMoveSpeed() * (currentTime - this.getLastCurrTime());
+
+
+                if (getX() + dx >= getAquarium().getXMax() && this.getXDir() > 0.0) {
+                    this.setXDir(this.getXDir() * -1.0);
+                    this.setState(State.turningLeft);
+                    this.setLastProgressTime(currentTime);
+                    this.setProgress(0);
+                } else if (getX() + dx <= getAquarium().getXMin() && this.getXDir() < 0.0) {
+                    this.setXDir(this.getXDir() * -1.0);
+                    this.setState(State.turningRight);
+                    this.setLastProgressTime(currentTime);
+                    this.setProgress(0);
+                } else {
+                    this.setX(this.getX() + dx);
+                }
+
+
+                if (getY() + dx >= getAquarium().getYMax() && this.getYDir() > 0.0) {
+                    this.setYDir(this.getYDir() * -1.0);
+                } else if (getY() + dy <= getAquarium().getYMin() && this.getYDir() < 0.0) {
+                    this.setYDir(this.getYDir() * -1.0);
+                } else {
+                    this.setY(this.getY() + dy);
+                }
+            }
+        }
     }
 
     /**
@@ -182,7 +324,19 @@ public class Guppy extends Fish implements Aquatic {
      */
     @Override
     public void updateState() {
-
+        double currentTime = this.getAquarium().getCurrTime();
+        if(this.getState() == State.deadLeft || this.getState() == State.deadRight || (this.getHungry() && (currentTime - this.getLastHungerTime()) > this.getHungerTimeout())) {
+            /* Dead guppy */
+            this.dead();
+        } else {
+            this.updateProgress();
+            this.dropCoin();
+            this.findNearestPellet();
+            this.eat();
+            this.findNearestPellet();
+            this.move();
+            this.setLastCurrTime(currentTime);
+        }
     }
 
     /**
@@ -190,7 +344,60 @@ public class Guppy extends Fish implements Aquatic {
      */
     @Override
     public void updateProgress() {
+        double currentTime = this.getAquarium().getCurrTime();
+        double progress_increment_time;
+        switch(this.getState()) {
+            case movingRight :
+                progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+                break;
+            case movingLeft :
+                progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+                break;
+            case turningRight :
+                progress_increment_time = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+                break;
+            case turningLeft :
+                progress_increment_time = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+                break;
+            case eatingRight :
+                progress_increment_time = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+                break;
+            case eatingLeft :
+                progress_increment_time = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+                break;
+            default:
+                progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        }
 
+        if(this.getHungry() && (this.getState() != State.eatingRight && this.getState() != State.eatingLeft) && (this.nearestPellet != null) && distanceToPellet(this.nearestPellet) < (2 * Constants.GUPPY_EAT_RADIUS)) {
+            if(this.getState() == State.movingRight) {
+                this.setState(State.eatingRight);
+            } else {
+                this.setState(State.eatingLeft);
+            }
+            this.setProgress(0);
+            this.setLastProgressTime(currentTime);
+            return;
+        }
+
+        if(currentTime - this.lastProgressTime > progress_increment_time) {
+            if(this.getProgress() < Constants.PROGRESS_PERIOD - 1) {
+                this.setProgress(this.getProgress() + 1);
+            } else if(this.getState() == State.turningRight) {
+                this.setState(State.movingRight);
+                this.setProgress(0);
+            } else if(this.getState() == State.turningLeft) {
+                this.setState(State.movingLeft);
+                this.setProgress(0);
+            } else if(this.getXDir() >= 0) {
+                this.setState(State.movingRight);
+                this.setProgress(0);
+            } else if(this.getXDir() < 0) {
+                this.setState(State.movingLeft);
+                this.setProgress(0);
+            }
+            this.setLastProgressTime(currentTime);
+        }
     }
 
     /**
@@ -198,6 +405,60 @@ public class Guppy extends Fish implements Aquatic {
      */
     @Override
     public void dead() {
+        if(this.getState() == State.movingRight || (this.getState() == State.turningRight && this.getProgress() >= 5) || (this.getState() == State.turningLeft && this.getProgress() < 5)) {
+            this.setState(State.deadRight);
+        } else if(this.getState() == State.movingLeft || (this.getState() == State.turningLeft && this.getProgress() >= 5) || (this.getState() == State.turningRight && this.getProgress() < 5)) {
+            this.setState(State.deadLeft);
+        }
+        double current_time = this.getAquarium().getCurrTime();
+        if(current_time - this.lastProgressTime > Constants.GUPPY_DEAD_PROGRESS_INCREMENT_TIME) {
+            this.setProgress(this.getProgress() + 1);
+            this.setLastProgressTime(current_time);
+            if(this.getProgress() >= Constants.PROGRESS_PERIOD) {
+                this.getAquarium().deleteGuppy(this);
+            }
+        }
+    }
 
+    /**
+     * Drop coin.
+     * Implements abstract method dropCoin() from Fish.
+     * Drop coin every c time.
+     */
+    @Override
+    void dropCoin() {
+        double currentTime = this.getAquarium().getCurrTime();
+        if(currentTime - this.lastDropCoin > Constants.GUPPY_COIN_INTERVAL){
+            this.getAquarium().createCoin(this.getX(), this.getY(), (int) (this.getLevel() * Constants.GUPPY_COIN_MULTIPLIER));
+            this.lastDropCoin = currentTime;
+        }
+    }
+
+    /**
+     * Eat object.
+     * Implements abstract method eat() from Fish.
+     * Eat food if the food is in range
+     */
+    @Override
+    void eat() {
+        double currentTime = this.getAquarium().getCurrTime();
+        if(!this.getHungry() && (currentTime - this.getLastEatTime() > this.getFullInterval())) {
+            /* Change guppy hunger state */
+            this.setHungry(true);
+            this.setLastHungerTime(currentTime);
+        }
+
+        if(this.getHungry() && nearestPelletInRange()) {
+            this.getAquarium().deletePellet(nearestPellet);
+            nearestPellet = null;
+            this.setHungry(false);
+            this.setLastEatTime(currentTime);
+            this.setFoodEaten(this.getFoodEaten() + 1);
+
+            if(this.getLevel() < Constants.MAX_LEVEL && this.getFoodEaten() > this.getFoodThres()) {
+                this.setLevel(this.getLevel() + 1);
+                this.setFoodEaten(0);
+            }
+        }
     }
 }
