@@ -13,10 +13,10 @@ package itb.arkavquarium;
  */
 public abstract class Fish {
 
-  private final int FOOD_THRES;
-  private final double EAT_RADIUS;
-  private final double FULL_INTERVAL;
-  private final double HUNGER_TIMEOUT;
+  private final int foodThres;
+  private final double eatRadius;
+  private final double fullInterval;
+  private final double hungerTimeout;
   /*------------------------------------------*/
   /* -------------- Attributes -------------- */
   /*------------------------------------------*/
@@ -26,8 +26,8 @@ public abstract class Fish {
   private int foodEaten;
   private boolean hungry;
   private int level;
-  private double xDir;
-  private double yDir;
+  private double dirX;
+  private double dirY;
 
   /*------------------------------------------*/
   /* ------------- Constructors ------------- */
@@ -44,10 +44,10 @@ public abstract class Fish {
    */
   public Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout,
       double createdTime) {
-    this.FOOD_THRES = foodThres;
-    this.EAT_RADIUS = eatRadius;
-    this.FULL_INTERVAL = fullInterval;
-    this.HUNGER_TIMEOUT = hungerTimeout;
+    this.foodThres = foodThres;
+    this.eatRadius = eatRadius;
+    this.fullInterval = fullInterval;
+    this.hungerTimeout = hungerTimeout;
     this.lastEatTime = createdTime;
     this.lastRandomTime = createdTime;
     this.lastHungerTime = createdTime;
@@ -151,75 +151,75 @@ public abstract class Fish {
   }
 
   /**
-   * Getter for FOOD_THRES constant.
+   * Getter for foodThres constant.
    *
    * @return The value of food threshold to level up
    */
   public int getFoodThres() {
-    return FOOD_THRES;
+    return foodThres;
   }
 
   /**
-   * Getter for EAT_RADIUS constant.
+   * Getter for eatRadius constant.
    *
    * @return The value of eat radius of the fish
    */
   public double getEatRadius() {
-    return EAT_RADIUS;
+    return eatRadius;
   }
 
   /**
-   * Getter for FULL_INTERVAL.
+   * Getter for fullInterval.
    *
    * @return The interval time between the last eat time to next hunger time
    */
   public double getFullInterval() {
-    return FULL_INTERVAL;
+    return fullInterval;
   }
 
   /**
-   * Getter for HUNGER_TIMEOUT.
+   * Getter for hungerTimeout.
    *
    * @return The interval time between last hunger time to death
    */
   public double getHungerTimeout() {
-    return HUNGER_TIMEOUT;
+    return hungerTimeout;
   }
 
   /**
-   * Getter for xDir.
+   * Getter for dirX.
    *
    * @return The x-axis direction of the Fish.
    */
   public double getXDir() {
-    return xDir;
+    return dirX;
   }
 
   /**
-   * Setter for xDir.
+   * Setter for dirX.
    *
-   * @param xDir The new x-axis direction of the Fish
+   * @param dirX The new x-axis direction of the Fish
    */
-  public void setXDir(double xDir) {
-    this.xDir = xDir;
+  public void setXDir(double dirX) {
+    this.dirX = dirX;
   }
 
   /**
-   * Getter for yDir.
+   * Getter for dirY.
    *
    * @return The y-axis direction of the Fish.
    */
   public double getYDir() {
-    return yDir;
+    return dirY;
   }
 
   /**
-   * Setter for yDir.
+   * Setter for dirY.
    *
-   * @param yDir The new y-axis direction of the Fish
+   * @param dirY The new y-axis direction of the Fish
    */
-  public void setYDir(double yDir) {
-    this.yDir = yDir;
+  public void setYDir(double dirY) {
+    this.dirY = dirY;
   }
 
   /**

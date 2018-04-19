@@ -81,7 +81,7 @@ public class Constants {
   /*------------------------------------------*/
 
   /**
-   * Generates random double in [min, max]
+   * Generates random double in [min, max].
    *
    * @param min Lower bound
    * @param max Upper bound
