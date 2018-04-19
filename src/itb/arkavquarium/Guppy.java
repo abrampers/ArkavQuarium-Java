@@ -17,13 +17,13 @@ public class Guppy extends Fish implements Aquatic {
   /* -------------- Attributes -------------- */
   /*------------------------------------------*/
 
-  private final double MOVE_SPEED; /* Movement Speed per second */
+  private final double moveSpeed; /* Movement Speed per second */
   private Pellet nearestPellet;
   private double lastDropCoin;
   /* ---------- Aquatic Attributes ---------- */
   private Aquarium aquarium;
-  private double x;
-  private double y;
+  private double xpos;
+  private double ypos;
   private double lastCurrTime;
   private double lastProgressTime;
   private State currState;
@@ -49,11 +49,11 @@ public class Guppy extends Fish implements Aquatic {
 
     /* Aquatic attribute initialization */
     this.aquarium = aquarium;
-    this.x = Constants.random(aquarium.getXMin(), aquarium.getXMax());
-    this.y = Constants.random(aquarium.getYMin(), aquarium.getYMax());
+    this.xpos = Constants.random(aquarium.getXMin(), aquarium.getXMax());
+    this.ypos = Constants.random(aquarium.getYMin(), aquarium.getYMax());
     this.lastCurrTime = aquarium.getCurrTime();
     this.lastProgressTime = aquarium.getCurrTime();
-    this.MOVE_SPEED = Constants.GUPPY_MOVE_SPEED;
+    this.moveSpeed = Constants.GUPPY_MOVE_SPEED;
     this.currState = State.movingRight;
     this.progress = 0;
     /* Initialize random movement */
@@ -73,9 +73,9 @@ public class Guppy extends Fish implements Aquatic {
   /*------------------------------------------*/
 
   /**
-   * Getter for Aquarium
+   * Getter for Aquarium.
    *
-   * @return The Aquarium the Aquatic is in
+   * @return The Aquarium the Aquatic is in.
    */
   @Override
   public Aquarium getAquarium() {
@@ -83,59 +83,59 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Getter for Move Speed
+   * Getter for Move Speed.
    *
-   * @return The Aquatic's move speed
+   * @return The Aquatic's move speed.
    */
   @Override
   public double getMoveSpeed() {
-    return this.MOVE_SPEED;
+    return this.moveSpeed;
   }
 
   /**
-   * Getter for x
+   * Getter for x.
    *
-   * @return The x-axis position of the Aquatic
+   * @return The x-axis position of the Aquatic.
    */
   @Override
   public double getX() {
-    return this.x;
+    return this.xpos;
   }
 
   /**
-   * Setter for x
+   * Setter for x.
    *
-   * @param x The new x-axis position of the Aquatic
+   * @param x The new x-axis position of the Aquatic.
    */
   @Override
   public void setX(double x) {
-    this.x = x;
+    this.xpos = x;
   }
 
   /**
-   * Getter for y
+   * Getter for y.
    *
-   * @return y-axis position of the Aquatic
+   * @return y-axis position of the Aquatic.
    */
   @Override
   public double getY() {
-    return this.y;
+    return this.ypos;
   }
 
   /**
-   * Setter for y
+   * Setter for y.
    *
-   * @param y The new y-axis position of the Aquatic
+   * @param y The new y-axis position of the Aquatic.
    */
   @Override
   public void setY(double y) {
-    this.y = y;
+    this.ypos = y;
   }
 
   /**
-   * Getter for lastCurrTime
+   * Getter for lastCurrTime.
    *
-   * @return The last update time of the Aquatic
+   * @return The last update time of the Aquatic.
    */
   @Override
   public double getLastCurrTime() {
@@ -143,9 +143,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Setter for last current time
+   * Setter for last current time.
    *
-   * @param time The last update time of the Aquatic
+   * @param time The last update time of the Aquatic.
    */
   @Override
   public void setLastCurrTime(double time) {
@@ -153,9 +153,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Getter for Aquatic's State
+   * Getter for Aquatic's State.
    *
-   * @return The Aquatic's current State
+   * @return The Aquatic's current State.
    */
   @Override
   public State getState() {
@@ -163,9 +163,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Setter for State
+   * Setter for State.
    *
-   * @param state The new state of the Aquatic
+   * @param state The new state of the Aquatic.
    */
   @Override
   public void setState(State state) {
@@ -173,9 +173,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Getter for Progress
+   * Getter for Progress.
    *
-   * @return The Aquatic's current State Progress
+   * @return The Aquatic's current State Progress.
    */
   @Override
   public int getProgress() {
@@ -183,9 +183,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Setter for progress
+   * Setter for progress.
    *
-   * @param progress The new progress of the Aquatic
+   * @param progress The new progress of the Aquatic.
    */
   @Override
   public void setProgress(int progress) {
@@ -193,9 +193,9 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Setter for last progress time
+   * Setter for last progress time.
    *
-   * @param time The new last update progress of the Aquatic
+   * @param time The new last update progress of the Aquatic.
    */
   @Override
   public void setLastProgressTime(double time) {
@@ -242,59 +242,60 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Moves the object independently
+   * Moves the object independently.
    */
   @Override
   public void move() {
     double currentTime = this.getAquarium().getCurrTime();
     if (this.getState() != State.turningRight && this.getState() != State.turningLeft) {
       if (nearestPellet != null && this.getHungry()) {
-        double xDirection = nearestPellet.getX() - this.getX();
-        double yDirection = nearestPellet.getY() - this.getY();
+        double xdirection = nearestPellet.getX() - this.getX();
+        double ydirection = nearestPellet.getY() - this.getY();
         double distance = distanceToPellet(nearestPellet);
 
         /* Check if this need to change */
-        double dx = (xDirection / distance) * this.getMoveSpeed() * ((currentTime - this
-            .getLastCurrTime()));
-        double dy = (yDirection / distance) * this.getMoveSpeed() * ((currentTime - this
-            .getLastCurrTime()));
+        double dx = (xdirection / distance) * this.getMoveSpeed() * ((currentTime - this
+                .getLastCurrTime()));
 
-        if (xDirection >= 0 && this.getXDir() < 0) {
+        if (xdirection >= 0 && this.getXDir() < 0) {
           this.setState(State.turningRight);
           this.setLastProgressTime(currentTime);
           this.setProgress(0);
         }
 
-        if (xDirection < 0 && this.getXDir() >= 0) {
+        if (xdirection < 0 && this.getXDir() >= 0) {
           this.setState(State.turningLeft);
           this.setLastProgressTime(currentTime);
           this.setProgress(0);
         }
 
+        double dy = (ydirection / distance) * this.getMoveSpeed() * ((currentTime - this
+                .getLastCurrTime()));
+
         this.setX(this.getX() + dx);
         this.setY(this.getY() + dy);
-        this.setXDir(xDirection / distance);
-        this.setYDir(yDirection / distance);
+        this.setXDir(xdirection / distance);
+        this.setYDir(ydirection / distance);
       } else {
         /* Randomize move direction after some interval */
         if (currentTime - this.getLastRandomTime() > Constants.RANDOM_MOVE_INTERVAL) {
           this.setLastRandomTime(currentTime);
           double rad = Constants.random(0.1, 1.9 * Math.PI);
 
-          double xDirection = Math.cos(rad);
-          if (xDirection >= 0 && this.getXDir() < 0) {
+          double xdirection = Math.cos(rad);
+          if (xdirection >= 0 && this.getXDir() < 0) {
             this.setState(State.turningRight);
             this.setLastProgressTime(currentTime);
             this.setProgress(0);
           }
 
-          if (xDirection < 0 && this.getXDir() >= 0) {
+          if (xdirection < 0 && this.getXDir() >= 0) {
             this.setState(State.turningLeft);
             this.setLastProgressTime(currentTime);
             this.setProgress(0);
           }
 
-          this.setXDir(xDirection);
+          this.setXDir(xdirection);
           this.setYDir(Math.sin(rad));
         }
 
@@ -329,7 +330,7 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Updates the object position and eating mechanism independently
+   * Updates the object position and eating mechanism independently.
    */
   @Override
   public void updateState() {
@@ -350,33 +351,33 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Updates the object progress independently
+   * Updates the object progress independently.
    */
   @Override
   public void updateProgress() {
     double currentTime = this.getAquarium().getCurrTime();
-    double progress_increment_time;
+    double progressIncrementTime;
     switch (this.getState()) {
       case movingRight:
-        progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
         break;
       case movingLeft:
-        progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
         break;
       case turningRight:
-        progress_increment_time = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
         break;
       case turningLeft:
-        progress_increment_time = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
         break;
       case eatingRight:
-        progress_increment_time = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
         break;
       case eatingLeft:
-        progress_increment_time = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
         break;
       default:
-        progress_increment_time = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
     }
 
     if (this.getHungry() && (this.getState() != State.eatingRight
@@ -392,7 +393,7 @@ public class Guppy extends Fish implements Aquatic {
       return;
     }
 
-    if (currentTime - this.lastProgressTime > progress_increment_time) {
+    if (currentTime - this.lastProgressTime > progressIncrementTime) {
       if (this.getProgress() < Constants.PROGRESS_PERIOD - 1) {
         this.setProgress(this.getProgress() + 1);
       } else if (this.getState() == State.turningRight) {
@@ -413,7 +414,7 @@ public class Guppy extends Fish implements Aquatic {
   }
 
   /**
-   * Executing dead progress
+   * Executing dead progress.
    */
   @Override
   public void dead() {
@@ -426,10 +427,10 @@ public class Guppy extends Fish implements Aquatic {
         && this.getProgress() < 5)) {
       this.setState(State.deadLeft);
     }
-    double current_time = this.getAquarium().getCurrTime();
-    if (current_time - this.lastProgressTime > Constants.GUPPY_DEAD_PROGRESS_INCREMENT_TIME) {
+    double currentTime = this.getAquarium().getCurrTime();
+    if (currentTime - this.lastProgressTime > Constants.GUPPY_DEAD_PROGRESS_INCREMENT_TIME) {
       this.setProgress(this.getProgress() + 1);
-      this.setLastProgressTime(current_time);
+      this.setLastProgressTime(currentTime);
       if (this.getProgress() >= Constants.PROGRESS_PERIOD) {
         this.getAquarium().deleteGuppy(this);
       }

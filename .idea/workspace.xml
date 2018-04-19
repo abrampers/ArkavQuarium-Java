@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="493e24aa-d606-4ebc-9aba-274b26f77827" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +74,7 @@
       <file leaf-file-name="Pellet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-7">
               <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#1702#1703#0" expanded="true" />
@@ -149,7 +150,7 @@
       <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="-7">
               <caret line="3" column="129" lean-forward="false" selection-start-line="3" selection-start-column="129" selection-end-line="3" selection-end-column="129" />
               <folding />
             </state>
@@ -159,7 +160,7 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
+            <state relative-caret-position="-7">
               <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="e#1080#1081#0" expanded="true" />
@@ -207,7 +208,7 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
+            <state relative-caret-position="-7">
               <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
               <folding>
                 <element signature="e#3756#3757#0" expanded="true" />
@@ -217,10 +218,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.editorconfig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="8955">
               <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
               <folding />
             </state>
@@ -230,18 +231,18 @@
       <file leaf-file-name="java-google-style" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-google-style">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="-7">
               <caret line="26" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="597" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Guppy.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Guppy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="272" column="16" lean-forward="false" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -265,7 +266,6 @@
       <find>.</find>
       <find>getHungry</find>
       <find>y_direction</find>
-      <find>current_time</find>
       <find>nearest_pellet</find>
       <find>const</find>
       <find>-&gt;</find>
@@ -275,6 +275,8 @@
       <find>todo</find>
       <find>TODO</find>
       <find>getContentP</find>
+      <find>MOVE_SPEED</find>
+      <find>current_time</find>
     </findStrings>
     <replaceStrings>
       <replace>{</replace>
@@ -283,11 +285,15 @@
       <replace>yDirection</replace>
       <replace>nearestPellet</replace>
       <replace>public static final</replace>
-      <replace>currentTime</replace>
       <replace>getXDir</replace>
       <replace>getXDir()</replace>
       <replace>.</replace>
       <replace>this.getXDir()</replace>
+      <replace>moveSpeed</replace>
+      <replace>xdirection</replace>
+      <replace>ydirection</replace>
+      <replace>progressIncrementTime</replace>
+      <replace>currentTime</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -319,13 +325,13 @@
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Coin.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Fish.java" />
-        <option value="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Piranha.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/State.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java" />
         <option value="$PROJECT_DIR$/.editorconfig" />
+        <option value="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" />
       </list>
     </option>
   </component>
@@ -517,7 +523,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -530,7 +535,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.49761903" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.49761903" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1310,64 +1315,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Fish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2607#2608#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3028#3029#0" expanded="true" />
-            <element signature="e#3141#3142#0" expanded="true" />
-            <element signature="e#3167#3168#0" expanded="true" />
-            <element signature="e#3308#3309#0" expanded="true" />
-            <element signature="e#3344#3345#0" expanded="true" />
-            <element signature="e#3441#3442#0" expanded="true" />
-            <element signature="e#3463#3464#0" expanded="true" />
-            <element signature="e#3577#3578#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
-            <element signature="e#3770#3771#0" expanded="true" />
-            <element signature="e#3907#3908#0" expanded="true" />
-            <element signature="e#3934#3935#0" expanded="true" />
-            <element signature="e#4096#4097#0" expanded="true" />
-            <element signature="e#4126#4127#0" expanded="true" />
-            <element signature="e#4278#4279#0" expanded="true" />
-            <element signature="e#4309#4310#0" expanded="true" />
-            <element signature="e#4424#4425#0" expanded="true" />
-            <element signature="e#4445#4446#0" expanded="true" />
-            <element signature="e#4576#4577#0" expanded="true" />
-            <element signature="e#4602#4603#0" expanded="true" />
-            <element signature="e#4717#4718#0" expanded="true" />
-            <element signature="e#4738#4739#0" expanded="true" />
-            <element signature="e#4869#4870#0" expanded="true" />
-            <element signature="e#4895#4896#0" expanded="true" />
-            <element signature="e#5012#5013#0" expanded="true" />
-            <element signature="e#5035#5036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
+        <state relative-caret-position="-7">
           <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
             <element signature="e#1080#1081#0" expanded="true" />
@@ -1396,7 +1346,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-7">
           <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <element signature="e#1702#1703#0" expanded="true" />
@@ -1468,9 +1418,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="-7">
           <caret line="3" column="129" lean-forward="false" selection-start-line="3" selection-start-column="129" selection-end-line="3" selection-end-column="129" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-google-style">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="597" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8955">
+          <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Fish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#2055#2056#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2238#2239#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2784#2785#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2982#2983#0" expanded="true" />
+            <element signature="e#3028#3029#0" expanded="true" />
+            <element signature="e#3141#3142#0" expanded="true" />
+            <element signature="e#3167#3168#0" expanded="true" />
+            <element signature="e#3308#3309#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+            <element signature="e#3441#3442#0" expanded="true" />
+            <element signature="e#3463#3464#0" expanded="true" />
+            <element signature="e#3577#3578#0" expanded="true" />
+            <element signature="e#3605#3606#0" expanded="true" />
+            <element signature="e#3743#3744#0" expanded="true" />
+            <element signature="e#3770#3771#0" expanded="true" />
+            <element signature="e#3907#3908#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
+            <element signature="e#4096#4097#0" expanded="true" />
+            <element signature="e#4126#4127#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4309#4310#0" expanded="true" />
+            <element signature="e#4424#4425#0" expanded="true" />
+            <element signature="e#4445#4446#0" expanded="true" />
+            <element signature="e#4576#4577#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
+            <element signature="e#4717#4718#0" expanded="true" />
+            <element signature="e#4738#4739#0" expanded="true" />
+            <element signature="e#4869#4870#0" expanded="true" />
+            <element signature="e#4895#4896#0" expanded="true" />
+            <element signature="e#5012#5013#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,29 +1513,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding>
-            <element signature="e#3756#3757#0" expanded="true" />
-            <element signature="e#3806#3807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-google-style">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="597" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
+        <state relative-caret-position="442">
+          <caret line="272" column="16" lean-forward="false" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
           <folding />
         </state>
       </provider>
