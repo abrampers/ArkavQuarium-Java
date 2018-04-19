@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="493e24aa-d606-4ebc-9aba-274b26f77827" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Coin.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Coin.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Fish.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Fish.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Piranha.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Piranha.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Snail.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Snail.java" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/State.java" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/State.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/AquariumTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/AquariumTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/CoinTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/CoinTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/FishTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/FishTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/GuppyTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/GuppyTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/PelletTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/PelletTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/PiranhaTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/PiranhaTest.java" />
-      <change beforePath="$PROJECT_DIR$/test/itb/arkavquarium/SnailTest.java" afterPath="$PROJECT_DIR$/test/itb/arkavquarium/SnailTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1800">
-              <caret line="130" column="5" lean-forward="true" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+              <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
               <folding>
                 <element signature="e#2671#2672#0" expanded="true" />
                 <element signature="e#2705#2706#0" expanded="true" />
@@ -223,27 +204,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aquatic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-367">
@@ -252,6 +213,26 @@
                 <element signature="e#3756#3757#0" expanded="true" />
                 <element signature="e#3806#3807#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.editorconfig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="java-google-style" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-google-style">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="597" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -332,7 +313,6 @@
         <option value="$PROJECT_DIR$/test/itb/arkavquarium/PiranhaTest.java" />
         <option value="$PROJECT_DIR$/test/itb/arkavquarium/SnailTest.java" />
         <option value="$PROJECT_DIR$/intellij-java-google-style.xml" />
-        <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/java-google-style" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Snail.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java" />
@@ -345,6 +325,7 @@
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Piranha.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/State.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java" />
+        <option value="$PROJECT_DIR$/.editorconfig" />
       </list>
     </option>
   </component>
@@ -1270,22 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-google-style">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="54" lean-forward="true" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Snail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5272">
@@ -1512,7 +1477,7 @@
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
-          <caret line="130" column="5" lean-forward="true" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
           <folding>
             <element signature="e#2671#2672#0" expanded="true" />
             <element signature="e#2705#2706#0" expanded="true" />
@@ -1532,6 +1497,22 @@
             <element signature="e#3756#3757#0" expanded="true" />
             <element signature="e#3806#3807#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-google-style">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="597" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
