@@ -192,6 +192,20 @@ public class Snail implements Aquatic {
         this.lastProgressTime = time;
     }
 
+    /** Getter for xDir.
+     * @return The x-axis direction of the Fish.
+     * */
+    public int getXDir() {
+        return xDir;
+    }
+
+    /** Setter for xDir.
+     * @param xDir  The new x-axis direction of the Fish
+     * */
+    public void setXDir(int xDir) {
+        this.xDir = xDir;
+    }
+
     /** Getter for number of coins Snail holds.
      * @return The value of coin Snail holds.
      */
@@ -241,7 +255,68 @@ public class Snail implements Aquatic {
      */
     @Override
     public void move() {
+        double currentTime = this.getAquarium().getCurrTime();
+        if(this.getState() != State.turningRight && this.getState() != State.turningLeft) {
+            if (nearestCoin != null) {
+                if(!isCoinOnTop()) {
+                    double dx = this.getMoveSpeed() * ((currentTime - this.getLastCurrTime()));
+                    double x_direction = this.getXDir();
+                    if (nearestCoin.getX() > this.getX()) {
+                        this.setXDir(1);
+                        this.setX(this.getX() + dx);
+                    } else {
+                        this.setXDir(-1);
+                        this.setX(this.getX() - dx);
+                    }
 
+                    if(x_direction == 0) {
+                        if(this.getState() == State.stillLeft && getXDir() == 1) {
+                            this.setState(State.turningRight);
+                            this.setLastProgressTime(currentTime);
+                            this.setProgress(0);
+                        } else if(this.getState() == State.stillRight && this.getXDir() == -1) {
+                            this.setState(State.turningLeft);
+                            this.setLastProgressTime(currentTime);
+                            this.setProgress(0);
+                        } else if(this.getState() == State.stillLeft && this.getXDir() == -1) {
+                            this.setState(State.movingLeft);
+                            this.setLastProgressTime(currentTime);
+                            this.setProgress(0);
+                        } else if(this.getState() == State.stillRight && this.getXDir() == 1) {
+                            this.setState(State.movingRight);
+                            this.setLastProgressTime(currentTime);
+                            this.setProgress(0);
+                        }
+                    }
+
+                    if(x_direction == 1 && this.getXDir() == -1) {
+                        this.setState(State.turningLeft);
+                        this.setLastProgressTime(currentTime);
+                        this.setProgress(0);
+                    }
+
+                    if(x_direction == -1 && this.getXDir() == 1) {
+                        this.setState(State.turningRight);
+                        this.setLastProgressTime(currentTime);
+                        this.setProgress(0);
+                    }
+                } else {
+                    if(this.getXDir() == 1) {
+                        this.setState(State.stillRight);
+                    } else {
+                        this.setState(State.stillLeft);
+                    }
+                    this.setXDir(0);
+                }
+            } else {
+                if(this.getXDir() == 1) {
+                    this.setState(State.stillRight);
+                } else {
+                    this.setState(State.stillLeft);
+                }
+                this.setXDir(0);
+            }
+        }
     }
 
     /**

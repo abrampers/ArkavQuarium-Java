@@ -1,5 +1,7 @@
 package itb.arkavquarium;
 
+import java.util.Iterator;
+
 /**
  * <h1>Aquarium!</h1>
  * The Aquarium class implements and updates all objects in Aquarium.
@@ -134,10 +136,35 @@ public class Aquarium {
     /*------------------------------------------*/
 
     /** Updates all the aquarium object state.
-     * @param current_time The new current time
+     * @param delta The delta of the last current time and new current time
      * */
-    public void updateState(double current_time) {
-        // TODO: Tunggu implementasi LinkedList
+    public void updateState(double delta) {
+        this.currTime += delta;
+        /* Piranha */
+        Iterator<Piranha> piranhaItr = contentPiranha.iterator();
+        while (piranhaItr.hasNext()) {
+            piranhaItr.next().updateState();
+        }
+        /* Guppy */
+        Iterator<Guppy> guppyItr = contentGuppy.iterator();
+        while (guppyItr.hasNext()) {
+            guppyItr.next().updateState();
+        }
+        /* Snail */
+        Iterator<Snail> snailItr = contentSnail.iterator();
+        while (snailItr.hasNext()) {
+            snailItr.next().updateState();
+        }
+        /* Pellet */
+        Iterator<Pellet> pelletItr = contentPellet.iterator();
+        while (pelletItr.hasNext()) {
+            pelletItr.next().updateState();
+        }
+        /* Coin */
+        Iterator<Coin> coinItr = contentCoin.iterator();
+        while (coinItr.hasNext()) {
+            coinItr.next().updateState();
+        }
     }
 
     /** Create Piranha.

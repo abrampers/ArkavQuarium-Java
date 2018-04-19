@@ -196,6 +196,7 @@ public abstract class Fish {
      * @param hungry  The new hunger state of the Fish
      * */
     public void setHungry(boolean hungry) {
+
         this.hungry = hungry;
     }
 
