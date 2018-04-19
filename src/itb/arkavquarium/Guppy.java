@@ -238,11 +238,7 @@ public class Guppy extends Fish implements Aquatic {
     private boolean nearestPelletInRange() {
         if(nearestPellet == null) {
             return false;
-        } else if(distanceToPellet(nearestPellet) < this.getEatRadius()) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return distanceToPellet(nearestPellet) < this.getEatRadius();
     }
 
     /**

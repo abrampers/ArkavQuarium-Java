@@ -15,9 +15,9 @@ import java.util.Iterator;
  * @since   2018-04-15
  */
 public class Aquarium {
-    /*------------------------------------------*/
+    /* ---------------------------------------- */
     /* -------------- Attributes -------------- */
-    /*------------------------------------------*/
+    /* ---------------------------------------- */
 
     private final double X_MIN;
     private final double Y_MIN;
@@ -47,6 +47,13 @@ public class Aquarium {
         this.Y_MIN = yMin;
         this.X_MAX = xMax;
         this.Y_MAX = yMax;
+
+        this.contentPiranha = new LinkedList<Piranha>();
+        this.contentGuppy = new LinkedList<Guppy>();
+        this.contentSnail = new LinkedList<Snail>();
+        this.contentCoin = new LinkedList<Coin>();
+        this.contentPellet = new LinkedList<Pellet>();
+
         this.createGuppy();
     }
 
