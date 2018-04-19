@@ -256,9 +256,7 @@ public class Snail implements Aquatic {
 
     private boolean nearestCoinInRange() {
         if (nearestCoin != null) {
-            if (getDistance(this, nearestCoin) < this.SNAIL_RADIUS) {
-                return true;
-            }
+            return getDistance(this, nearestCoin) < this.SNAIL_RADIUS;
         }
         return false;
     }

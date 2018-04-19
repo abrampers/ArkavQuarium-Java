@@ -235,11 +235,7 @@ public class Piranha extends Fish implements Aquatic {
     private boolean nearestGuppyInRange() {
         if(nearestGuppy == null) {
             return false;
-        } else if(distanceToGuppy(nearestGuppy) < this.getEatRadius()) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return distanceToGuppy(nearestGuppy) < this.getEatRadius();
     }
 
     /**
