@@ -14,113 +14,113 @@ package itb.arkavquarium;
 public interface Aquatic {
 
   /**
-   * Getter for Aquarium
+   * Getter for Aquarium.
    *
-   * @return The Aquarium the Aquatic is in
+   * @return The Aquarium the Aquatic is in.
    */
   Aquarium getAquarium();
 
   /**
-   * Getter for Move Speed
+   * Getter for Move Speed.
    *
-   * @return The Aquatic's move speed
+   * @return The Aquatic's move speed.
    */
   double getMoveSpeed();
 
   /**
-   * Getter for x
+   * Getter for x.
    *
-   * @return The x-axis position of the Aquatic
+   * @return The x-axis position of the Aquatic.
    */
   double getX();
 
   /**
-   * Setter for x
+   * Setter for x.
    *
-   * @param x The new x-axis position of the Aquatic
+   * @param x The new x-axis position of the Aquatic.
    */
   void setX(double x);
 
   /**
-   * Getter for y
+   * Getter for y.
    *
-   * @return y-axis position of the Aquatic
+   * @return y-axis position of the Aquatic.
    */
   double getY();
 
   /**
-   * Setter for y
+   * Setter for y.
    *
-   * @param y The new y-axis position of the Aquatic
+   * @param y The new y-axis position of the Aquatic.
    */
   void setY(double y);
 
   /**
-   * Getter for lastCurrTime
+   * Getter for lastCurrTime.
    *
-   * @return The last update time of the Aquatic
+   * @return The last update time of the Aquatic.
    */
   double getLastCurrTime();
 
   /**
-   * Setter for last current time
+   * Setter for last current time.
    *
-   * @param time The last update time of the Aquatic
+   * @param time The last update time of the Aquatic.
    */
   void setLastCurrTime(double time);
 
   /**
-   * Getter for Aquatic's State
+   * Getter for Aquatic's State.
    *
-   * @return The Aquatic's current State
+   * @return The Aquatic's current State.
    */
   State getState();
 
   /**
-   * Setter for State
+   * Setter for State.
    *
-   * @param state The new state of the Aquatic
+   * @param state The new state of the Aquatic.
    */
   void setState(State state);
 
   /**
-   * Getter for Progress
+   * Getter for Progress.
    *
-   * @return The Aquatic's current State Progress
+   * @return The Aquatic's current State Progress.
    */
   int getProgress();
 
   /**
-   * Setter for progress
+   * Setter for progress.
    *
-   * @param progress The new progress of the Aquatic
+   * @param progress The new progress of the Aquatic.
    */
   void setProgress(int progress);
 
   /**
-   * Setter for last progress time
+   * Setter for last progress time.
    *
-   * @param time The new last update progress of the Aquatic
+   * @param time The new last update progress of the Aquatic.
    */
   void setLastProgressTime(double time);
 
   /**
-   * Moves the object independently
+   * Moves the object independently.
    */
   void move();
 
   /**
-   * Updates the object position and eating mechanism independently
+   * Updates the object position and eating mechanism independently.
    */
   void updateState();
 
   /**
-   * Updates the object progress independently
+   * Updates the object progress independently.
    */
   void updateProgress();
 
   /**
-   * Executing dead progress
+   * Executing dead progress.
    */
   void dead();
 }
