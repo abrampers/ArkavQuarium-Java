@@ -6,27 +6,27 @@ import static org.junit.Assert.*;
 
 public class GuppyTest {
 
-    @Test
-    public void move() {
-    }
+  @Test
+  public void move() {
+  }
 
-    @Test
-    public void updateState() {
-    }
+  @Test
+  public void updateState() {
+  }
 
-    @Test
-    public void updateProgress() {
-    }
+  @Test
+  public void updateProgress() {
+  }
 
-    @Test
-    public void dead() {
-    }
+  @Test
+  public void dead() {
+  }
 
-    @Test
-    public void dropCoin() {
-    }
+  @Test
+  public void dropCoin() {
+  }
 
-    @Test
-    public void eat() {
-    }
+  @Test
+  public void eat() {
+  }
 }
