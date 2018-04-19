@@ -1,5 +1,7 @@
 package itb.arkavquarium;
 
+import java.util.Iterator;
+
 /**
  * <h1>Guppy!</h1>
  * The Guppy class inherits Fish and implements Aquatic interface.
@@ -219,7 +221,18 @@ public class Guppy extends Fish implements Aquatic {
     }
 
     private void findNearestPellet() {
-        /* TODO: Tunggu implementasi LinkedList */
+        LinkedList<Pellet> contentPellet = this.getAquarium().getContentPellet();
+        Pellet currentNearestPellet = null;
+        Iterator<Pellet> pelletItr = contentPellet.iterator();
+        while(pelletItr.hasNext()) {
+            Pellet currentPellet = pelletItr.next();
+            if(currentNearestPellet == null) {
+                currentNearestPellet = currentPellet;
+            } else if(distanceToPellet(currentPellet) < distanceToPellet(currentNearestPellet)) {
+                currentNearestPellet = currentPellet;
+            }
+        }
+        this.nearestPellet =  currentNearestPellet;
     }
 
     private boolean nearestPelletInRange() {

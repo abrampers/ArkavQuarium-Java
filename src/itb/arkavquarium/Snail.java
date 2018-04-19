@@ -1,5 +1,7 @@
 package itb.arkavquarium;
 
+import java.util.Iterator;
+
 /**
  * <h1>Snail!</h1>
  * The Snail class implements Aquatic interface.
@@ -238,7 +240,18 @@ public class Snail implements Aquatic {
     }
 
     private void findNearestCoin() {
-        /* TODO: Tunggu implement linkedlist */
+        LinkedList<Coin> contentCoin = this.getAquarium().getContentCoin();
+        Coin currentNearestCoin = null;
+        Iterator<Coin> coinItr = contentCoin.iterator();
+        while(coinItr.hasNext()) {
+            Coin currentCoin = coinItr.next();
+            if(currentNearestCoin == null) {
+                currentNearestCoin = currentCoin;
+            } else if(getDistance(this, currentCoin) < getDistance(this, currentNearestCoin)) {
+                currentNearestCoin = currentCoin;
+            }
+        }
+        this.nearestCoin =  currentNearestCoin;
     }
 
     private boolean nearestCoinInRange() {

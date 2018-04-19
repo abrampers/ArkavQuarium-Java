@@ -1,5 +1,7 @@
 package itb.arkavquarium;
 
+import java.util.Iterator;
+
 /**
  * <h1>Piranha!</h1>
  * The Piranha class inherits Fish and implements Aquatic interface.
@@ -216,7 +218,18 @@ public class Piranha extends Fish implements Aquatic {
     }
 
     private void findNearestGuppy() {
-        /* TODO: Tunggu implementasi LinkedList */
+        LinkedList<Guppy> contentGuppy = this.getAquarium().getContentGuppy();
+        Guppy currentNearestGuppy = null;
+        Iterator<Guppy> guppyItr = contentGuppy.iterator();
+        while(guppyItr.hasNext()) {
+            Guppy currentGuppy = guppyItr.next();
+            if(currentNearestGuppy == null) {
+                currentNearestGuppy = currentGuppy;
+            } else if(distanceToGuppy(currentGuppy) < distanceToGuppy(currentNearestGuppy)) {
+                currentNearestGuppy = currentGuppy;
+            }
+        }
+        this.nearestGuppy =  currentNearestGuppy;
     }
 
     private boolean nearestGuppyInRange() {
