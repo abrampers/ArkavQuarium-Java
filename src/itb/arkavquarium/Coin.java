@@ -16,12 +16,12 @@ public class Coin implements Aquatic {
   /*------------------------------------------*/
 
   private final int value;
-  private final double MOVE_SPEED; /* Movement Speed per second */
+  private final double moveSpeed; /* Movement Speed per second */
   private double lastBottomTime;
   /* ---------- Aquatic Attributes ---------- */
-  private Aquarium aquarium;
-  private double x;
-  private double y;
+  private final Aquarium aquarium;
+  private double xpos;
+  private double ypos;
   private double lastCurrTime;
   private double lastProgressTime;
   private State currState;
@@ -34,19 +34,19 @@ public class Coin implements Aquatic {
   /**
    * A constructor. Constructs a new Fish object.
    *
-   * @param x X-axis position of the Pellet.
-   * @param y Y-axis position of the Pellet.
+   * @param xpos X-axis position of the Pellet.
+   * @param ypos Y-axis position of the Pellet.
    * @param aquarium The Aquarium the Pellet is on.
    */
-  public Coin(double x, double y, int value, Aquarium aquarium) {
-    this.x = x;
-    this.y = y;
+  public Coin(double xpos, double ypos, int value, Aquarium aquarium) {
+    this.xpos = xpos;
+    this.ypos = ypos;
     this.lastCurrTime = aquarium.getCurrTime();
     this.aquarium = aquarium;
     this.currState = State.movingRight;
     this.lastProgressTime = 0;
     this.progress = 0;
-    this.MOVE_SPEED = Constants.PELLET_SPEED;
+    this.moveSpeed = Constants.PELLET_SPEED;
 
     this.lastBottomTime = 0;
     this.setState(State.movingRight);
@@ -59,9 +59,9 @@ public class Coin implements Aquatic {
   /*------------------------------------------*/
 
   /**
-   * Getter for Aquarium
+   * Getter for Aquarium.
    *
-   * @return The Aquarium the Aquatic is in
+   * @return The Aquarium the Aquatic is in.
    */
   @Override
   public Aquarium getAquarium() {
@@ -69,59 +69,59 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Getter for Move Speed
+   * Getter for Move Speed.
    *
-   * @return The Aquatic's move speed
+   * @return The Aquatic's move speed.
    */
   @Override
   public double getMoveSpeed() {
-    return this.MOVE_SPEED;
+    return this.moveSpeed;
   }
 
   /**
-   * Getter for x
+   * Getter for x.
    *
-   * @return The x-axis position of the Aquatic
+   * @return The x-axis position of the Aquatic.
    */
   @Override
   public double getX() {
-    return this.x;
+    return this.xpos;
   }
 
   /**
-   * Setter for x
+   * Setter for x.
    *
-   * @param x The new x-axis position of the Aquatic
+   * @param xpos The new x-axis position of the Aquatic.
    */
   @Override
-  public void setX(double x) {
-    this.x = x;
+  public void setX(double xpos) {
+    this.xpos = xpos;
   }
 
   /**
-   * Getter for y
+   * Getter for y.
    *
-   * @return y-axis position of the Aquatic
+   * @return y-axis position of the Aquatic.
    */
   @Override
   public double getY() {
-    return this.y;
+    return this.ypos;
   }
 
   /**
-   * Setter for y
+   * Setter for y.
    *
-   * @param y The new y-axis position of the Aquatic
+   * @param ypos The new y-axis position of the Aquatic.
    */
   @Override
-  public void setY(double y) {
-    this.y = y;
+  public void setY(double ypos) {
+    this.ypos = ypos;
   }
 
   /**
-   * Getter for lastCurrTime
+   * Getter for lastCurrTime.
    *
-   * @return The last update time of the Aquatic
+   * @return The last update time of the Aquatic.
    */
   @Override
   public double getLastCurrTime() {
@@ -129,9 +129,9 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Setter for last current time
+   * Setter for last current time.
    *
-   * @param time The last update time of the Aquatic
+   * @param time The last update time of the Aquatic.
    */
   @Override
   public void setLastCurrTime(double time) {
@@ -139,9 +139,9 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Getter for Aquatic's State
+   * Getter for Aquatic's State.
    *
-   * @return The Aquatic's current State
+   * @return The Aquatic's current State.
    */
   @Override
   public State getState() {
@@ -149,9 +149,9 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Setter for State
+   * Setter for State.
    *
-   * @param state The new state of the Aquatic
+   * @param state The new state of the Aquatic.
    */
   @Override
   public void setState(State state) {
@@ -159,9 +159,9 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Getter for Progress
+   * Getter for Progress.
    *
-   * @return The Aquatic's current State Progress
+   * @return The Aquatic's current State Progress.
    */
   @Override
   public int getProgress() {
@@ -169,9 +169,9 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Setter for progress
+   * Setter for progress.
    *
-   * @param progress The new progress of the Aquatic
+   * @param progress The new progress of the Aquatic.
    */
   @Override
   public void setProgress(int progress) {
@@ -179,18 +179,18 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Getter for Value
+   * Getter for Value.
    *
-   * @return The Coin's value
+   * @return The Coin's value.
    */
   public int getValue() {
     return value;
   }
 
   /**
-   * Setter for last progress time
+   * Setter for last progress time.
    *
-   * @param time The new last update progress of the Aquatic
+   * @param time The new last update progress of the Aquatic.
    */
   @Override
   public void setLastProgressTime(double time) {
@@ -202,17 +202,19 @@ public class Coin implements Aquatic {
   /*------------------------------------------*/
 
   /**
-   * Check whether the object is inside the Aquarium
+   * Check whether the object is inside the Aquarium.
    *
-   * @return True if the object is inside the Aquarium
+   * @return True if the object is inside the Aquarium.
    */
-  public boolean isInside() {
-    return x > this.aquarium.getXMin() && y > this.aquarium.getYMin() && y < this.aquarium.getYMax()
-        && x < this.aquarium.getXMax();
+  private boolean isInside() {
+    return xpos > this.aquarium.getXMin()
+            && ypos > this.aquarium.getYMin()
+            && ypos < this.aquarium.getYMax()
+            && xpos < this.aquarium.getXMax();
   }
 
   /**
-   * Moves the object independently
+   * Moves the object independently.
    */
   @Override
   public void move() {
@@ -221,6 +223,7 @@ public class Coin implements Aquatic {
     if (this.isInside()) {
       if (this.getY() + dy > this.getAquarium().getYMax()) {
         this.setY(this.getAquarium().getYMax());
+        lastBottomTime = currentTime;
       } else {
         this.setY(this.getY() + dy);
       }
@@ -228,7 +231,7 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Updates the object position and eating mechanism independently
+   * Updates the object position and eating mechanism independently.
    */
   @Override
   public void updateState() {
@@ -244,7 +247,7 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Updates the object progress independently
+   * Updates the object progress independently.
    */
   @Override
   public void updateProgress() {
@@ -264,7 +267,7 @@ public class Coin implements Aquatic {
   }
 
   /**
-   * Executing dead progress
+   * Executing dead progress.
    */
   @Override
   public void dead() {

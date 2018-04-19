@@ -1,6 +1,7 @@
 package itb.arkavquarium;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * <h1>LinkedList!</h1> Class that contains linked list for storage of classes' data.
@@ -37,9 +38,9 @@ public class LinkedList<E> {
   /*------------------------------------------*/
 
   /**
-   * Getter for Length
+   * Getter for Length.
    *
-   * @return int length of list (excluding dummy)
+   * @return int length of list (excluding dummy).
    */
   int getLength() {
     return this.length;
@@ -50,16 +51,16 @@ public class LinkedList<E> {
   /*------------------------------------------*/
 
   /**
-   * Check if list is empty
+   * Check if list is empty.
    *
-   * @return true if list is empty
+   * @return true if list is empty.
    */
   public boolean isEmpty() {
     return this.head.getNext() == null;
   }
 
   /**
-   * Add new element
+   * Add new element.
    */
   public void add(E e) {
     Node<E> n = new Node<E>(e);
@@ -73,7 +74,7 @@ public class LinkedList<E> {
   }
 
   /**
-   * Remove element, do nothing if element not found
+   * Remove element, do nothing if element not found.
    */
   public void remove(E e) {
     if (!this.isEmpty()) {
@@ -92,18 +93,18 @@ public class LinkedList<E> {
   }
 
   /**
-   * Returns an iterator over the elements in the list in proper sequence
+   * Returns an iterator over the elements in the list in proper sequence.
    *
-   * @return an iterator for the linkedlist
+   * @return an iterator for the linkedlist.
    */
   public Iterator<E> iterator() {
-    return new LLIterator();
+    return new LlIterator();
   }
 
   /**
-   * Private Class For Iterator
+   * Private Class For Iterator.
    */
-  private class LLIterator implements Iterator<E> {
+  private class LlIterator implements Iterator<E> {
 
     /*------------------------------------------*/
     /* -------------- Attributes -------------- */
@@ -119,7 +120,7 @@ public class LinkedList<E> {
     /**
      * A constructor. Constructs a new Iterator object.
      */
-    public LLIterator() {
+    public LlIterator() {
       this.cursor = LinkedList.this.head;
       this.lastRet = -1;
     }
@@ -129,16 +130,16 @@ public class LinkedList<E> {
     /*------------------------------------------*/
 
     /**
-     * Implementation of Iterator check if there is next element
+     * Implementation of Iterator check if there is next element.
      */
     public boolean hasNext() {
       return (this.cursor.getNext() != null);
     }
 
     /**
-     * Implementation of Iterator get next element
+     * Implementation of Iterator get next element.
      *
-     * @return value of next element
+     * @return value of next element.
      */
     public E next() {
       if (!this.hasNext()) {
@@ -152,7 +153,7 @@ public class LinkedList<E> {
 
     /**
      * Implementation of Iterator remove element in cursor, can only be called only after next() has
-     * been called Set current cursor to prev element
+     * been called Set current cursor to prev element.
      */
     public void remove() {
       if (this.lastRet < 0) {
@@ -203,54 +204,54 @@ public class LinkedList<E> {
     /*------------------------------------------*/
 
     /**
-     * Getter for Value
+     * Getter for Value.
      *
-     * @return The value of the Node
+     * @return The value of the Node.
      */
     E getValue() {
       return this.value;
     }
 
     /**
-     * Setter for Value
+     * Setter for Value.
      *
-     * @param value New value of the node
+     * @param value New value of the node.
      */
     void setValue(E value) {
       this.value = value;
     }
 
     /**
-     * Getter for Next Node
+     * Getter for Next Node.
      *
-     * @return The next Node
+     * @return The next Node.
      */
     Node<E> getNext() {
       return this.next;
     }
 
     /**
-     * Setter for Next Node
+     * Setter for Next Node.
      *
-     * @param n New Node for next
+     * @param n New Node for next.
      */
     void setNext(Node<E> n) {
       this.next = n;
     }
 
     /**
-     * Getter for Prev Node
+     * Getter for Prev Node.
      *
-     * @return The previous Node
+     * @return The previous Node.
      */
     Node<E> getPrev() {
       return this.prev;
     }
 
     /**
-     * Setter for Previous Node
+     * Setter for Previous Node.
      *
-     * @param p New Node for previous
+     * @param p New Node for previous.
      */
     void setPrev(Node<E> p) {
       this.prev = p;
