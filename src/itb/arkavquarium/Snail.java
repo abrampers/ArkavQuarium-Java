@@ -44,7 +44,7 @@ public class Snail implements Aquatic {
     /* Aquatic attribute initialization */
     this.aquarium = aquarium;
     this.abscissa = Constants.random(aquarium.getXMin(), aquarium.getXMax());
-    this.ordinate = Constants.random(aquarium.getYMin(), aquarium.getYMax());
+    this.ordinate = aquarium.getYMax();
     this.lastCurrTime = aquarium.getCurrTime();
     this.lastProgressTime = aquarium.getCurrTime();
     this.moveSpeed = Constants.GUPPY_MOVE_SPEED;
