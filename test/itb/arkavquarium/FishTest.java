@@ -6,11 +6,11 @@ import static org.junit.Assert.*;
 
 public class FishTest {
 
-    @Test
-    public void eat() {
-    }
+  @Test
+  public void eat() {
+  }
 
-    @Test
-    public void dropCoin() {
-    }
+  @Test
+  public void dropCoin() {
+  }
 }
