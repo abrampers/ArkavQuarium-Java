@@ -206,7 +206,7 @@ public class Coin implements Aquatic {
    *
    * @return True if the object is inside the Aquarium.
    */
-  private boolean isInside() {
+  public boolean isInside() {
     return xpos > this.aquarium.getXMin()
             && ypos > this.aquarium.getYMin()
             && ypos < this.aquarium.getYMax()
