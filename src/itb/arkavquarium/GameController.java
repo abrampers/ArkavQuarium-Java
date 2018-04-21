@@ -97,7 +97,7 @@ public class GameController extends JPanel implements ActionListener {
   private void updateGameState() {
 
     // Update game state
-    aquarium.updateState(Constants.GRAPHICS_FRAME_DELAY);
+    aquarium.updateState((double) Constants.GRAPHICS_FRAME_DELAY);
 
     // Get updated aquarium objects
     contentGuppy = aquarium.getContentGuppy();
@@ -117,13 +117,13 @@ public class GameController extends JPanel implements ActionListener {
   private void drawAssets(Graphics graphics) {
 
     if (gameState == GameState.uninitialized) {
-      graphics.drawImage(mainMenu, 0, 0, this);
+      drawMainMenu(graphics);
 
     } else if (gameState == GameState.won) {
-      graphics.drawImage(winMenu, 0, 0, this);
+      drawWinMenu(graphics);
 
     } else if (gameState == GameState.lost) {
-      graphics.drawImage(loseMenu, 0, 0, this);
+      drawLoseMenu(graphics);
 
     } else {
       graphics.drawImage(aquariumBackground, 0, 0, this);
@@ -140,31 +140,49 @@ public class GameController extends JPanel implements ActionListener {
       Iterator<Piranha> piranhaIterator = contentPiranha.iterator();
       while (piranhaIterator.hasNext()) {
         Piranha piranha = piranhaIterator.next();
-        //drawPiranha(graphics, piranha);
+        drawPiranha(graphics, piranha);
       }
 
       // Draw snail
       Iterator<Snail> snailIterator = contentSnail.iterator();
       while (snailIterator.hasNext()) {
         Snail snail = snailIterator.next();
-        //drawSnail(graphics, snail);
+        drawSnail(graphics, snail);
       }
 
       // Draw coin
       Iterator<Coin> coinIterator = contentCoin.iterator();
       while (coinIterator.hasNext()) {
         Coin coin = coinIterator.next();
-        //drawCoin(graphics, coin);
+        drawCoin(graphics, coin);
       }
 
       // Draw pellet
       Iterator<Pellet> pelletIterator = contentPellet.iterator();
       while (pelletIterator.hasNext()) {
         Pellet pellet = pelletIterator.next();
-        //drawPellet(graphics, pellet);
+        drawPellet(graphics, pellet);
       }
 
     }
+  }
+
+  private void drawMainMenu(Graphics graphics) {
+    String assetPath = "assets/graphics/statics/main_menu.jpg";
+    Image mainMenuImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(mainMenuImage, 0, 0, this);
+  }
+
+  private void drawWinMenu(Graphics graphics) {
+    String assetPath = "assets/graphics/statics/win_menu.jpg";
+    Image winMenuImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(winMenuImage, 0, 0, this);
+  }
+
+  private void drawLoseMenu(Graphics graphics) {
+    String assetPath = "assets/graphics/statics/lose_menu.jpg";
+    Image loseMenuImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(loseMenuImage, 0, 0, this);
   }
 
   private void drawGuppy(Graphics graphics, Guppy guppy) {
@@ -174,7 +192,7 @@ public class GameController extends JPanel implements ActionListener {
     State state = guppy.getState();
     String assetPath = "assets/graphics/sprites/guppy";
 
-    // TODO: Check level
+    // Check level
     if (level == 1) {
       assetPath += "/small";
     } else if (level == 2) {
@@ -209,9 +227,101 @@ public class GameController extends JPanel implements ActionListener {
       assetPath += "/dead/right";
     }
 
+    // Draw asset
     assetPath += "/" + (progress + 1) + ".png";
     Image guppyImage = new ImageIcon(assetPath).getImage();
     graphics.drawImage(guppyImage, (int) guppy.getX(), (int) guppy.getY(), this);
+  }
+
+  private void drawPiranha(Graphics graphics, Piranha piranha) {
+    boolean hungry = false;
+    int progress = piranha.getProgress();
+    State state = piranha.getState();
+    String assetPath = "assets/graphics/sprites/piranha";
+
+    // Check state
+    if (state == State.movingLeft) {
+      assetPath += hungry ? "/move/hungry/left" : "/move/normal/left";
+
+    } else if (state == State.movingRight) {
+      assetPath += hungry ? "/move/hungry/right" : "/move/normal/right";
+
+    } else if (state == State.turningLeft) {
+      assetPath += hungry ? "/turn/hungry/left" : "/turn/normal/left";
+
+    } else if (state == State.turningRight) {
+      assetPath += hungry ? "/turn/hungry/right" : "/turn/normal/right";
+
+    } else if (state == State.eatingLeft) {
+      assetPath += hungry ? "/eat/hungry/left" : "/eat/normal/left";
+
+    } else if (state == State.eatingRight) {
+      assetPath += hungry ? "/eat/hungry/right" : "/eat/normal/right";
+
+    } else if (state == State.deadLeft) {
+      assetPath += "/dead/left";
+
+    } else if (state == State.deadRight) {
+      assetPath += "/dead/right";
+    }
+
+    // Draw asset
+    assetPath += "/" + (progress + 1) + ".png";
+    Image piranhaImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(piranhaImage, (int) piranha.getX(), (int) piranha.getY(), this);
+  }
+
+  private void drawSnail(Graphics graphics, Snail snail) {
+    int progress = snail.getProgress();
+    State state = snail.getState();
+    String assetPath = "assets/graphics/sprites/snail";
+
+    // Check state
+    if (state == State.movingLeft) {
+      assetPath += "/move/left";
+
+    } else if (state == State.movingRight) {
+      assetPath += "/move/right";
+
+    } else if (state == State.turningLeft) {
+      assetPath += "/turn/left";
+
+    } else if (state == State.turningRight) {
+      assetPath += "/turn/right";
+
+    } else if (state == State.stillRight) {
+      assetPath += "/move/right";
+
+    } else if (state == State.stillLeft) {
+      assetPath += "/move/left";
+    }
+
+    // Draw asset
+    assetPath += "/" + (progress + 1) + ".png";
+    Image snailImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(snailImage, (int) snail.getX(), (int) snail.getY(), this);
+  }
+
+  private void drawCoin(Graphics graphics, Coin coin) {
+    boolean isGold = coin.getValue() > 20;
+    int progress = coin.getProgress();
+    String assetPath = "assets/graphics/sprites/coin";
+
+    // Draw asset
+    assetPath += isGold ? "/gold" : "/silver";
+    assetPath += "/" + (progress + 1) + ".png";
+    Image coinImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(coinImage, (int) coin.getX(), (int) coin.getY(), this);
+  }
+
+  private void drawPellet(Graphics graphics, Pellet pellet) {
+    int progress = pellet.getProgress();
+    String assetPath = "assets/graphics/sprites/pellet";
+
+    // Draw asset
+    assetPath += "/" + (progress + 1) + ".png";
+    Image pelletImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(pelletImage, (int) pellet.getX(), (int) pellet.getY(), this);
   }
 
   @Override
