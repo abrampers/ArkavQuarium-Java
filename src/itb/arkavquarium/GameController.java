@@ -15,19 +15,11 @@ public class GameController extends JPanel implements ActionListener {
   private int mouseClickY;
   private boolean mouseClickValid;
 
-  // Assets
-  private Image mainMenu;
-  private Image winMenu;
-  private Image loseMenu;
-  private Image aquariumBackground;
-  private Image aquariumUI;
-  private HashMap<String, Image[]> guppyImage;
-
   // Game state
   private Aquarium aquarium;
   private GameState gameState;
-  private int coin;
-  private int egg;
+  private int coinCount;
+  private int eggCount;
   LinkedList<Guppy> contentGuppy;
   LinkedList<Piranha> contentPiranha;
   LinkedList<Snail> contentSnail;
@@ -43,38 +35,17 @@ public class GameController extends JPanel implements ActionListener {
     addMouseListener(new MAdapter());
     mouseClickValid = false;
 
+    // Setup window
     setBackground(Color.black);
     setFocusable(true);
     setPreferredSize(new Dimension(Constants.GRAPHICS_WIN_WIDTH, Constants.GRAPHICS_WIN_HEIGHT));
 
-    loadAssets();
+    // Init game state
     gameState = GameState.uninitialized;
 
     // Init game timer, choose framerate
     timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
     timer.start();
-  }
-
-  private void loadAssets() {
-
-    // Menu assets
-    mainMenu = new ImageIcon("assets/graphics/statics/main_menu.jpg").getImage();
-    winMenu = new ImageIcon("assets/graphics/statics/win_menu.jpg").getImage();
-    loseMenu = new ImageIcon("assets/graphics/statics/lose_menu.jpg").getImage();
-
-    // Gameplay assets
-    aquariumBackground = new ImageIcon("assets/graphics/statics/aquarium_background.jpg").getImage();
-    aquariumUI = new ImageIcon("assets/graphics/statics/aquarium_ui.png").getImage();
-
-    // Guppy
-    guppyImage = new HashMap<>();
-    for (String key : Constants.guppyImageStyles) {
-      Image[] images = new Image[10];
-      for (int i = 0; i < Constants.GUPPY_SPRITE_LEN; i++) {
-        images[i] = new ImageIcon(key + (i + 1) + ".png").getImage();
-      }
-      guppyImage.put(key, images);
-    }
   }
 
   private void initGameState() {
@@ -83,8 +54,8 @@ public class GameController extends JPanel implements ActionListener {
     aquarium = new Aquarium(Constants.GAME_SCREEN_LEFT_PADDING, Constants.GAME_SCREEN_TOP_PADDING,
       Constants.GRAPHICS_WIN_WIDTH - Constants.GAME_SCREEN_RIGHT_PADDING,
       Constants.GRAPHICS_WIN_HEIGHT - Constants.GAME_SCREEN_BOTTOM_PADDING);
-    coin = 0;
-    egg = 0;
+    coinCount = 0;
+    eggCount = 0;
 
     // Get aquarium objects
     contentGuppy = aquarium.getContentGuppy();
@@ -126,8 +97,8 @@ public class GameController extends JPanel implements ActionListener {
       drawLoseMenu(graphics);
 
     } else {
-      graphics.drawImage(aquariumBackground, 0, 0, this);
-      graphics.drawImage(aquariumUI, 0, 0, this);
+      drawAquarium(graphics);
+      drawTopBar(graphics);
 
       // Draw guppy
       Iterator<Guppy> guppyIterator = contentGuppy.iterator();
@@ -165,6 +136,41 @@ public class GameController extends JPanel implements ActionListener {
       }
 
     }
+  }
+
+  private void drawAquarium(Graphics graphics) {
+    String assetPath = "assets/graphics/statics/aquarium_background.jpg";
+    Image aquariumImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(aquariumImage, 0, 0, this);
+  }
+
+  private void drawTopBar(Graphics graphics) {
+    // Draw top bar UI
+    String assetPath = "assets/graphics/statics/aquarium_ui.png";
+    Image topBarImage = new ImageIcon(assetPath).getImage();
+    graphics.drawImage(topBarImage, 0, 0, this);
+
+    // Draw texts
+//    drawText(to_string(coin_count), coinTextSize, coinTextX,
+//      coinTextY, coinTextColorR, coinTextColorG, coinTextColorB);
+//
+//    drawText(to_string(guppyPrice), priceTextSize, guppyPriceTextX,
+//      guppyPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
+//
+//    drawText(to_string(pelletPrice), priceTextSize, pelletPriceTextX,
+//      pelletPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
+//
+//    drawText(to_string(piranhaPrice), priceTextSize, piranhaPriceTextX,
+//      piranhaPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
+//
+//    drawText(to_string(snailPrice), priceTextSize, snailPriceTextX,
+//      snailPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
+//
+//    drawText(to_string(eggPrice), priceTextSize, eggPriceTextX,
+//      eggPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
+//
+//    drawText(to_string(egg_count), eggCountTextSize, eggCountTextX,
+//      eggCountTextY, eggCountTextColorR, eggCountTextColorG, eggCountTextColorB);
   }
 
   private void drawMainMenu(Graphics graphics) {
