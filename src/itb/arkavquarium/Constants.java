@@ -1,55 +1,145 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Constants!</h1> Class that contains a widely used constants in ArkavQuarium.
+ * <h1>Constants!</h1>
+ * Class that contains a widely used constants in ArkavQuarium.
  *
- * @author Abram Situmorang
- * @author Faza Fahleraz
- * @author Senapati Sang Diwangkara
- * @author Yusuf Rahmat Pratama
+ * @author  Abram Situmorang
+ * @author  Faza Fahleraz
+ * @author  Senapati Sang Diwangkara
+ * @author  Yusuf Rahmat Pratama
  * @version 0.0
- * @since 2018-04-15
+ * @since   2018-04-15
  */
 public class Constants {
 
+  /**
+   * Graphics UI constants
+   */
+  /* Window */
+  public static final int GRAPHICS_WIN_WIDTH = 1024;
+  public static final int GRAPHICS_WIN_HEIGHT = 768;
+  public static final int GRAPHICS_FRAME_DELAY = 50;
+
+  /* Texts */
+//  public static final int coinTextSize = 23;
+//  public static final int coinTextX = 885;
+//  public static final int coinTextY = 63;
+//  public static final int coinTextColorR = 166;
+//  public static final int coinTextColorG = 255;
+//  public static final int coinTextColorB = 112;
+//
+//  public static final int priceTextSize = 15;
+//  public static final int priceTextColorR = 166;
+//  public static final int priceTextColorG = 255;
+//  public static final int priceTextColorB = 112;
+//
+//  public static final int guppyPriceTextX = 46;
+//  public static final int guppyPriceTextY = 75;
+//
+//  public static final int pelletPriceTextX = 157;
+//  public static final int pelletPriceTextY = 75;
+//
+//  public static final int piranhaPriceTextX = 367;
+//  public static final int piranhaPriceTextY = 75;
+//
+//  public static final int snailPriceTextX = 485;
+//  public static final int snailPriceTextY = 75;
+//
+//  public static final int eggPriceTextX = 722;
+//  public static final int eggPriceTextY = 75;
+//
+//  public static final int eggCountTextSize = 30;
+//  public static final int eggCountTextX = 739;
+//  public static final int eggCountTextY = 23;
+//  public static final int eggCountTextColorR = 80;
+//  public static final int eggCountTextColorG = 24;
+//  public static final int eggCountTextColorB = 186;
+
+  /* Click targets */
+  public static final int buyGuppyButtonXStart = 33;
+  public static final int buyGuppyButtonXEnd = 109;
+  public static final int buyGuppyButtonYStart = 7;
+  public static final int buyGuppyButtonYEnd = 72;
+
+  public static final int buyPiranhaButtonXStart = 354;
+  public static final int buyPiranhaButtonXEnd = 430;
+  public static final int buyPiranhaButtonYStart = 7;
+  public static final int buyPiranhaButtonYEnd = 72;
+
+  public static final int buySnailButtonXStart = 473;
+  public static final int buySnailButtonXEnd = 547;
+  public static final int buySnailButtonYStart = 7;
+  public static final int buySnailButtonYEnd = 72;
+
+  public static final int buyEggButtonXStart = 708;
+  public static final int buyEggButtonXEnd = 783;
+  public static final int buyEggButtonYStart = 7;
+  public static final int buyEggButtonYEnd = 72;
+
+  public static final int MAIN_START_BUTTON_X_START = 560;
+  public static final int MAIN_START_BUTTON_X_END = 900;
+  public static final int MAIN_START_BUTTON_Y_START = 80;
+  public static final int MAIN_START_BUTTON_Y_END = 185;
+
+  public static final int WIN_START_BUTTON_X_START = 406;
+  public static final int WIN_START_BUTTON_X_END = 621;
+  public static final int WIN_START_BUTTON_Y_START = 598;
+  public static final int WIN_START_BUTTON_Y_END = 666;
+
+  public static final int LOSE_START_BUTTON_X_START = 406;
+  public static final int LOSE_START_BUTTON_X_END = 621;
+  public static final int LOSE_START_BUTTON_Y_START = 598;
+  public static final int LOSE_START_BUTTON_Y_END = 666;
+
+  /* Sprites */
+  public static final int GUPPY_SPRITE_LEN = 10;
+  public static final int PIRANHA_SPRITE_LEN = 10;
+  public static final int SNAIL_SPRITE_LEN = 10;
+  public static final int PELLET_SPRITE_LEN = 10;
+  public static final int COIN_SPRITE_LEN = 10;
+
+  public static final String[] guppyImageStyles = {
+    "small/dead/left", "small/dead/right",
+    "small/eat/normal/left", "small/eat/normal/right", "small/eat/hungry/left", "small/eat/hungry/right",
+    "small/move/normal/left", "small/move/normal/right", "small/move/hungry/left", "small/move/normal/right",
+    "small/turn/normal/left", "small/turn/normal/right", "small/turn/hungry/left", "small/turn/hungry/right"};
+
   /* Game constants */
   public static final int GAME_INITIAL_COIN = 200;
-  public static final int GAME_FRAME_RATE = 35;
-  public static final int GAME_SCREEN_WITH = 1024;
-  public static final int GAME_SCREEN_HEIGHT = 768;
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
   public static final int GAME_SCREEN_RIGHT_PADDING = 20;
   public static final int GAME_SCREEN_TOP_PADDING = 170;
   public static final int GAME_SCREEN_BOTTOM_PADDING = 65;
   public static final int MAX_LEVEL = 3;
   public static final int EGG_PRICE = 2000;
-  public static final double RANDOM_MOVE_INTERVAL = 2;    /* Ini juga detik ya brok */
+  public static final double RANDOM_MOVE_INTERVAL = 2; 		/* Ini juga detik ya brok */
 
   /* Coin's constant */
-  public static final double COIN_MOVE_SPEED = 100;      /* TBD */
-  public static final double COIN_DELETION_INTERVAL = 5;    /* TBD */
+  public static final double COIN_MOVE_SPEED = 100; 			/* TBD */
+  public static final double COIN_DELETION_INTERVAL = 5; 		/* TBD */
   public static final int COIN_CLICK_RADIUS = 20;
 
   /* Guppy constants */
   public static final int GUPPY_FOOD_THRES = 2;
   public static final int GUPPY_PRICE = 100;
   public static final double GUPPY_EAT_RADIUS = 20;
-  public static final double GUPPY_FULL_INTERVAL = 15;    /* Ini detik ye bos */
+  public static final double GUPPY_FULL_INTERVAL = 15; 		/* Ini detik ye bos */
   public static final double GUPPY_HUNGER_INTERVAL = 15;
-  public static final double GUPPY_MOVE_SPEED = 60;      /* Pixels per second */
+  public static final double GUPPY_MOVE_SPEED = 60; 			/* Pixels per second */
   public static final double GUPPY_COIN_INTERVAL = 8;
   public static final double GUPPY_COIN_MULTIPLIER = 10;
 
 
   /* Pellet's constant */
-  public static final double PELLET_SPEED = 0.125;        /* TBD */
+  public static final double PELLET_SPEED = 0.125; 				/* TBD */
   public static final int PELLET_PRICE = 10;
 
   /* Piranha constants */
   public static final int PIRANHA_FOOD_THRES = 50;
   public static final int PIRANHA_PRICE = 400;
   public static final double PIRANHA_EAT_RADIUS = 50;
-  public static final double PIRANHA_FULL_INTERVAL = 15;    /* Ini detik ye bos */
+  public static final double PIRANHA_FULL_INTERVAL = 15; 		/* Ini detik ye bos */
   public static final double PIRANHA_HUNGER_INTERVAL = 15;
   public static final double PIRANHA_MOVE_SPEED = 82;
   public static final double PIRANHA_COIND_INTERVAL = 8;
@@ -60,10 +150,10 @@ public class Constants {
   public static final double SNAIL_EAT_RADIUS = 50;
 
   /* Progress */
-  public static final double PROGRESS_PERIOD = 10;
+  public static final double PROGRESS_PERIOD= 10;
   public static final double GUPPY_TURN_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double GUPPY_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
-  public static final double GUPPY_DEAD_PROGRESS_INCREMENT_TIME = 0.16;
+  public static final double GUPPY_DEAD_PROGRESS_INCREMENT_TIME= 0.16;
   public static final double GUPPY_EAT_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double PIRANHA_TURN_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double PIRANHA_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
@@ -73,20 +163,17 @@ public class Constants {
   public static final double SNAIL_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double PELLET_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double COIN_PROGRESS_INCREMENT_TIME = 0.05;
-  public static final double COIN_FADE_PROGRESS_INCREMENT_TIME =
-      COIN_DELETION_INTERVAL / PROGRESS_PERIOD;
+  public static final double COIN_FADE_PROGRESS_INCREMENT_TIME = COIN_DELETION_INTERVAL / PROGRESS_PERIOD;
 
   /*------------------------------------------*/
   /* ---------------- Methods --------------- */
   /*------------------------------------------*/
 
-  /**
-   * Generates random double in [min, max].
-   *
+  /** Generates random double in [min, max]
    * @param min Lower bound
    * @param max Upper bound
-   */
+   * */
   public static double random(double min, double max) {
-    return min + Math.random() * (max - min);
+      return min + Math.random() * (max - min);
   }
 }
