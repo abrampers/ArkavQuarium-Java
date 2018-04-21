@@ -5,20 +5,44 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CoinTest {
+  // Stub Aquarium
+  private Aquarium a = new Aquarium(0, 0, 100, 100);
+
+  /*
+   This is a test just for the coin mechanics.
+   For a test where the pellet gets consumed by a Snail, see Snail test.
+  */
 
   @Test
-  public void move() {
+  public void fallTest() {
+    Coin c = new Coin(50, 50, 50, a);
+    a.getContentCoin().add(c);
+    a.updateState(5.0);
+    assertTrue("Coin is not falling", c.getY() > 50);
   }
 
   @Test
-  public void updateState() {
+  public void xTest() {
+    Coin c = new Coin(50, 50, 50, a);
+    a.getContentCoin().add(c);
+    a.updateState(5.0);
+    assertEquals("Coin's abcissa changed", 50, c.getX(), 0.01);
   }
 
   @Test
-  public void updateProgress() {
+  public void bottomTest() {
+    Coin c = new Coin(50, 99, 50, a);
+    a.getContentCoin().add(c);
+    a.updateState(8 + 2); // less than coin deletion interval
+    assertEquals("Coin falls through the aquarium",  c.getY(), a.getYMax(), 0.01);
   }
 
   @Test
-  public void dead() {
+  public void deletionTest() {
+    Coin c = new Coin(50, 99, 50, a);
+    a.getContentCoin().add(c);
+    //for (int i = 0; i < 8 + Constants.COIN_DELETION_INTERVAL + 1; i++) a.updateState(1);
+    a.updateState(8 + Constants.COIN_DELETION_INTERVAL + 1); // more than coin deletion interval
+    assertTrue("Coin goes divine", a.getContentCoin().isEmpty());
   }
 }
