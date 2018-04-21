@@ -57,25 +57,25 @@ public class Constants {
 //  public static final int eggCountTextColorB = 186;
 
   /* Click targets */
-  public static final int buyGuppyButtonXStart = 33;
-  public static final int buyGuppyButtonXEnd = 109;
-  public static final int buyGuppyButtonYStart = 7;
-  public static final int buyGuppyButtonYEnd = 72;
+  public static final int BUY_GUPPY_BUTTON_X_START = 33;
+  public static final int BUY_GUPPY_BUTTON_X_END = 109;
+  public static final int BUY_GUPPY_BUTTON_Y_START = 7;
+  public static final int BUY_GUPPY_BUTTON_Y_END = 72;
 
-  public static final int buyPiranhaButtonXStart = 354;
-  public static final int buyPiranhaButtonXEnd = 430;
-  public static final int buyPiranhaButtonYStart = 7;
-  public static final int buyPiranhaButtonYEnd = 72;
+  public static final int BUY_PIRANHA_BUTTON_X_START = 354;
+  public static final int BUY_PIRANHA_BUTTON_X_END = 430;
+  public static final int BUY_PIRANHA_BUTTON_Y_START = 7;
+  public static final int BUY_PIRANHA_BUTTON_Y_END = 72;
 
-  public static final int buySnailButtonXStart = 473;
-  public static final int buySnailButtonXEnd = 547;
-  public static final int buySnailButtonYStart = 7;
-  public static final int buySnailButtonYEnd = 72;
+  public static final int BUY_SNAIL_BUTTON_X_START = 473;
+  public static final int BUY_SNAIL_BUTTON_X_END = 547;
+  public static final int BUY_SNAIL_BUTTON_Y_START = 7;
+  public static final int BUY_SNAIL_BUTTON_Y_END = 72;
 
-  public static final int buyEggButtonXStart = 708;
-  public static final int buyEggButtonXEnd = 783;
-  public static final int buyEggButtonYStart = 7;
-  public static final int buyEggButtonYEnd = 72;
+  public static final int BUY_EGG_BUTTON_X_START = 708;
+  public static final int BUY_EGG_BUTTON_X_END = 783;
+  public static final int BUY_EGG_BUTTON_Y_START = 7;
+  public static final int BUY_EGG_BUTTON_Y_END = 72;
 
   public static final int MAIN_START_BUTTON_X_START = 560;
   public static final int MAIN_START_BUTTON_X_END = 900;
@@ -91,19 +91,6 @@ public class Constants {
   public static final int LOSE_START_BUTTON_X_END = 621;
   public static final int LOSE_START_BUTTON_Y_START = 598;
   public static final int LOSE_START_BUTTON_Y_END = 666;
-
-  /* Sprites */
-  public static final int GUPPY_SPRITE_LEN = 10;
-  public static final int PIRANHA_SPRITE_LEN = 10;
-  public static final int SNAIL_SPRITE_LEN = 10;
-  public static final int PELLET_SPRITE_LEN = 10;
-  public static final int COIN_SPRITE_LEN = 10;
-
-  public static final String[] guppyImageStyles = {
-    "small/dead/left", "small/dead/right",
-    "small/eat/normal/left", "small/eat/normal/right", "small/eat/hungry/left", "small/eat/hungry/right",
-    "small/move/normal/left", "small/move/normal/right", "small/move/hungry/left", "small/move/normal/right",
-    "small/turn/normal/left", "small/turn/normal/right", "small/turn/hungry/left", "small/turn/hungry/right"};
 
   /* Game constants */
   public static final int GAME_INITIAL_COIN = 200;
