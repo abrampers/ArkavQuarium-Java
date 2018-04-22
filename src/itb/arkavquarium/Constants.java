@@ -93,7 +93,7 @@ public class Constants {
   public static final int LOSE_START_BUTTON_Y_END = 666;
 
   /* Game constants */
-  public static final int GAME_INITIAL_COIN = 200;
+  public static final int GAME_INITIAL_COIN = 2000;
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
   public static final int GAME_SCREEN_RIGHT_PADDING = 20;
   public static final int GAME_SCREEN_TOP_PADDING = 170;
@@ -105,6 +105,7 @@ public class Constants {
   /* Coin's constant */
   public static final double COIN_MOVE_SPEED = 100; 			/* TBD */
   public static final double COIN_DELETION_INTERVAL = 5; 		/* TBD */
+  public static final int COIN_GOLD_THRESHOLD = 20;
   public static final int COIN_CLICK_RADIUS = 20;
 
   /* Guppy constants */
