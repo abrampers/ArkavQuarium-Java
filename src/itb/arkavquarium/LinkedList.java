@@ -42,7 +42,7 @@ public class LinkedList<E> {
    *
    * @return int length of list (excluding dummy).
    */
-  int getLength() {
+  public int getLength() {
     return this.length;
   }
 
