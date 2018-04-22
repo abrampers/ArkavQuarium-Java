@@ -26,7 +26,7 @@
       <file leaf-file-name="Pellet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2535">
+            <state relative-caret-position="15">
               <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
               <folding>
                 <element signature="e#1730#1731#0" expanded="true" />
@@ -125,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="304">
+              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,7 +140,7 @@
       <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
+            <state relative-caret-position="-204">
               <caret line="189" column="29" lean-forward="true" selection-start-line="189" selection-start-column="29" selection-end-line="189" selection-end-column="29" />
               <folding>
                 <element signature="e#2671#2672#0" expanded="true" />
@@ -156,11 +156,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="95" column="43" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="43" />
+            <state relative-caret-position="122">
+              <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="226" column="14" lean-forward="true" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -296,16 +305,16 @@
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/Game.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/GameView.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/GameState.java" />
-        <option value="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" />
         <option value="$PROJECT_DIR$/src/itb/arkavquarium/GameController.java" />
+        <option value="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="21" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="826" />
+    <option name="width" value="1394" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -581,11 +590,25 @@
       <option name="project" value="LOCAL" />
       <updated>1524329317094</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add custom fonts support">
+      <created>1524367216286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524367216286</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add all UI texts">
+      <created>1524368119903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524368119903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="825" extended-state="6" />
+    <frame x="21" y="22" width="1394" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -601,7 +624,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25824964" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -617,6 +640,36 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32756326" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49761903" visible="true" weight="0.32958034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50238097" side_tool="true" weight="0.32958034" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32756326" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -625,7 +678,9 @@
     <MESSAGE value="Add assets drawing mechanism" />
     <MESSAGE value="Add methods to draw objects" />
     <MESSAGE value="Refactor drawing calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor drawing calls" />
+    <MESSAGE value="Add custom fonts support" />
+    <MESSAGE value="Add all UI texts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all UI texts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1160,13 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Fish.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3195">
@@ -1279,9 +1327,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3031">
+          <caret line="384" column="85" lean-forward="true" selection-start-line="384" selection-start-column="85" selection-end-line="384" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="226" column="14" lean-forward="true" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="189" column="29" lean-forward="true" selection-start-line="189" selection-start-column="29" selection-end-line="189" selection-end-column="29" />
+          <folding>
+            <element signature="e#2671#2672#0" expanded="true" />
+            <element signature="e#2705#2706#0" expanded="true" />
+            <element signature="e#2843#2844#0" expanded="true" />
+            <element signature="e#2874#2875#0" expanded="true" />
+            <element signature="e#4907#4908#0" expanded="true" />
+            <element signature="e#4950#4951#0" expanded="true" />
+            <element signature="e#6793#6794#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Pellet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
+        <state relative-caret-position="15">
           <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
           <folding>
             <element signature="e#1730#1731#0" expanded="true" />
@@ -1313,13 +1437,6 @@
             <element signature="e#5576#5577#0" expanded="true" />
             <element signature="e#5623#5624#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1366,72 +1483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="189" column="29" lean-forward="true" selection-start-line="189" selection-start-column="29" selection-end-line="189" selection-end-column="29" />
-          <folding>
-            <element signature="e#2671#2672#0" expanded="true" />
-            <element signature="e#2705#2706#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#4907#4908#0" expanded="true" />
-            <element signature="e#4950#4951#0" expanded="true" />
-            <element signature="e#6793#6794#0" expanded="true" />
-            <element signature="e#6824#6825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3031">
-          <caret line="384" column="85" lean-forward="true" selection-start-line="384" selection-start-column="85" selection-end-line="384" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="95" column="43" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="122">
+          <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
         </state>
       </provider>
     </entry>

@@ -77,6 +77,22 @@ public class GameController extends JPanel implements ActionListener {
     contentSnail = aquarium.getContentSnail();
     contentCoin = aquarium.getContentCoin();
     contentPellet = aquarium.getContentPellet();
+
+    // Check win/lose
+    if (eggCount >= 3) {
+      gameState = GameState.won;
+    } else if (coinCount < Constants.GUPPY_PRICE && contentGuppy.getLength() == 0 && contentPiranha.getLength() == 0 &&
+      contentCoin.getLength() == 0) {
+      gameState = GameState.lost;
+    }
+
+    // Get coins form snails
+    Iterator<Snail> snailIterator = contentSnail.iterator();
+    while (snailIterator.hasNext()) {
+      Snail snail = snailIterator.next();
+      coinCount += snail.getCoin();
+      snail.resetCoin();
+    }
   }
 
   @Override
@@ -335,7 +351,7 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawCoin(Graphics graphics, Coin coin) {
-    boolean isGold = coin.getValue() > 20;
+    boolean isGold = coin.getValue() > Constants.COIN_GOLD_THRESHOLD;
     int progress = coin.getProgress();
     String assetPath = "assets/graphics/sprites/coin";
 
@@ -387,9 +403,62 @@ public class GameController extends JPanel implements ActionListener {
       // Update game state
       updateGameState();
 
-      // TODO: Handle button clicks
+      // Handle buy guppy button click
+      if (areaClicked(Constants.BUY_GUPPY_BUTTON_X_START, Constants.BUY_GUPPY_BUTTON_X_END,
+        Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
+        if (coinCount >= Constants.GUPPY_PRICE) {
+          aquarium.createGuppy();
+          coinCount -= Constants.GUPPY_PRICE;
+        }
+      }
 
-      // TODO: Handle pellet and coin clicks
+      // Handle buy piranha button click
+      if (areaClicked(Constants.BUY_PIRANHA_BUTTON_X_START, Constants.BUY_PIRANHA_BUTTON_X_END,
+        Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
+        if (coinCount >= Constants.PIRANHA_PRICE) {
+          aquarium.createPiranha();
+          coinCount -= Constants.PIRANHA_PRICE;
+        }
+      }
+
+      // Handle buy snail button click
+      if (areaClicked(Constants.BUY_SNAIL_BUTTON_X_START, Constants.BUY_SNAIL_BUTTON_X_END,
+        Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
+        if (coinCount >= Constants.SNAIL_PRICE) {
+          aquarium.createSnail();
+          coinCount -= Constants.SNAIL_PRICE;
+        }
+      }
+
+      // Handle buy egg button click
+      if (areaClicked(Constants.BUY_EGG_BUTTON_X_START, Constants.BUY_EGG_BUTTON_X_END,
+        Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
+        if (coinCount >= Constants.EGG_PRICE) {
+          eggCount += 1;
+          coinCount -= Constants.EGG_PRICE;
+        }
+      }
+
+      // Handle coin taking click
+      Iterator<Coin> coinIterator = contentCoin.iterator();
+      while (coinIterator.hasNext()) {
+        Coin coin = coinIterator.next();
+        if (areaClicked((int) coin.getX(), (int) coin.getX() + Constants.COIN_CLICK_RADIUS, (int) coin.getY(),
+          (int) coin.getY() + Constants.COIN_CLICK_RADIUS)) {
+          coinCount -= coin.getValue();
+          aquarium.deleteCoin(coin);
+        }
+      }
+
+      // Handle pellet buying click
+      if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING, Constants.GRAPHICS_WIN_WIDTH -
+        Constants.GAME_SCREEN_RIGHT_PADDING, Constants.GAME_SCREEN_TOP_PADDING, Constants.GRAPHICS_WIN_HEIGHT -
+        Constants.GAME_SCREEN_BOTTOM_PADDING)) {
+        if (coinCount >= Constants.PELLET_PRICE) {
+          aquarium.createPellet(mouseClickX, mouseClickY);
+          coinCount -= Constants.PELLET_PRICE;
+        }
+      }
 
     }
 
