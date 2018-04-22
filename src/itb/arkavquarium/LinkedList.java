@@ -79,16 +79,18 @@ public class LinkedList<E> {
   public void remove(E e) {
     if (!this.isEmpty()) {
       Node<E> currNode = this.head;
-      while (currNode.getNext() != null) {
+      while (currNode.getNext() != null && currNode.value != e) {
         currNode = currNode.getNext();
       }
-      Node<E> prevNode = currNode.getPrev();
-      Node<E> nextNode = currNode.getNext();
-      prevNode.setNext(nextNode);
-      if (currNode.getNext() != null) {
-        nextNode.setPrev(prevNode);
+      if (currNode.value == e) {
+        Node<E> prevNode = currNode.getPrev();
+        Node<E> nextNode = currNode.getNext();
+        prevNode.setNext(nextNode);
+        if (currNode.getNext() != null) {
+          nextNode.setPrev(prevNode);
+        }
+        length -= 1;
       }
-      length -= 1;
     }
   }
 
