@@ -155,38 +155,48 @@ public class GameController extends JPanel implements ActionListener {
     Font font;
     try {
       font = Font.createFont(Font.TRUETYPE_FONT, new File("assets/fonts/Oswald-Heavy.ttf"));
-      font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
     } catch (IOException | FontFormatException e) {
       font = new Font("Helvetica", Font.BOLD, Constants.COIN_TEXT_SIZE);
     }
     graphics.setFont(font);
 
-    // Draw texts
+    // Draw coin count text
+    font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
+    graphics.setFont(font);
     graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G, Constants.COIN_TEXT_COLOR_B));
+
     String coinPriceText = "" + coinCount;
     graphics.drawString(coinPriceText, Constants.COIN_TEXT_X, Constants.COIN_TEXT_Y);
 
+    // Draw prices text
+    font = font.deriveFont((float) Constants.PRICE_TEXT_SIZE);
+    graphics.setFont(font);
+    graphics.setColor(new Color(Constants.PRICE_TEXT_COLOR_R, Constants.PRICE_TEXT_COLOR_G,
+      Constants.PRICE_TEXT_COLOR_B));
 
-//    drawText(to_string(coin_count), coinTextSize, coinTextX,
-//      coinTextY, coinTextColorR, coinTextColorG, coinTextColorB);
-//
-//    drawText(to_string(guppyPrice), priceTextSize, guppyPriceTextX,
-//      guppyPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(pelletPrice), priceTextSize, pelletPriceTextX,
-//      pelletPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(piranhaPrice), priceTextSize, piranhaPriceTextX,
-//      piranhaPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(snailPrice), priceTextSize, snailPriceTextX,
-//      snailPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(eggPrice), priceTextSize, eggPriceTextX,
-//      eggPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(egg_count), eggCountTextSize, eggCountTextX,
-//      eggCountTextY, eggCountTextColorR, eggCountTextColorG, eggCountTextColorB);
+    String guppyPriceText = "" + Constants.GUPPY_PRICE;
+    graphics.drawString(guppyPriceText, Constants.GUPPY_PRICE_TEXT_X, Constants.GUPPY_PRICE_TEXT_Y);
+
+    String pelletPriceText = "" + Constants.PELLET_PRICE;
+    graphics.drawString(pelletPriceText, Constants.PELLET_PRICE_TEXT_X, Constants.PELLET_PRICE_TEXT_Y);
+
+    String piranhaPriceText = "" + Constants.PIRANHA_PRICE;
+    graphics.drawString(piranhaPriceText, Constants.PIRANHA_PRICE_TEXT_X, Constants.PIRANHA_PRICE_TEXT_Y);
+
+    String snailPriceText = "" + Constants.SNAIL_PRICE;
+    graphics.drawString(snailPriceText, Constants.SNAIL_PRICE_TEXT_X, Constants.SNAIL_PRICE_TEXT_Y);
+
+    String eggPriceText = "" + Constants.EGG_PRICE;
+    graphics.drawString(eggPriceText, Constants.EGG_PRICE_TEXT_X, Constants.EGG_PRICE_TEXT_Y);
+
+    // Draw egg count text
+    font = font.deriveFont((float) Constants.EGG_COUNT_TEXT_SIZE);
+    graphics.setFont(font);
+    graphics.setColor(new Color(Constants.EGG_COUNT_TEXT_COLOR_R, Constants.EGG_COUNT_TEXT_COLOR_G,
+      Constants.EGG_COUNT_TEXT_COLOR_B));
+
+    String eggCountText = "" + eggCount;
+    graphics.drawString(eggCountText, Constants.EGG_COUNT_TEXT_X, Constants.EGG_COUNT_TEXT_Y);
   }
 
   private void drawMainMenu(Graphics graphics) {
@@ -208,8 +218,8 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawGuppy(Graphics graphics, Guppy guppy) {
-    int level = 1;
-    boolean hungry = false;
+    int level = guppy.getLevel();
+    boolean hungry = guppy.getHungry();
     int progress = guppy.getProgress();
     State state = guppy.getState();
     String assetPath = "assets/graphics/sprites/guppy";
@@ -256,7 +266,7 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawPiranha(Graphics graphics, Piranha piranha) {
-    boolean hungry = false;
+    boolean hungry = piranha.getHungry();
     int progress = piranha.getProgress();
     State state = piranha.getState();
     String assetPath = "assets/graphics/sprites/piranha";
