@@ -106,7 +106,8 @@ public class Constants {
   public static final double COIN_MOVE_SPEED = 100; 			/* TBD */
   public static final double COIN_DELETION_INTERVAL = 5; 		/* TBD */
   public static final int COIN_GOLD_THRESHOLD = 20;
-  public static final int COIN_CLICK_RADIUS = 20;
+  public static final int COIN_CLICK_AREA_WIDTH = 40;
+  public static final int COIN_CLICK_AREA_HEIGHT = 40;
 
   /* Guppy constants */
   public static final int GUPPY_FOOD_THRES = 2;
