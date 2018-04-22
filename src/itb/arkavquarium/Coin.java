@@ -46,7 +46,7 @@ public class Coin implements Aquatic {
     this.currState = State.movingRight;
     this.lastProgressTime = 0;
     this.progress = 0;
-    this.moveSpeed = Constants.PELLET_SPEED;
+    this.moveSpeed = Constants.COIN_MOVE_SPEED;
 
     this.lastBottomTime = 0;
     this.setState(State.movingRight);

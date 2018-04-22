@@ -98,7 +98,7 @@ public class GameController extends JPanel implements ActionListener {
   private void updateGameState() {
 
     // Update game state
-    aquarium.updateState((double) Constants.GRAPHICS_FRAME_DELAY);
+    aquarium.updateState((double) Constants.GRAPHICS_FRAME_DELAY / 1000);
 
     // Get updated aquarium objects
     contentGuppy = aquarium.getContentGuppy();
@@ -187,7 +187,7 @@ public class GameController extends JPanel implements ActionListener {
   private void drawAquarium(Graphics graphics) {
     String assetPath = "assets/graphics/statics/aquarium_background.jpg";
     Image aquariumImage = new ImageIcon(assetPath).getImage();
-    graphics.drawImage(aquariumImage, 0, 0, this);
+    graphics.drawImage(aquariumImage, -5, 0, this);
   }
 
   private void drawTopBar(Graphics graphics) {
@@ -253,13 +253,13 @@ public class GameController extends JPanel implements ActionListener {
   private void drawWinMenu(Graphics graphics) {
     String assetPath = "assets/graphics/statics/win_menu.jpg";
     Image winMenuImage = new ImageIcon(assetPath).getImage();
-    graphics.drawImage(winMenuImage, 0, 0, this);
+    graphics.drawImage(winMenuImage, -5, 0, this);
   }
 
   private void drawLoseMenu(Graphics graphics) {
     String assetPath = "assets/graphics/statics/lose_menu.jpg";
     Image loseMenuImage = new ImageIcon(assetPath).getImage();
-    graphics.drawImage(loseMenuImage, 0, 0, this);
+    graphics.drawImage(loseMenuImage, -5, 0, this);
   }
 
   private void drawGuppy(Graphics graphics, Guppy guppy) {
@@ -472,9 +472,9 @@ public class GameController extends JPanel implements ActionListener {
       Iterator<Coin> coinIterator = contentCoin.iterator();
       while (coinIterator.hasNext()) {
         Coin coin = coinIterator.next();
-        if (areaClicked((int) coin.getX(), (int) coin.getX() + Constants.COIN_CLICK_RADIUS, (int) coin.getY(),
-          (int) coin.getY() + Constants.COIN_CLICK_RADIUS)) {
-          coinCount -= coin.getValue();
+        if (areaClicked((int) coin.getX(), (int) coin.getX() + Constants.COIN_CLICK_AREA_WIDTH, (int) coin.getY(),
+          (int) coin.getY() + Constants.COIN_CLICK_AREA_HEIGHT)) {
+          coinCount += coin.getValue();
           aquarium.deleteCoin(coin);
         }
       }
@@ -534,10 +534,10 @@ public class GameController extends JPanel implements ActionListener {
   private class MAdapter extends MouseAdapter {
 
     @Override
-    public void mouseReleased(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
 
-      mouseClickX = e.getX();
-      mouseClickY = e.getY();
+      mouseClickX = e.getX() - 20;
+      mouseClickY = e.getY() - 20;
       mouseClickValid = true;
     }
   }
