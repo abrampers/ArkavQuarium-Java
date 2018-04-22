@@ -19,7 +19,7 @@ public class Constants {
   /* Window */
   public static final int GRAPHICS_WIN_WIDTH = 1024;
   public static final int GRAPHICS_WIN_HEIGHT = 768;
-  public static final int GRAPHICS_FRAME_DELAY = 50;
+  public static final int GRAPHICS_FRAME_DELAY = 20;
 
   /* Texts */
   public static final int COIN_TEXT_SIZE = 23;
@@ -93,11 +93,11 @@ public class Constants {
   public static final int LOSE_START_BUTTON_Y_END = 666;
 
   /* Game constants */
-  public static final int GAME_INITIAL_COIN = 2000;
+  public static final int GAME_INITIAL_COIN = 20000000;
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
-  public static final int GAME_SCREEN_RIGHT_PADDING = 20;
+  public static final int GAME_SCREEN_RIGHT_PADDING = 60;
   public static final int GAME_SCREEN_TOP_PADDING = 170;
-  public static final int GAME_SCREEN_BOTTOM_PADDING = 65;
+  public static final int GAME_SCREEN_BOTTOM_PADDING = 100;
   public static final int MAX_LEVEL = 3;
   public static final int EGG_PRICE = 2000;
   public static final double RANDOM_MOVE_INTERVAL = 2; 		/* Ini juga detik ya brok */
@@ -113,12 +113,11 @@ public class Constants {
   public static final int GUPPY_FOOD_THRES = 2;
   public static final int GUPPY_PRICE = 100;
   public static final double GUPPY_EAT_RADIUS = 20;
-  public static final double GUPPY_FULL_INTERVAL = 15; 		/* Ini detik ye bos */
-  public static final double GUPPY_HUNGER_INTERVAL = 15;
+  public static final double GUPPY_FULL_INTERVAL = 10; 		/* Ini detik ye bos */
+  public static final double GUPPY_HUNGER_INTERVAL = 10;
   public static final double GUPPY_MOVE_SPEED = 60; 			/* Pixels per second */
   public static final double GUPPY_COIN_INTERVAL = 8;
   public static final double GUPPY_COIN_MULTIPLIER = 10;
-
 
   /* Pellet's constant */
   public static final double PELLET_SPEED = 0.125; 				/* TBD */

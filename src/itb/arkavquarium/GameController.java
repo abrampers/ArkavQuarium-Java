@@ -69,7 +69,7 @@ public class GameController extends JPanel implements ActionListener {
   private void updateGameState() {
 
     // Update game state
-    aquarium.updateState((double) Constants.GRAPHICS_FRAME_DELAY);
+    aquarium.updateState((double) Constants.GRAPHICS_FRAME_DELAY / 1000);
 
     // Get updated aquarium objects
     contentGuppy = aquarium.getContentGuppy();
@@ -224,13 +224,13 @@ public class GameController extends JPanel implements ActionListener {
   private void drawWinMenu(Graphics graphics) {
     String assetPath = "assets/graphics/statics/win_menu.jpg";
     Image winMenuImage = new ImageIcon(assetPath).getImage();
-    graphics.drawImage(winMenuImage, 0, 0, this);
+    graphics.drawImage(winMenuImage, -5, 0, this);
   }
 
   private void drawLoseMenu(Graphics graphics) {
     String assetPath = "assets/graphics/statics/lose_menu.jpg";
     Image loseMenuImage = new ImageIcon(assetPath).getImage();
-    graphics.drawImage(loseMenuImage, 0, 0, this);
+    graphics.drawImage(loseMenuImage, -5, 0, this);
   }
 
   private void drawGuppy(Graphics graphics, Guppy guppy) {
@@ -505,7 +505,7 @@ public class GameController extends JPanel implements ActionListener {
   private class MAdapter extends MouseAdapter {
 
     @Override
-    public void mouseReleased(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
 
       mouseClickX = e.getX() - 20;
       mouseClickY = e.getY() - 20;

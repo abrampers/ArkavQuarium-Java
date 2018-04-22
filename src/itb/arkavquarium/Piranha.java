@@ -339,7 +339,7 @@ public class Piranha extends Fish implements Aquatic {
       this.dead();
     } else {
       this.updateProgress();
-      this.dropCoin();
+//      this.dropCoin();
       this.findNearestGuppy();
       this.eat();
       this.findNearestGuppy();
@@ -456,6 +456,7 @@ public class Piranha extends Fish implements Aquatic {
     }
 
     if (this.getHungry() && nearestGuppyInRange()) {
+      this.dropCoin();
       this.getAquarium().deleteGuppy(nearestGuppy);
       nearestGuppy = null;
       this.setHungry(false);
