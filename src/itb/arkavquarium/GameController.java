@@ -40,7 +40,7 @@ public class GameController extends JPanel implements ActionListener {
   private int eggCount;
 
   /**
-   * TODO: ISI YA
+   * TODO: ISI YA.
    */
   public GameController() {
 
@@ -65,7 +65,7 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   /**
-   * TODO: ISI YA
+   * TODO: ISI YA.
    */
   public static void main(String[] args) {
 
@@ -110,8 +110,10 @@ public class GameController extends JPanel implements ActionListener {
     // Check win/lose
     if (eggCount >= 3) {
       gameState = GameState.won;
-    } else if (coinCount < Constants.GUPPY_PRICE && contentGuppy.getLength() == 0 && contentPiranha.getLength() == 0 &&
-      contentCoin.getLength() == 0) {
+    } else if (coinCount < Constants.GUPPY_PRICE
+        && contentGuppy.getLength() == 0
+        && contentPiranha.getLength() == 0
+        && contentCoin.getLength() == 0) {
       gameState = GameState.lost;
     }
 
@@ -208,7 +210,9 @@ public class GameController extends JPanel implements ActionListener {
     // Draw coin count text
     font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
     graphics.setFont(font);
-    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G, Constants.COIN_TEXT_COLOR_B));
+    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R,
+        Constants.COIN_TEXT_COLOR_G,
+        Constants.COIN_TEXT_COLOR_B));
 
     String coinPriceText = "" + coinCount;
     graphics.drawString(coinPriceText, Constants.COIN_TEXT_X, Constants.COIN_TEXT_Y);
@@ -217,16 +221,20 @@ public class GameController extends JPanel implements ActionListener {
     font = font.deriveFont((float) Constants.PRICE_TEXT_SIZE);
     graphics.setFont(font);
     graphics.setColor(new Color(Constants.PRICE_TEXT_COLOR_R, Constants.PRICE_TEXT_COLOR_G,
-      Constants.PRICE_TEXT_COLOR_B));
+        Constants.PRICE_TEXT_COLOR_B));
 
     String guppyPriceText = "" + Constants.GUPPY_PRICE;
     graphics.drawString(guppyPriceText, Constants.GUPPY_PRICE_TEXT_X, Constants.GUPPY_PRICE_TEXT_Y);
 
     String pelletPriceText = "" + Constants.PELLET_PRICE;
-    graphics.drawString(pelletPriceText, Constants.PELLET_PRICE_TEXT_X, Constants.PELLET_PRICE_TEXT_Y);
+    graphics.drawString(pelletPriceText,
+        Constants.PELLET_PRICE_TEXT_X,
+        Constants.PELLET_PRICE_TEXT_Y);
 
     String piranhaPriceText = "" + Constants.PIRANHA_PRICE;
-    graphics.drawString(piranhaPriceText, Constants.PIRANHA_PRICE_TEXT_X, Constants.PIRANHA_PRICE_TEXT_Y);
+    graphics.drawString(piranhaPriceText,
+        Constants.PIRANHA_PRICE_TEXT_X,
+        Constants.PIRANHA_PRICE_TEXT_Y);
 
     String snailPriceText = "" + Constants.SNAIL_PRICE;
     graphics.drawString(snailPriceText, Constants.SNAIL_PRICE_TEXT_X, Constants.SNAIL_PRICE_TEXT_Y);
@@ -238,7 +246,7 @@ public class GameController extends JPanel implements ActionListener {
     font = font.deriveFont((float) Constants.EGG_COUNT_TEXT_SIZE);
     graphics.setFont(font);
     graphics.setColor(new Color(Constants.EGG_COUNT_TEXT_COLOR_R, Constants.EGG_COUNT_TEXT_COLOR_G,
-      Constants.EGG_COUNT_TEXT_COLOR_B));
+        Constants.EGG_COUNT_TEXT_COLOR_B));
 
     String eggCountText = "" + eggCount;
     graphics.drawString(eggCountText, Constants.EGG_COUNT_TEXT_X, Constants.EGG_COUNT_TEXT_Y);
@@ -434,7 +442,7 @@ public class GameController extends JPanel implements ActionListener {
 
       // Handle buy guppy button click
       if (areaClicked(Constants.BUY_GUPPY_BUTTON_X_START, Constants.BUY_GUPPY_BUTTON_X_END,
-        Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
+          Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
         if (coinCount >= Constants.GUPPY_PRICE) {
           aquarium.createGuppy();
           coinCount -= Constants.GUPPY_PRICE;
@@ -443,7 +451,7 @@ public class GameController extends JPanel implements ActionListener {
 
       // Handle buy piranha button click
       if (areaClicked(Constants.BUY_PIRANHA_BUTTON_X_START, Constants.BUY_PIRANHA_BUTTON_X_END,
-        Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
+          Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
         if (coinCount >= Constants.PIRANHA_PRICE) {
           aquarium.createPiranha();
           coinCount -= Constants.PIRANHA_PRICE;
@@ -452,7 +460,7 @@ public class GameController extends JPanel implements ActionListener {
 
       // Handle buy snail button click
       if (areaClicked(Constants.BUY_SNAIL_BUTTON_X_START, Constants.BUY_SNAIL_BUTTON_X_END,
-        Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
+          Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
         if (coinCount >= Constants.SNAIL_PRICE) {
           aquarium.createSnail();
           coinCount -= Constants.SNAIL_PRICE;
@@ -461,7 +469,7 @@ public class GameController extends JPanel implements ActionListener {
 
       // Handle buy egg button click
       if (areaClicked(Constants.BUY_EGG_BUTTON_X_START, Constants.BUY_EGG_BUTTON_X_END,
-        Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
+          Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
         if (coinCount >= Constants.EGG_PRICE) {
           eggCount += 1;
           coinCount -= Constants.EGG_PRICE;
@@ -472,17 +480,20 @@ public class GameController extends JPanel implements ActionListener {
       Iterator<Coin> coinIterator = contentCoin.iterator();
       while (coinIterator.hasNext()) {
         Coin coin = coinIterator.next();
-        if (areaClicked((int) coin.getX(), (int) coin.getX() + Constants.COIN_CLICK_AREA_WIDTH, (int) coin.getY(),
-          (int) coin.getY() + Constants.COIN_CLICK_AREA_HEIGHT)) {
+        if (areaClicked((int) coin.getX(),
+            (int) coin.getX() + Constants.COIN_CLICK_AREA_WIDTH,
+            (int) coin.getY(),
+            (int) coin.getY() + Constants.COIN_CLICK_AREA_HEIGHT)) {
           coinCount += coin.getValue();
           aquarium.deleteCoin(coin);
         }
       }
 
       // Handle pellet buying click
-      if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING, Constants.GRAPHICS_WIN_WIDTH -
-        Constants.GAME_SCREEN_RIGHT_PADDING, Constants.GAME_SCREEN_TOP_PADDING, Constants.GRAPHICS_WIN_HEIGHT -
-        Constants.GAME_SCREEN_BOTTOM_PADDING)) {
+      if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING,
+          Constants.GRAPHICS_WIN_WIDTH - Constants.GAME_SCREEN_RIGHT_PADDING,
+          Constants.GAME_SCREEN_TOP_PADDING,
+          Constants.GRAPHICS_WIN_HEIGHT - Constants.GAME_SCREEN_BOTTOM_PADDING)) {
         if (coinCount >= Constants.PELLET_PRICE) {
           aquarium.createPellet(mouseClickX, mouseClickY);
           coinCount -= Constants.PELLET_PRICE;
@@ -495,9 +506,9 @@ public class GameController extends JPanel implements ActionListener {
     repaint();
   }
 
-  private boolean areaClicked(int xStart, int xEnd, int yStart, int yEnd) {
+  private boolean areaClicked(int startX, int endX, int startY, int endY) {
 
-    if (mouseClickX >= xStart && mouseClickX <= xEnd && mouseClickY >= yStart && mouseClickY <= yEnd
+    if (mouseClickX >= startX && mouseClickX <= endX && mouseClickY >= startY && mouseClickY <= endY
         && mouseClickValid) {
       mouseClickValid = false;
       return true;
