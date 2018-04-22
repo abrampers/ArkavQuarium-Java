@@ -22,39 +22,39 @@ public class Constants {
   public static final int GRAPHICS_FRAME_DELAY = 50;
 
   /* Texts */
-//  public static final int coinTextSize = 23;
-//  public static final int coinTextX = 885;
-//  public static final int coinTextY = 63;
-//  public static final int coinTextColorR = 166;
-//  public static final int coinTextColorG = 255;
-//  public static final int coinTextColorB = 112;
-//
-//  public static final int priceTextSize = 15;
-//  public static final int priceTextColorR = 166;
-//  public static final int priceTextColorG = 255;
-//  public static final int priceTextColorB = 112;
-//
-//  public static final int guppyPriceTextX = 46;
-//  public static final int guppyPriceTextY = 75;
-//
-//  public static final int pelletPriceTextX = 157;
-//  public static final int pelletPriceTextY = 75;
-//
-//  public static final int piranhaPriceTextX = 367;
-//  public static final int piranhaPriceTextY = 75;
-//
-//  public static final int snailPriceTextX = 485;
-//  public static final int snailPriceTextY = 75;
-//
-//  public static final int eggPriceTextX = 722;
-//  public static final int eggPriceTextY = 75;
-//
-//  public static final int eggCountTextSize = 30;
-//  public static final int eggCountTextX = 739;
-//  public static final int eggCountTextY = 23;
-//  public static final int eggCountTextColorR = 80;
-//  public static final int eggCountTextColorG = 24;
-//  public static final int eggCountTextColorB = 186;
+  public static final int COIN_TEXT_SIZE = 23;
+  public static final int COIN_TEXT_X = 885;
+  public static final int COIN_TEXT_Y = 89;
+  public static final int COIN_TEXT_COLOR_R = 166;
+  public static final int COIN_TEXT_COLOR_G = 255;
+  public static final int COIN_TEXT_COLOR_B = 112;
+
+  public static final int priceTextSize = 15;
+  public static final int priceTextColorR = 166;
+  public static final int priceTextColorG = 255;
+  public static final int priceTextColorB = 112;
+
+  public static final int GUPPY_PRICE_TEXT_X = 46;
+  public static final int GUPPY_PRICE_TEXT_Y = 75;
+
+  public static final int PELLET_PRICE_TEXT_X = 157;
+  public static final int PELLET_PRICE_TEXT_Y = 75;
+
+  public static final int PIRANHA_PRICE_TEXT_X = 367;
+  public static final int PIRANHA_PRICE_TEXT_Y = 75;
+
+  public static final int SNAIL_PRICE_TEXT_X = 485;
+  public static final int SNAIL_PRICE_TEXT_Y = 75;
+
+  public static final int EGG_PRICE_TEXT_X = 722;
+  public static final int EGG_PRICE_TEXT_Y = 75;
+
+  public static final int EGG_COUNT_TEXT_SIZE = 30;
+  public static final int EGG_COUNT_TEXT_X = 739;
+  public static final int EGG_COUNT_TEXT_Y = 23;
+  public static final int EGG_COUNT_TEXT_COLOR_R = 80;
+  public static final int EGG_COUNT_TEXT_COLOR_G = 24;
+  public static final int EGG_COUNT_TEXT_COLOR_B = 186;
 
   /* Click targets */
   public static final int BUY_GUPPY_BUTTON_X_START = 33;

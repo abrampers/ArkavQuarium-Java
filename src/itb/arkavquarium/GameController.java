@@ -3,8 +3,9 @@ package itb.arkavquarium;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.util.HashMap;
+import java.io.IOException;
 import java.util.Iterator;
+import java.io.File;
 
 public class GameController extends JPanel implements ActionListener {
 
@@ -54,7 +55,7 @@ public class GameController extends JPanel implements ActionListener {
     aquarium = new Aquarium(Constants.GAME_SCREEN_LEFT_PADDING, Constants.GAME_SCREEN_TOP_PADDING,
       Constants.GRAPHICS_WIN_WIDTH - Constants.GAME_SCREEN_RIGHT_PADDING,
       Constants.GRAPHICS_WIN_HEIGHT - Constants.GAME_SCREEN_BOTTOM_PADDING);
-    coinCount = 0;
+    coinCount = Constants.GAME_INITIAL_COIN;
     eggCount = 0;
 
     // Get aquarium objects
@@ -150,7 +151,22 @@ public class GameController extends JPanel implements ActionListener {
     Image topBarImage = new ImageIcon(assetPath).getImage();
     graphics.drawImage(topBarImage, 0, 0, this);
 
+    // Load font
+    Font font;
+    try {
+      font = Font.createFont(Font.TRUETYPE_FONT, new File("assets/fonts/Oswald-Heavy.ttf"));
+      font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
+    } catch (IOException | FontFormatException e) {
+      font = new Font("Helvetica", Font.BOLD, Constants.COIN_TEXT_SIZE);
+    }
+    graphics.setFont(font);
+
     // Draw texts
+    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G, Constants.COIN_TEXT_COLOR_B));
+    String coinPriceText = "" + coinCount;
+    graphics.drawString(coinPriceText, Constants.COIN_TEXT_X, Constants.COIN_TEXT_Y);
+
+
 //    drawText(to_string(coin_count), coinTextSize, coinTextX,
 //      coinTextY, coinTextColorR, coinTextColorG, coinTextColorB);
 //
@@ -361,7 +377,9 @@ public class GameController extends JPanel implements ActionListener {
       // Update game state
       updateGameState();
 
-      // TODO: Handle clicks
+      // TODO: Handle button clicks
+
+      // TODO: Handle pellet and coin clicks
 
     }
 
