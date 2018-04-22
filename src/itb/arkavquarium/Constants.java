@@ -28,29 +28,29 @@ public class Constants {
   public static final int COIN_TEXT_COLOR_G = 255;
   public static final int COIN_TEXT_COLOR_B = 112;
 
-  public static final int priceTextSize = 15;
-  public static final int priceTextColorR = 166;
-  public static final int priceTextColorG = 255;
-  public static final int priceTextColorB = 112;
+  public static final int PRICE_TEXT_SIZE = 15;
+  public static final int PRICE_TEXT_COLOR_R = 166;
+  public static final int PRICE_TEXT_COLOR_G = 255;
+  public static final int PRICE_TEXT_COLOR_B = 112;
 
   public static final int GUPPY_PRICE_TEXT_X = 46;
-  public static final int GUPPY_PRICE_TEXT_Y = 75;
+  public static final int GUPPY_PRICE_TEXT_Y = 91;
 
   public static final int PELLET_PRICE_TEXT_X = 157;
-  public static final int PELLET_PRICE_TEXT_Y = 75;
+  public static final int PELLET_PRICE_TEXT_Y = 92;
 
   public static final int PIRANHA_PRICE_TEXT_X = 367;
-  public static final int PIRANHA_PRICE_TEXT_Y = 75;
+  public static final int PIRANHA_PRICE_TEXT_Y = 92;
 
   public static final int SNAIL_PRICE_TEXT_X = 485;
-  public static final int SNAIL_PRICE_TEXT_Y = 75;
+  public static final int SNAIL_PRICE_TEXT_Y = 92;
 
   public static final int EGG_PRICE_TEXT_X = 722;
-  public static final int EGG_PRICE_TEXT_Y = 75;
+  public static final int EGG_PRICE_TEXT_Y = 92;
 
   public static final int EGG_COUNT_TEXT_SIZE = 30;
   public static final int EGG_COUNT_TEXT_X = 739;
-  public static final int EGG_COUNT_TEXT_Y = 23;
+  public static final int EGG_COUNT_TEXT_Y = 55;
   public static final int EGG_COUNT_TEXT_COLOR_R = 80;
   public static final int EGG_COUNT_TEXT_COLOR_G = 24;
   public static final int EGG_COUNT_TEXT_COLOR_B = 186;
@@ -92,7 +92,7 @@ public class Constants {
   public static final int LOSE_START_BUTTON_Y_END = 666;
 
   /* Game constants */
-  public static final int GAME_INITIAL_COIN = 200;
+  public static final int GAME_INITIAL_COIN = 2000;
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
   public static final int GAME_SCREEN_RIGHT_PADDING = 20;
   public static final int GAME_SCREEN_TOP_PADDING = 170;
@@ -102,8 +102,9 @@ public class Constants {
   public static final double RANDOM_MOVE_INTERVAL = 2;    /* Ini juga detik ya brok */
 
   /* Coin's constant */
-  public static final double COIN_MOVE_SPEED = 100;      /* TBD */
-  public static final double COIN_DELETION_INTERVAL = 5;    /* TBD */
+  public static final double COIN_MOVE_SPEED = 100; 			/* TBD */
+  public static final double COIN_DELETION_INTERVAL = 5;  /* TBD */
+  public static final int COIN_GOLD_THRESHOLD = 20;
   public static final int COIN_CLICK_RADIUS = 20;
 
   /* Guppy constants */
