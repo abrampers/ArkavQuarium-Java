@@ -1,32 +1,47 @@
 package itb.arkavquarium;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
-import java.io.File;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.Timer;
 
 public class GameController extends JPanel implements ActionListener {
 
-  private Timer timer;
-
-  // Events
-  private int mouseClickX;
-  private int mouseClickY;
-  private boolean mouseClickValid;
-
-  // Game state
-  private Aquarium aquarium;
-  private GameState gameState;
-  private int coinCount;
-  private int eggCount;
   LinkedList<Guppy> contentGuppy;
   LinkedList<Piranha> contentPiranha;
   LinkedList<Snail> contentSnail;
   LinkedList<Coin> contentCoin;
   LinkedList<Pellet> contentPellet;
+  private Timer timer;
+  // Events
+  private int mouseClickX;
+  private int mouseClickY;
+  private boolean mouseClickValid;
+  // Game state
+  private Aquarium aquarium;
+  private GameState gameState;
+  private int coinCount;
+  private int eggCount;
 
+  /**
+   * TODO: ISI YA
+   */
   public GameController() {
 
     // Add keyboard event listener
@@ -47,6 +62,20 @@ public class GameController extends JPanel implements ActionListener {
     // Init game timer, choose framerate
     timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
     timer.start();
+  }
+
+  /**
+   * TODO: ISI YA
+   */
+  public static void main(String[] args) {
+
+    EventQueue.invokeLater(new Runnable() {
+      @Override
+      public void run() {
+        JFrame ex = new GameView();
+        ex.setVisible(true);
+      }
+    });
   }
 
   private void initGameState() {
@@ -104,8 +133,8 @@ public class GameController extends JPanel implements ActionListener {
       // Draw guppy
       Iterator<Guppy> guppyIterator = contentGuppy.iterator();
       while (guppyIterator.hasNext()) {
-          Guppy guppy = guppyIterator.next();
-          drawGuppy(graphics, guppy);
+        Guppy guppy = guppyIterator.next();
+        drawGuppy(graphics, guppy);
       }
 
       // Draw piranha
@@ -162,10 +191,10 @@ public class GameController extends JPanel implements ActionListener {
     graphics.setFont(font);
 
     // Draw texts
-    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G, Constants.COIN_TEXT_COLOR_B));
+    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G,
+        Constants.COIN_TEXT_COLOR_B));
     String coinPriceText = "" + coinCount;
     graphics.drawString(coinPriceText, Constants.COIN_TEXT_X, Constants.COIN_TEXT_Y);
-
 
 //    drawText(to_string(coin_count), coinTextSize, coinTextX,
 //      coinTextY, coinTextColorR, coinTextColorG, coinTextColorB);
@@ -352,7 +381,7 @@ public class GameController extends JPanel implements ActionListener {
     if (gameState == GameState.uninitialized) {
       // Check if start button clicked
       if (areaClicked(Constants.MAIN_START_BUTTON_X_START, Constants.MAIN_START_BUTTON_X_END,
-        Constants.MAIN_START_BUTTON_Y_START, Constants.MAIN_START_BUTTON_Y_END)) {
+          Constants.MAIN_START_BUTTON_Y_START, Constants.MAIN_START_BUTTON_Y_END)) {
         gameState = GameState.running;
         initGameState();
       }
@@ -360,7 +389,7 @@ public class GameController extends JPanel implements ActionListener {
     } else if (gameState == GameState.won) {
       // Check if start button clicked
       if (areaClicked(Constants.WIN_START_BUTTON_X_START, Constants.WIN_START_BUTTON_X_END,
-        Constants.WIN_START_BUTTON_Y_START, Constants.WIN_START_BUTTON_Y_END)) {
+          Constants.WIN_START_BUTTON_Y_START, Constants.WIN_START_BUTTON_Y_END)) {
         gameState = GameState.running;
         initGameState();
       }
@@ -368,7 +397,7 @@ public class GameController extends JPanel implements ActionListener {
     } else if (gameState == GameState.lost) {
       // Check if start button clicked
       if (areaClicked(Constants.LOSE_START_BUTTON_X_START, Constants.LOSE_START_BUTTON_X_END,
-        Constants.LOSE_START_BUTTON_Y_START, Constants.LOSE_START_BUTTON_Y_END)) {
+          Constants.LOSE_START_BUTTON_Y_START, Constants.LOSE_START_BUTTON_Y_END)) {
         gameState = GameState.running;
         initGameState();
       }
@@ -389,8 +418,8 @@ public class GameController extends JPanel implements ActionListener {
 
   private boolean areaClicked(int xStart, int xEnd, int yStart, int yEnd) {
 
-    if (mouseClickX >= xStart && mouseClickX <= xEnd && mouseClickY >= yStart && mouseClickY <= yEnd &&
-      mouseClickValid) {
+    if (mouseClickX >= xStart && mouseClickX <= xEnd && mouseClickY >= yStart && mouseClickY <= yEnd
+        && mouseClickValid) {
       mouseClickValid = false;
       return true;
     } else {
@@ -432,16 +461,5 @@ public class GameController extends JPanel implements ActionListener {
       mouseClickY = e.getY();
       mouseClickValid = true;
     }
-  }
-
-  public static void main(String[] args) {
-
-    EventQueue.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        JFrame ex = new GameView();
-        ex.setVisible(true);
-      }
-    });
   }
 }
