@@ -47,7 +47,7 @@ public class Snail implements Aquatic {
     this.ordinate = aquarium.getYMax();
     this.lastCurrTime = aquarium.getCurrTime();
     this.lastProgressTime = aquarium.getCurrTime();
-    this.moveSpeed = Constants.GUPPY_MOVE_SPEED;
+    this.moveSpeed = Constants.SNAIL_SPEED;
     this.currState = State.movingRight;
     this.progress = 0;
 
