@@ -106,6 +106,22 @@ public class GameController extends JPanel implements ActionListener {
     contentSnail = aquarium.getContentSnail();
     contentCoin = aquarium.getContentCoin();
     contentPellet = aquarium.getContentPellet();
+
+    // Check win/lose
+    if (eggCount >= 3) {
+      gameState = GameState.won;
+    } else if (coinCount < Constants.GUPPY_PRICE && contentGuppy.getLength() == 0 && contentPiranha.getLength() == 0 &&
+      contentCoin.getLength() == 0) {
+      gameState = GameState.lost;
+    }
+
+    // Get coins form snails
+    Iterator<Snail> snailIterator = contentSnail.iterator();
+    while (snailIterator.hasNext()) {
+      Snail snail = snailIterator.next();
+      coinCount += snail.getCoin();
+      snail.resetCoin();
+    }
   }
 
   @Override
@@ -184,38 +200,48 @@ public class GameController extends JPanel implements ActionListener {
     Font font;
     try {
       font = Font.createFont(Font.TRUETYPE_FONT, new File("assets/fonts/Oswald-Heavy.ttf"));
-      font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
     } catch (IOException | FontFormatException e) {
       font = new Font("Helvetica", Font.BOLD, Constants.COIN_TEXT_SIZE);
     }
     graphics.setFont(font);
 
-    // Draw texts
-    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G,
-        Constants.COIN_TEXT_COLOR_B));
+    // Draw coin count text
+    font = font.deriveFont((float) Constants.COIN_TEXT_SIZE);
+    graphics.setFont(font);
+    graphics.setColor(new Color(Constants.COIN_TEXT_COLOR_R, Constants.COIN_TEXT_COLOR_G, Constants.COIN_TEXT_COLOR_B));
+
     String coinPriceText = "" + coinCount;
     graphics.drawString(coinPriceText, Constants.COIN_TEXT_X, Constants.COIN_TEXT_Y);
 
-//    drawText(to_string(coin_count), coinTextSize, coinTextX,
-//      coinTextY, coinTextColorR, coinTextColorG, coinTextColorB);
-//
-//    drawText(to_string(guppyPrice), priceTextSize, guppyPriceTextX,
-//      guppyPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(pelletPrice), priceTextSize, pelletPriceTextX,
-//      pelletPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(piranhaPrice), priceTextSize, piranhaPriceTextX,
-//      piranhaPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(snailPrice), priceTextSize, snailPriceTextX,
-//      snailPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(eggPrice), priceTextSize, eggPriceTextX,
-//      eggPriceTextY, priceTextColorR, priceTextColorG, priceTextColorB);
-//
-//    drawText(to_string(egg_count), eggCountTextSize, eggCountTextX,
-//      eggCountTextY, eggCountTextColorR, eggCountTextColorG, eggCountTextColorB);
+    // Draw prices text
+    font = font.deriveFont((float) Constants.PRICE_TEXT_SIZE);
+    graphics.setFont(font);
+    graphics.setColor(new Color(Constants.PRICE_TEXT_COLOR_R, Constants.PRICE_TEXT_COLOR_G,
+      Constants.PRICE_TEXT_COLOR_B));
+
+    String guppyPriceText = "" + Constants.GUPPY_PRICE;
+    graphics.drawString(guppyPriceText, Constants.GUPPY_PRICE_TEXT_X, Constants.GUPPY_PRICE_TEXT_Y);
+
+    String pelletPriceText = "" + Constants.PELLET_PRICE;
+    graphics.drawString(pelletPriceText, Constants.PELLET_PRICE_TEXT_X, Constants.PELLET_PRICE_TEXT_Y);
+
+    String piranhaPriceText = "" + Constants.PIRANHA_PRICE;
+    graphics.drawString(piranhaPriceText, Constants.PIRANHA_PRICE_TEXT_X, Constants.PIRANHA_PRICE_TEXT_Y);
+
+    String snailPriceText = "" + Constants.SNAIL_PRICE;
+    graphics.drawString(snailPriceText, Constants.SNAIL_PRICE_TEXT_X, Constants.SNAIL_PRICE_TEXT_Y);
+
+    String eggPriceText = "" + Constants.EGG_PRICE;
+    graphics.drawString(eggPriceText, Constants.EGG_PRICE_TEXT_X, Constants.EGG_PRICE_TEXT_Y);
+
+    // Draw egg count text
+    font = font.deriveFont((float) Constants.EGG_COUNT_TEXT_SIZE);
+    graphics.setFont(font);
+    graphics.setColor(new Color(Constants.EGG_COUNT_TEXT_COLOR_R, Constants.EGG_COUNT_TEXT_COLOR_G,
+      Constants.EGG_COUNT_TEXT_COLOR_B));
+
+    String eggCountText = "" + eggCount;
+    graphics.drawString(eggCountText, Constants.EGG_COUNT_TEXT_X, Constants.EGG_COUNT_TEXT_Y);
   }
 
   private void drawMainMenu(Graphics graphics) {
@@ -237,8 +263,8 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawGuppy(Graphics graphics, Guppy guppy) {
-    int level = 1;
-    boolean hungry = false;
+    int level = guppy.getLevel();
+    boolean hungry = guppy.getHungry();
     int progress = guppy.getProgress();
     State state = guppy.getState();
     String assetPath = "assets/graphics/sprites/guppy";
@@ -285,7 +311,7 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawPiranha(Graphics graphics, Piranha piranha) {
-    boolean hungry = false;
+    boolean hungry = piranha.getHungry();
     int progress = piranha.getProgress();
     State state = piranha.getState();
     String assetPath = "assets/graphics/sprites/piranha";
@@ -354,7 +380,7 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   private void drawCoin(Graphics graphics, Coin coin) {
-    boolean isGold = coin.getValue() > 20;
+    boolean isGold = coin.getValue() > Constants.COIN_GOLD_THRESHOLD;
     int progress = coin.getProgress();
     String assetPath = "assets/graphics/sprites/coin";
 
@@ -406,9 +432,62 @@ public class GameController extends JPanel implements ActionListener {
       // Update game state
       updateGameState();
 
-      // TODO: Handle button clicks
+      // Handle buy guppy button click
+      if (areaClicked(Constants.BUY_GUPPY_BUTTON_X_START, Constants.BUY_GUPPY_BUTTON_X_END,
+        Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
+        if (coinCount >= Constants.GUPPY_PRICE) {
+          aquarium.createGuppy();
+          coinCount -= Constants.GUPPY_PRICE;
+        }
+      }
 
-      // TODO: Handle pellet and coin clicks
+      // Handle buy piranha button click
+      if (areaClicked(Constants.BUY_PIRANHA_BUTTON_X_START, Constants.BUY_PIRANHA_BUTTON_X_END,
+        Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
+        if (coinCount >= Constants.PIRANHA_PRICE) {
+          aquarium.createPiranha();
+          coinCount -= Constants.PIRANHA_PRICE;
+        }
+      }
+
+      // Handle buy snail button click
+      if (areaClicked(Constants.BUY_SNAIL_BUTTON_X_START, Constants.BUY_SNAIL_BUTTON_X_END,
+        Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
+        if (coinCount >= Constants.SNAIL_PRICE) {
+          aquarium.createSnail();
+          coinCount -= Constants.SNAIL_PRICE;
+        }
+      }
+
+      // Handle buy egg button click
+      if (areaClicked(Constants.BUY_EGG_BUTTON_X_START, Constants.BUY_EGG_BUTTON_X_END,
+        Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
+        if (coinCount >= Constants.EGG_PRICE) {
+          eggCount += 1;
+          coinCount -= Constants.EGG_PRICE;
+        }
+      }
+
+      // Handle coin taking click
+      Iterator<Coin> coinIterator = contentCoin.iterator();
+      while (coinIterator.hasNext()) {
+        Coin coin = coinIterator.next();
+        if (areaClicked((int) coin.getX(), (int) coin.getX() + Constants.COIN_CLICK_RADIUS, (int) coin.getY(),
+          (int) coin.getY() + Constants.COIN_CLICK_RADIUS)) {
+          coinCount -= coin.getValue();
+          aquarium.deleteCoin(coin);
+        }
+      }
+
+      // Handle pellet buying click
+      if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING, Constants.GRAPHICS_WIN_WIDTH -
+        Constants.GAME_SCREEN_RIGHT_PADDING, Constants.GAME_SCREEN_TOP_PADDING, Constants.GRAPHICS_WIN_HEIGHT -
+        Constants.GAME_SCREEN_BOTTOM_PADDING)) {
+        if (coinCount >= Constants.PELLET_PRICE) {
+          aquarium.createPellet(mouseClickX, mouseClickY);
+          coinCount -= Constants.PELLET_PRICE;
+        }
+      }
 
     }
 
