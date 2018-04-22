@@ -6,7 +6,7 @@ import javax.swing.WindowConstants;
 public class GameView extends JFrame {
 
   /**
-   * TODO: ISI YA
+   * TODO: ISI YA.
    */
   public GameView() {
     add(new GameController());

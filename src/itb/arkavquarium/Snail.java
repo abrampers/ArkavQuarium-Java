@@ -318,7 +318,7 @@ public class Snail implements Aquatic {
             this.setProgress(0);
           }
         } else {
-          if (this.getXDir() == 1) {
+          if (this.getXDir() > 0) {
             this.setState(State.stillRight);
           } else {
             this.setState(State.stillLeft);
@@ -326,7 +326,7 @@ public class Snail implements Aquatic {
           this.setXDir(0);
         }
       } else {
-        if (this.getXDir() == 1) {
+        if (this.getXDir() > 0) {
           this.setState(State.stillRight);
         } else {
           this.setState(State.stillLeft);
