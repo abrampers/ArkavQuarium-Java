@@ -1,12 +1,18 @@
 package itb.arkavquarium;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class CoinTest {
   // Stub Aquarium
-  private Aquarium a = new Aquarium(0, 0, 100, 100);
+  private Aquarium a;
+
+  @Before
+  public void setUp() throws Exception {
+    a = new Aquarium(0, 0, 100, 100);
+  }
 
   /*
    This is a test just for the coin mechanics.
@@ -26,7 +32,7 @@ public class CoinTest {
     Coin c = new Coin(50, 50, 50, a);
     a.getContentCoin().add(c);
     a.updateState(5.0);
-    assertEquals("Coin's abcissa changed", 50, c.getX(), 0.01);
+    assertEquals("Coin's abscissa changed", 50, c.getX(), 0.01);
   }
 
   @Test
@@ -39,10 +45,11 @@ public class CoinTest {
 
   @Test
   public void deletionTest() {
-    Coin c = new Coin(50, 99, 50, a);
+    Coin c = new Coin(50, a.getYMax() + 100, 50, a);
     a.getContentCoin().add(c);
     //for (int i = 0; i < 8 + Constants.COIN_DELETION_INTERVAL + 1; i++) a.updateState(1);
-    a.updateState(8 + Constants.COIN_DELETION_INTERVAL + 1); // more than coin deletion interval
+    a.updateState((Constants.COIN_DELETION_INTERVAL + 1) / 1000); // more than coin deletion interval
+    System.out.println(a.getContentCoin().getLength());
     assertTrue("Coin goes divine", a.getContentCoin().isEmpty());
   }
 }

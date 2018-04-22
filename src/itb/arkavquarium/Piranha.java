@@ -52,7 +52,7 @@ public class Piranha extends Fish implements Aquatic {
     this.ordinate = Constants.random(aquarium.getYMin(), aquarium.getYMax());
     this.lastCurrTime = aquarium.getCurrTime();
     this.lastProgressTime = aquarium.getCurrTime();
-    this.moveSpeed = Constants.GUPPY_MOVE_SPEED;
+    this.moveSpeed = Constants.PIRANHA_MOVE_SPEED;
     this.currState = State.movingRight;
     this.progress = 0;
     /* Initialize random movement */
@@ -356,30 +356,31 @@ public class Piranha extends Fish implements Aquatic {
     double progressIncrementTime;
     switch (this.getState()) {
       case movingRight:
-        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_MOVE_PROGRESS_INCREMENT_TIME;
         break;
       case movingLeft:
-        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_MOVE_PROGRESS_INCREMENT_TIME;
         break;
       case turningRight:
-        progressIncrementTime = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_TURN_PROGRESS_INCREMENT_TIME;
         break;
       case turningLeft:
-        progressIncrementTime = Constants.GUPPY_TURN_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_TURN_PROGRESS_INCREMENT_TIME;
         break;
       case eatingRight:
-        progressIncrementTime = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_EAT_PROGRESS_INCREMENT_TIME;
         break;
       case eatingLeft:
-        progressIncrementTime = Constants.GUPPY_EAT_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_EAT_PROGRESS_INCREMENT_TIME;
         break;
       default:
-        progressIncrementTime = Constants.GUPPY_MOVE_PROGRESS_INCREMENT_TIME;
+        progressIncrementTime = Constants.PIRANHA_MOVE_PROGRESS_INCREMENT_TIME;
     }
 
-    if (this.getHungry() && (this.getState() != State.eatingRight
-        && this.getState() != State.eatingLeft) && (this.nearestGuppy != null)
-        && distanceToGuppy(this.nearestGuppy) < (2 * Constants.GUPPY_EAT_RADIUS)) {
+    if (this.getHungry()
+        && (this.getState() != State.eatingRight && this.getState() != State.eatingLeft)
+        && (this.nearestGuppy != null)
+        && distanceToGuppy(this.nearestGuppy) < (2 * Constants.PIRANHA_EAT_RADIUS)) {
       if (this.getState() == State.movingRight) {
         this.setState(State.eatingRight);
       } else {
@@ -425,7 +426,7 @@ public class Piranha extends Fish implements Aquatic {
       this.setState(State.deadLeft);
     }
     double currentTime = this.getAquarium().getCurrTime();
-    if (currentTime - this.lastProgressTime > Constants.GUPPY_DEAD_PROGRESS_INCREMENT_TIME) {
+    if (currentTime - this.lastProgressTime > Constants.PIRANHA_DEAD_PROGRESS_INCREMENT_TIME) {
       this.setProgress(this.getProgress() + 1);
       this.setLastProgressTime(currentTime);
       if (this.getProgress() >= Constants.PROGRESS_PERIOD) {
