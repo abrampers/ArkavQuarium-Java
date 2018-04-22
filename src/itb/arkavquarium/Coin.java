@@ -239,7 +239,7 @@ public class Coin implements Aquatic {
     this.updateProgress();
     this.move();
     if (this.getY() == this.getAquarium().getYMax()) {
-      if (currentTime - lastBottomTime > Constants.COIN_DELETION_INTERVAL) {
+      if (currentTime - lastBottomTime >= Constants.COIN_DELETION_INTERVAL) {
         this.dead();
       }
     }

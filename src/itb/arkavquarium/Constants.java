@@ -129,7 +129,6 @@ public class Constants {
   public static final double PIRANHA_FULL_INTERVAL = 15;    /* Ini detik ye bos */
   public static final double PIRANHA_HUNGER_INTERVAL = 15;
   public static final double PIRANHA_MOVE_SPEED = 82;
-  public static final double PIRANHA_COIND_INTERVAL = 8;
 
   /* Snail's constant */
   public static final int SNAIL_PRICE = 1000;
