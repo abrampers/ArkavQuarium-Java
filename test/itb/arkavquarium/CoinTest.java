@@ -45,11 +45,11 @@ public class CoinTest {
 
   @Test
   public void deletionTest() {
-    Coin c = new Coin(50, a.getYMax() + 100, 50, a);
+    Coin c = new Coin(50, a.getYMax(), 50, a);
+    Guppy g = a.getContentGuppy().iterator().next();
+    a.getContentGuppy().remove(g);
     a.getContentCoin().add(c);
-    //for (int i = 0; i < 8 + Constants.COIN_DELETION_INTERVAL + 1; i++) a.updateState(1);
-    a.updateState((Constants.COIN_DELETION_INTERVAL + 1) / 1000); // more than coin deletion interval
-    System.out.println(a.getContentCoin().getLength());
+    a.updateState((Constants.COIN_DELETION_INTERVAL  + 1) * 1000); // more than coin deletion interval
     assertTrue("Coin goes divine", a.getContentCoin().isEmpty());
   }
 }

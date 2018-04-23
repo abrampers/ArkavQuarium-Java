@@ -17,11 +17,11 @@ public class Coin implements Aquatic {
 
   private final int value;
   private final double moveSpeed; /* Movement Speed per second */
-  private double lastBottomTime;
+  public double lastBottomTime;
   /* ---------- Aquatic Attributes ---------- */
   private final Aquarium aquarium;
-  private double xpos;
-  private double ypos;
+  private double posX;
+  private double posY;
   private double lastCurrTime;
   private double lastProgressTime;
   private State currState;
@@ -34,13 +34,13 @@ public class Coin implements Aquatic {
   /**
    * A constructor. Constructs a new Fish object.
    *
-   * @param xpos X-axis position of the Pellet.
-   * @param ypos Y-axis position of the Pellet.
+   * @param posX X-axis position of the Pellet.
+   * @param posY Y-axis position of the Pellet.
    * @param aquarium The Aquarium the Pellet is on.
    */
-  public Coin(double xpos, double ypos, int value, Aquarium aquarium) {
-    this.xpos = xpos;
-    this.ypos = ypos;
+  public Coin(double posX, double posY, int value, Aquarium aquarium) {
+    this.posX = posX;
+    this.posY = posY;
     this.lastCurrTime = aquarium.getCurrTime();
     this.aquarium = aquarium;
     this.currState = State.movingRight;
@@ -85,17 +85,17 @@ public class Coin implements Aquatic {
    */
   @Override
   public double getX() {
-    return this.xpos;
+    return this.posX;
   }
 
   /**
    * Setter for x.
    *
-   * @param xpos The new x-axis position of the Aquatic.
+   * @param posX The new x-axis position of the Aquatic.
    */
   @Override
-  public void setX(double xpos) {
-    this.xpos = xpos;
+  public void setX(double posX) {
+    this.posX = posX;
   }
 
   /**
@@ -105,17 +105,17 @@ public class Coin implements Aquatic {
    */
   @Override
   public double getY() {
-    return this.ypos;
+    return this.posY;
   }
 
   /**
    * Setter for y.
    *
-   * @param ypos The new y-axis position of the Aquatic.
+   * @param posY The new y-axis position of the Aquatic.
    */
   @Override
-  public void setY(double ypos) {
-    this.ypos = ypos;
+  public void setY(double posY) {
+    this.posY = posY;
   }
 
   /**
@@ -207,10 +207,10 @@ public class Coin implements Aquatic {
    * @return True if the object is inside the Aquarium.
    */
   public boolean isInside() {
-    return xpos > this.aquarium.getXMin()
-            && ypos > this.aquarium.getYMin()
-            && ypos < this.aquarium.getYMax()
-            && xpos < this.aquarium.getXMax();
+    return posX > this.aquarium.getXMin()
+            && posY > this.aquarium.getYMin()
+            && posY < this.aquarium.getYMax()
+            && posX < this.aquarium.getXMax();
   }
 
   /**
@@ -270,7 +270,5 @@ public class Coin implements Aquatic {
    * Executing dead progress.
    */
   @Override
-  public void dead() {
-    this.getAquarium().deleteCoin(this);
-  }
+  public void dead() { this.getAquarium().deleteCoin(this); }
 }
