@@ -170,6 +170,9 @@ public class LinkedList<E> {
     }
   }
 
+  /**
+   * Private Class For LinkedList's Node.
+   */
   private class Node<E> {
     /*------------------------------------------*/
     /* -------------- Attributes -------------- */
