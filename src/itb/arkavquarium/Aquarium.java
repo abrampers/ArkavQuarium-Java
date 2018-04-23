@@ -281,7 +281,5 @@ public class Aquarium {
    *
    * @param c The Coin object to be deleted.
    */
-  public void deleteCoin(Coin c) {
-    contentCoin.remove(c);
-  }
+  public void deleteCoin(Coin c) { contentCoin.remove(c); }
 }
