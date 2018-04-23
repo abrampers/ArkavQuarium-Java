@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * <h1>LinkedList!</h1> Class that contains linked list for storage of classes' data.
+ * <h1>LinkedList! Class that contains linked list for storage of classes' data.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -61,6 +61,7 @@ public class LinkedList<E> {
 
   /**
    * Add new element.
+   * @param e The element that will be added.
    */
   public void add(E e) {
     Node<E> n = new Node<E>(e);
@@ -75,6 +76,7 @@ public class LinkedList<E> {
 
   /**
    * Remove element, do nothing if element not found.
+   * @param e The element that will be removed.
    */
   public void remove(E e) {
     if (!this.isEmpty()) {

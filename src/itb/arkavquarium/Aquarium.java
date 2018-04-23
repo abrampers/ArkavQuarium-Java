@@ -3,8 +3,8 @@ package itb.arkavquarium;
 import java.util.Iterator;
 
 /**
- * <h1>Aquarium!</h1> The Aquarium class implements and updates all objects in Aquarium. This
- * simulates movement and state of the objects.
+ * <h1>Aquarium! The Aquarium class implements and updates all objects in Aquarium. This
+ * simulates movement and state of the objects.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -281,5 +281,7 @@ public class Aquarium {
    *
    * @param c The Coin object to be deleted.
    */
-  public void deleteCoin(Coin c) { contentCoin.remove(c); }
+  public void deleteCoin(Coin c) {
+    contentCoin.remove(c);
+  }
 }

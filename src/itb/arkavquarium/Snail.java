@@ -3,7 +3,7 @@ package itb.arkavquarium;
 import java.util.Iterator;
 
 /**
- * <h1>Snail!</h1> The Snail class implements Aquatic interface.
+ * <h1>Snail! The Snail class implements Aquatic interface.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -222,6 +222,7 @@ public class Snail implements Aquatic {
 
   /**
    * Resetter for number of coins Snail holds.
+   * @return The new coin value.
    */
   public double resetCoin() {
     return this.holdCoinValue = 0;

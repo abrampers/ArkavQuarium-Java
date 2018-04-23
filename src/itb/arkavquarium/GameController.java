@@ -21,6 +21,16 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+/**
+ * <h1>TODO: ISI YA JON.</h1>
+ *
+ * @author Abram Situmorang
+ * @author Faza Fahleraz
+ * @author Senapati Sang Diwangkara
+ * @author Yusuf Rahmat Pratama
+ * @version 0.0
+ * @since 2018-04-15
+ */
 public class GameController extends JPanel implements ActionListener {
 
   LinkedList<Guppy> contentGuppy;
@@ -65,7 +75,8 @@ public class GameController extends JPanel implements ActionListener {
   }
 
   /**
-   * TODO: ISI YA.
+   * Entry point of the game.
+   * @param args Arguments provided.
    */
   public static void main(String[] args) {
 

@@ -3,7 +3,7 @@ package itb.arkavquarium;
 import java.util.Iterator;
 
 /**
- * <h1>Piranha!</h1> The Piranha class inherits Fish and implements Aquatic interface.
+ * <h1>Piranha! The Piranha class inherits Fish and implements Aquatic interface.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
