@@ -1,7 +1,7 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Coin!</h1> The Coin class implements Aquatic interface.
+ * <h1>Coin! The Coin class implements Aquatic interface.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -36,6 +36,7 @@ public class Coin implements Aquatic {
    *
    * @param posX X-axis position of the Pellet.
    * @param posY Y-axis position of the Pellet.
+   * @param value Value of the coin.
    * @param aquarium The Aquarium the Pellet is on.
    */
   public Coin(double posX, double posY, int value, Aquarium aquarium) {
@@ -270,5 +271,7 @@ public class Coin implements Aquatic {
    * Executing dead progress.
    */
   @Override
-  public void dead() { this.getAquarium().deleteCoin(this); }
+  public void dead() {
+    this.getAquarium().deleteCoin(this);
+  }
 }

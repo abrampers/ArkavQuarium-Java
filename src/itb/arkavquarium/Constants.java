@@ -1,7 +1,7 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Constants!</h1> Class that contains a widely used constants in ArkavQuarium.
+ * <h1>Constants! Class that contains a widely used constants in ArkavQuarium.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -159,8 +159,9 @@ public class Constants {
   /**
    * Generates random double in [min, max].
    *
-   * @param min Lower bound
-   * @param max Upper bound
+   * @param min Lower bound.
+   * @param max Upper bound.
+   * @return Random value generated.
    */
   public static double random(double min, double max) {
     return min + Math.random() * (max - min);

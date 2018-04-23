@@ -3,7 +3,7 @@ package itb.arkavquarium;
 import java.util.Iterator;
 
 /**
- * <h1>Guppy!</h1> The Guppy class inherits Fish and implements Aquatic interface.
+ * <h1>Guppy! The Guppy class inherits Fish and implements Aquatic interface.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz

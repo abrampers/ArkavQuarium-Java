@@ -1,7 +1,7 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Pellet!</h1> The Pellet class implements Aquatic interface.
+ * <h1>Pellet! The Pellet class implements Aquatic interface.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz

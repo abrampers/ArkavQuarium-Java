@@ -1,8 +1,8 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Fish!</h1> The abstract Fish class implements the behaviour of Fish. This contains the
- * information needed for the Fish to act.
+ * <h1>Fish! The abstract Fish class implements the behaviour of Fish. This contains the
+ * information needed for the Fish to act.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz

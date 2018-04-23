@@ -1,8 +1,8 @@
 package itb.arkavquarium;
 
 /**
- * <h1>Aquatic!</h1> The Aquatic interface defines all objects in Aquarium. This contains all the
- * needed information of the object in the Aquarium to be drawn.
+ * <h1>Aquatic! The Aquatic interface defines all objects in Aquarium. This contains all the
+ * needed information of the object in the Aquarium to be drawn.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
