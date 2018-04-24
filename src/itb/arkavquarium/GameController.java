@@ -38,7 +38,6 @@ public class GameController extends JPanel implements ActionListener {
   LinkedList<Snail> contentSnail;
   LinkedList<Coin> contentCoin;
   LinkedList<Pellet> contentPellet;
-  private Timer timer;
   // Events
   private int mouseClickX;
   private int mouseClickY;
@@ -70,7 +69,7 @@ public class GameController extends JPanel implements ActionListener {
     gameState = GameState.uninitialized;
 
     // Init game timer, choose framerate
-    timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
+    Timer timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
     timer.start();
   }
 
@@ -535,20 +534,16 @@ public class GameController extends JPanel implements ActionListener {
 
       int key = e.getKeyCode();
 
-      if ((key == KeyEvent.VK_LEFT)) {
-
+      if ((key == KeyEvent.VK_G)) {
+        aquarium.createGuppy();
       }
 
-      if ((key == KeyEvent.VK_RIGHT)) {
-
+      if ((key == KeyEvent.VK_P)) {
+        aquarium.createPiranha();
       }
 
-      if ((key == KeyEvent.VK_UP)) {
-
-      }
-
-      if ((key == KeyEvent.VK_DOWN)) {
-
+      if ((key == KeyEvent.VK_C)) {
+        coinCount += 10;
       }
     }
   }
