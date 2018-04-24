@@ -1,24 +1,29 @@
 package itb.arkavquarium;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class PiranhaTest {
   // Stub Aquarium
-  private Aquarium a = new Aquarium(0, 0, 100, 100);
+  private Aquarium a;
+
+  @Before
+  public void setUp() throws Exception {
+    a = new Aquarium(0, 0, 100, 100);
+  }
 
   @Test
   public void chaseGuppyTest() {
     Piranha p = new Piranha(a);
     p.setX(25);
     p.setY(50);
-    Guppy g = new Guppy(a);
+    Guppy g = a.getContentGuppy().iterator().next();
     g.setX(50);
     g.setY(50);
     p.setHungry(true);
     a.getContentPiranha().add(p);
-    a.getContentGuppy().add(g);
     a.updateState(0.1);
     // if the test is negative, it's definitely wrong
     // if the test is positive, it's probably right. Test it repeatedly
@@ -58,9 +63,15 @@ public class PiranhaTest {
   @Test
   public void deadTest() {
     Piranha p = new Piranha(a);
-    p.setHungry(true);
+
+    /* Delete the first guppy */
+    Guppy g1 = a.getContentGuppy().iterator().next();
+    a.getContentGuppy().remove(g1);
+
     a.getContentPiranha().add(p);
-    a.updateState(1000);
-    assertTrue("Piranha goes divine", a.getContentPiranha().isEmpty()); // ?
+    a.updateState(p.getHungerTimeout() + p.getFullInterval());
+    a.updateState(p.getHungerTimeout() + 1);
+
+    assertTrue("Piranha goes divine", (p.getState() == State.deadLeft) || (p.getState() == State.deadRight)); // ?
   }
 }

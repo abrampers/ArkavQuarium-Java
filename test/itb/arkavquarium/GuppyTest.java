@@ -1,13 +1,18 @@
 package itb.arkavquarium;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class GuppyTest {
   // Stub Aquarium
-  private Aquarium a = new Aquarium(0, 0, 100, 100);
+  private Aquarium a;
+
+  @Before
+  public void setUp() throws Exception {
+    a = new Aquarium(0, 0, 100, 100);
+  }
 
   @Test
   public void chasePelletTest() {
@@ -49,10 +54,15 @@ public class GuppyTest {
   public void deadTest() {
     Guppy g = new Guppy(a);
     g.setHungry(true);
+
+    /* Delete the first guppy */
+    Guppy g1 = a.getContentGuppy().iterator().next();
+    a.getContentGuppy().remove(g1);
+
     a.getContentGuppy().add(g);
-    a.updateState(1000);
-    System.out.println(a.getContentGuppy().getLength());
-    assertTrue("Guppy goes divine", a.getContentGuppy().isEmpty());
+    a.updateState(g.getHungerTimeout() + g.getFullInterval());
+    a.updateState(g.getHungerTimeout() + 1);
+    assertTrue("Guppy goes divine", (g.getState() == State.deadLeft) || (g.getState() == State.deadRight));
   }
 
 }
