@@ -334,8 +334,8 @@ public class Piranha extends Fish implements Aquatic {
   public void updateState() {
     double currentTime = this.getAquarium().getCurrTime();
     if (this.getState() == State.deadLeft || this.getState() == State.deadRight || (this.getHungry()
-        && (currentTime - this.getLastHungerTime()) > this.getHungerTimeout())) {
-      /* Dead guppy */
+        && (currentTime - this.getLastHungerTime()) >= this.getHungerTimeout())) {
+      /* Dead piranha */
       this.dead();
     } else {
       this.updateProgress();

@@ -46,8 +46,11 @@ public class CoinTest {
   @Test
   public void deletionTest() {
     Coin c = new Coin(50, a.getYMax(), 50, a);
+
+    /* Delete the first guppy */
     Guppy g = a.getContentGuppy().iterator().next();
     a.getContentGuppy().remove(g);
+
     a.getContentCoin().add(c);
     a.updateState(Constants.COIN_DELETION_INTERVAL  + 1); // more than coin deletion interval
     assertTrue("Coin goes divine", a.getContentCoin().isEmpty());
