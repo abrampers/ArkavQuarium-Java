@@ -17,7 +17,7 @@ public class Pellet implements Aquatic {
 
   private final double moveSpeed; /* Movement Speed per second */
   /* ---------- Aquatic Attributes ---------- */
-  private Aquarium aquarium;
+  private final Aquarium aquarium;
   private double abscissa;
   private double ordinate;
   private double lastCurrTime;
@@ -190,7 +190,7 @@ public class Pellet implements Aquatic {
    *
    * @return True if the object is inside the Aquarium.
    */
-  public boolean isInside() {
+  private boolean isInside() {
     return abscissa > this.aquarium.getXMin()
         && ordinate > this.aquarium.getYMin()
         && ordinate < this.aquarium.getYMax()

@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class SnailTest {
   // Stub Aquarium
-  private Aquarium a = new Aquarium(0, 0, 100, 100);
+  private final Aquarium a = new Aquarium(0, 0, 100, 100);
 
   @Test
   public void chaseCoinTest() {

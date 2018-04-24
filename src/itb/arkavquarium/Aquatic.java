@@ -11,7 +11,7 @@ package itb.arkavquarium;
  * @version 0.0
  * @since 2018-04-15
  */
-public interface Aquatic {
+interface Aquatic {
 
   /**
    * Getter for Aquarium.

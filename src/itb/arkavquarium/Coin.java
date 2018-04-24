@@ -17,7 +17,7 @@ public class Coin implements Aquatic {
 
   private final int value;
   private final double moveSpeed; /* Movement Speed per second */
-  public double lastBottomTime;
+  private double lastBottomTime;
   /* ---------- Aquatic Attributes ---------- */
   private final Aquarium aquarium;
   private double posX;
@@ -207,7 +207,7 @@ public class Coin implements Aquatic {
    *
    * @return True if the object is inside the Aquarium.
    */
-  public boolean isInside() {
+  private boolean isInside() {
     return posX > this.aquarium.getXMin()
             && posY > this.aquarium.getYMin()
             && posY < this.aquarium.getYMax()

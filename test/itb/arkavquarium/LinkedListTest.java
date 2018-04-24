@@ -13,7 +13,7 @@ public class LinkedListTest {
 
   @Test
   public void isEmpty() {
-    LinkedList<Integer> l = new LinkedList<Integer>();
+    LinkedList<Integer> l = new LinkedList<>();
     assertTrue("Initialization returns non-empty list", l.isEmpty());
     l.add(5);
     assertFalse("Element addition doesn't make list non-empty", l.isEmpty());
@@ -21,7 +21,7 @@ public class LinkedListTest {
 
   @Test
   public void add() {
-    LinkedList<Integer> l = new LinkedList<Integer>();
+    LinkedList<Integer> l = new LinkedList<>();
     Iterator<Integer> intIterator = l.iterator();
     boolean found = false;
     l.add(10);
@@ -35,7 +35,7 @@ public class LinkedListTest {
 
   @Test
   public void remove() {
-    LinkedList<Integer> l = new LinkedList<Integer>();
+    LinkedList<Integer> l = new LinkedList<>();
     Iterator<Integer> intIterator = l.iterator();
     l.add(13);
     l.remove(13);
@@ -48,7 +48,7 @@ public class LinkedListTest {
 
   @Test
   public void iterator() {
-    LinkedList<Integer> l = new LinkedList<Integer>();
+    LinkedList<Integer> l = new LinkedList<>();
     Iterator<Integer> intIterator = l.iterator();
     int i;
     int[] elementExample = new int[5];

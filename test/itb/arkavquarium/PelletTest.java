@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class PelletTest {
   // Stub Aquarium
-  private Aquarium a = new Aquarium(0, 0, 100, 100);
+  private final Aquarium a = new Aquarium(0, 0, 100, 100);
 
   /*
    This is a test just for the pellet mechanics.

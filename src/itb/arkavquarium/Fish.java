@@ -11,7 +11,7 @@ package itb.arkavquarium;
  * @version 0.0
  * @since 2018-04-15
  */
-public abstract class Fish {
+abstract class Fish {
 
   private final int foodThres;
   private final double eatRadius;
@@ -42,7 +42,7 @@ public abstract class Fish {
    * @param hungerTimeout Hungry to dead interval if there's no food.
    * @param createdTime Time created Fish
    */
-  public Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout,
+  Fish(int foodThres, double eatRadius, double fullInterval, double hungerTimeout,
       double createdTime) {
     this.foodThres = foodThres;
     this.eatRadius = eatRadius;
@@ -65,7 +65,7 @@ public abstract class Fish {
    *
    * @return The last eating time
    */
-  public double getLastEatTime() {
+  double getLastEatTime() {
     return lastEatTime;
   }
 
@@ -74,7 +74,7 @@ public abstract class Fish {
    *
    * @param lastEatTime The value of the new eating time
    */
-  public void setLastEatTime(double lastEatTime) {
+  void setLastEatTime(double lastEatTime) {
     this.lastEatTime = lastEatTime;
   }
 
@@ -83,7 +83,7 @@ public abstract class Fish {
    *
    * @return The value of last random time
    */
-  public double getLastRandomTime() {
+  double getLastRandomTime() {
     return lastRandomTime;
   }
 
@@ -92,7 +92,7 @@ public abstract class Fish {
    *
    * @param lastRandomTime The value of the new random time
    */
-  public void setLastRandomTime(double lastRandomTime) {
+  void setLastRandomTime(double lastRandomTime) {
     this.lastRandomTime = lastRandomTime;
   }
 
@@ -101,7 +101,7 @@ public abstract class Fish {
    *
    * @return The value of last hunger time
    */
-  public double getLastHungerTime() {
+  double getLastHungerTime() {
     return lastHungerTime;
   }
 
@@ -110,7 +110,7 @@ public abstract class Fish {
    *
    * @param lastHungerTime The value of the new hunger time
    */
-  public void setLastHungerTime(double lastHungerTime) {
+  void setLastHungerTime(double lastHungerTime) {
     this.lastHungerTime = lastHungerTime;
   }
 
@@ -119,7 +119,7 @@ public abstract class Fish {
    *
    * @return The number of food eaten
    */
-  public int getFoodEaten() {
+  int getFoodEaten() {
     return foodEaten;
   }
 
@@ -128,7 +128,7 @@ public abstract class Fish {
    *
    * @param foodEaten The new number of food eaten.
    */
-  public void setFoodEaten(int foodEaten) {
+  void setFoodEaten(int foodEaten) {
     this.foodEaten = foodEaten;
   }
 
@@ -146,7 +146,7 @@ public abstract class Fish {
    *
    * @param level The new Fish level
    */
-  public void setLevel(int level) {
+  void setLevel(int level) {
     this.level = level;
   }
 
@@ -155,7 +155,7 @@ public abstract class Fish {
    *
    * @return The value of food threshold to level up
    */
-  public int getFoodThres() {
+  int getFoodThres() {
     return foodThres;
   }
 
@@ -164,7 +164,7 @@ public abstract class Fish {
    *
    * @return The value of eat radius of the fish
    */
-  public double getEatRadius() {
+  double getEatRadius() {
     return eatRadius;
   }
 
@@ -200,7 +200,7 @@ public abstract class Fish {
    *
    * @param dirX The new x-axis direction of the Fish
    */
-  public void setXDir(double dirX) {
+  void setXDir(double dirX) {
     this.dirX = dirX;
   }
 
@@ -209,7 +209,7 @@ public abstract class Fish {
    *
    * @return The y-axis direction of the Fish.
    */
-  public double getYDir() {
+  double getYDir() {
     return dirY;
   }
 
@@ -218,7 +218,7 @@ public abstract class Fish {
    *
    * @param dirY The new y-axis direction of the Fish
    */
-  public void setYDir(double dirY) {
+  void setYDir(double dirY) {
     this.dirY = dirY;
   }
 

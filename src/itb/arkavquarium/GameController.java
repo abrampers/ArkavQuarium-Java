@@ -31,13 +31,13 @@ import javax.swing.Timer;
  * @version 0.0
  * @since 2018-04-15
  */
-public class GameController extends JPanel implements ActionListener {
+class GameController extends JPanel implements ActionListener {
 
-  LinkedList<Guppy> contentGuppy;
-  LinkedList<Piranha> contentPiranha;
-  LinkedList<Snail> contentSnail;
-  LinkedList<Coin> contentCoin;
-  LinkedList<Pellet> contentPellet;
+  private LinkedList<Guppy> contentGuppy;
+  private LinkedList<Piranha> contentPiranha;
+  private LinkedList<Snail> contentSnail;
+  private LinkedList<Coin> contentCoin;
+  private LinkedList<Pellet> contentPellet;
   // Events
   private int mouseClickX;
   private int mouseClickY;
@@ -79,12 +79,9 @@ public class GameController extends JPanel implements ActionListener {
    */
   public static void main(String[] args) {
 
-    EventQueue.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        JFrame ex = new GameView();
-        ex.setVisible(true);
-      }
+    EventQueue.invokeLater(() -> {
+      JFrame ex = new GameView();
+      ex.setVisible(true);
     });
   }
 
