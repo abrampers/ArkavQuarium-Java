@@ -22,7 +22,8 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 /**
- * <h1>TODO: ISI YA JON.</h1>
+ * <h1>GameController! The GameController class controls the state of the game as well as controlling what's going to
+ *  be shown by the GameView.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -49,7 +50,7 @@ class GameController extends JPanel implements ActionListener {
   private int eggCount;
 
   /**
-   * TODO: ISI YA.
+   * A constructor. Constructs a new GameController object.
    */
   public GameController() {
 
