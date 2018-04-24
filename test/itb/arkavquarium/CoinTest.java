@@ -49,7 +49,7 @@ public class CoinTest {
     Guppy g = a.getContentGuppy().iterator().next();
     a.getContentGuppy().remove(g);
     a.getContentCoin().add(c);
-    a.updateState((Constants.COIN_DELETION_INTERVAL  + 1) * 1000); // more than coin deletion interval
+    a.updateState(Constants.COIN_DELETION_INTERVAL  + 1); // more than coin deletion interval
     assertTrue("Coin goes divine", a.getContentCoin().isEmpty());
   }
 }
