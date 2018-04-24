@@ -10,7 +10,7 @@ package itb.arkavquarium;
  * @version 0.0
  * @since 2018-04-15
  */
-public class Constants {
+class Constants {
 
   /**
    * Graphics UI constants.

@@ -20,7 +20,7 @@ public class Piranha extends Fish implements Aquatic {
   private final double moveSpeed; /* Movement Speed per second */
   private Guppy nearestGuppy;
   /* ---------- Aquatic Attributes ---------- */
-  private Aquarium aquarium;
+  private final Aquarium aquarium;
   private double abscissa;
   private double ordinate;
   private double lastCurrTime;
@@ -232,11 +232,7 @@ public class Piranha extends Fish implements Aquatic {
   }
 
   private boolean nearestGuppyInRange() {
-    if (nearestGuppy == null) {
-      return false;
-    } else {
-      return distanceToGuppy(nearestGuppy) < this.getEatRadius();
-    }
+    return nearestGuppy != null && distanceToGuppy(nearestGuppy) < this.getEatRadius();
   }
 
   /**

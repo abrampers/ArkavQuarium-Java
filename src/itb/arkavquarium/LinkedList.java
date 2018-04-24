@@ -18,7 +18,7 @@ public class LinkedList<E> {
   /* -------------- Attributes -------------- */
   /*------------------------------------------*/
 
-  private Node<E> head;
+  private final Node<E> head;
   private int length;
 
   /*------------------------------------------*/
@@ -29,7 +29,7 @@ public class LinkedList<E> {
    * A constructor. Constructs a new LinkedList object.
    */
   public LinkedList() {
-    this.head = new Node<E>();
+    this.head = new Node<>();
     this.length = 0;
   }
 
@@ -64,7 +64,7 @@ public class LinkedList<E> {
    * @param e The element that will be added.
    */
   public void add(E e) {
-    Node<E> n = new Node<E>(e);
+    Node<E> n = new Node<>(e);
     Node<E> currNode = this.head;
     while (currNode.getNext() != null) {
       currNode = currNode.getNext();
@@ -124,7 +124,7 @@ public class LinkedList<E> {
     /**
      * A constructor. Constructs a new Iterator object.
      */
-    public LlIterator() {
+    LlIterator() {
       this.cursor = LinkedList.this.head;
       this.lastRet = -1;
     }
@@ -189,7 +189,7 @@ public class LinkedList<E> {
     /**
      * Default constructor. Constructs a new Node object.
      */
-    public Node() {
+    Node() {
       this.value = null;
       this.prev = null;
       this.next = null;
@@ -200,7 +200,7 @@ public class LinkedList<E> {
      *
      * @param value The Value of the Node.
      */
-    public Node(E value) {
+    Node(E value) {
       this.value = value;
       this.prev = null;
       this.next = null;

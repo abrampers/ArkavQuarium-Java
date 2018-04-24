@@ -10,7 +10,7 @@ public class CoinTest {
   private Aquarium a;
 
   @Before
-  public void setUp() throws Exception {
+  public void setUp() {
     a = new Aquarium(0, 0, 100, 100);
   }
 

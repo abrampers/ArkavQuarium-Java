@@ -13,7 +13,7 @@ import javax.swing.WindowConstants;
  * @version 0.0
  * @since 2018-04-15
  */
-public class GameView extends JFrame {
+class GameView extends JFrame {
 
   /**
    * TODO: ISI YA.

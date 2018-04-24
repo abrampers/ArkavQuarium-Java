@@ -23,11 +23,11 @@ public class Aquarium {
   private final double xmax;
   private final double ymax;
   private double currTime;
-  private LinkedList<Piranha> contentPiranha;
-  private LinkedList<Guppy> contentGuppy;
-  private LinkedList<Snail> contentSnail;
-  private LinkedList<Pellet> contentPellet;
-  private LinkedList<Coin> contentCoin;
+  private final LinkedList<Piranha> contentPiranha;
+  private final LinkedList<Guppy> contentGuppy;
+  private final LinkedList<Snail> contentSnail;
+  private final LinkedList<Pellet> contentPellet;
+  private final LinkedList<Coin> contentCoin;
 
   /*------------------------------------------*/
   /* ------------- Constructors ------------- */

@@ -23,7 +23,7 @@ public class Snail implements Aquatic {
   private int holdCoinValue;
   private int dirX;
   /* ---------- Aquatic Attributes ---------- */
-  private Aquarium aquarium;
+  private final Aquarium aquarium;
   private double abscissa;
   private double ordinate;
   private double lastCurrTime;
@@ -198,7 +198,7 @@ public class Snail implements Aquatic {
    *
    * @return The x-axis direction of the Fish.
    */
-  public int getXDir() {
+  private int getXDir() {
     return dirX;
   }
 
@@ -207,7 +207,7 @@ public class Snail implements Aquatic {
    *
    * @param dirX The new x-axis direction of the Fish
    */
-  public void setXDir(int dirX) {
+  private void setXDir(int dirX) {
     this.dirX = dirX;
   }
 
@@ -222,10 +222,9 @@ public class Snail implements Aquatic {
 
   /**
    * Resetter for number of coins Snail holds.
-   * @return The new coin value.
    */
-  public double resetCoin() {
-    return this.holdCoinValue = 0;
+  public void resetCoin() {
+    this.holdCoinValue = 0;
   }
 
   /*------------------------------------------*/
@@ -262,10 +261,7 @@ public class Snail implements Aquatic {
   }
 
   private boolean nearestCoinInRange() {
-    if (nearestCoin != null) {
-      return getDistance(this, nearestCoin) < this.snailRadius;
-    }
-    return false;
+    return nearestCoin != null && getDistance(this, nearestCoin) < this.snailRadius;
   }
 
   /**
@@ -369,14 +365,18 @@ public class Snail implements Aquatic {
       if (currentTime - this.lastProgressTime > progressIncrementTime) {
         this.setProgress(this.getProgress() + 1);
         if (this.getProgress() >= Constants.PROGRESS_PERIOD) {
-          if (this.getState() == State.turningRight) {
-            this.setProgress(0);
-            this.setState(State.movingRight);
-          } else if (this.getState() == State.turningLeft) {
-            this.setProgress(0);
-            this.setState(State.movingLeft);
-          } else {
-            this.setProgress(0);
+          switch (this.getState()) {
+            case turningRight:
+              this.setProgress(0);
+              this.setState(State.movingRight);
+              break;
+            case turningLeft:
+              this.setProgress(0);
+              this.setState(State.movingLeft);
+              break;
+            default:
+              this.setProgress(0);
+              break;
           }
         }
         this.setLastProgressTime(currentTime);
