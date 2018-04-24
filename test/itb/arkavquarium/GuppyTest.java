@@ -10,7 +10,7 @@ public class GuppyTest {
   private Aquarium a;
 
   @Before
-  public void setUp() throws Exception {
+  public void setUp() {
     a = new Aquarium(0, 0, 100, 100);
   }
 
@@ -23,10 +23,15 @@ public class GuppyTest {
     g.setHungry(true);
     a.getContentPellet().add(p);
     a.getContentGuppy().add(g);
+
+    double distBefore = Math.sqrt((p.getX() - g.getX()) * (p.getX() - g.getX()) + (p.getY() - g.getY()) * (p.getY() - g.getY()));
+
     a.updateState(0.1);
+
+    double distAfter = Math.sqrt((p.getX() - g.getX()) * (p.getX() - g.getX()) + (p.getY() - g.getY()) * (p.getY() - g.getY()));
     // if the test is negative, it's definitely wrong
     // if the test is positive, it's probably right. Test it repeatedly
-    assertTrue("Guppy turns left, while the pellet is in the right", g.getX() > 25);
+    assertTrue("Guppy turns left, while the pellet is in the right", distAfter < distBefore);
   }
 
   @Test
