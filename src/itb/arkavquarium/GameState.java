@@ -1,7 +1,7 @@
 package itb.arkavquarium;
 
 /**
- * <h1>TODO: Isi ya jon.</h1>
+ * <h1>GameState! The GameState enum represents the current state of the game.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -12,22 +12,22 @@ package itb.arkavquarium;
  */
 public enum GameState {
   /**
-   * TODO: isi ya jon.
+   * The game state is not initialized yet, which means the controller should show the main menu.
    */
   uninitialized,
 
   /**
-   * TODO: isi ya jon.
+   * The game state is initialized and the game is currently running.
    */
   running,
 
   /**
-   * TODO: isi ya jon.
+   * The game is won, which means the controller should show the win menu.
    */
   won,
 
   /**
-   * TODO: isi ya jon.
+   * The game is lost, which means the controller should show the lose menu.
    */
   lost
 }

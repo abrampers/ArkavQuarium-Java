@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
 /**
- * <h1>GameView! TODO: Isi ye jon.</h1>
+ * <h1>GameView! The GameView class shows the contents of the game.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -16,7 +16,7 @@ import javax.swing.WindowConstants;
 class GameView extends JFrame {
 
   /**
-   * TODO: ISI YA.
+   * A constructor. Constructs a new GameView object and sets up a new window to show the game contents.
    */
   public GameView() {
     add(new GameController());
