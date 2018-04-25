@@ -16,7 +16,9 @@ import javax.swing.WindowConstants;
 class GameView extends JFrame {
 
   /**
-   * A constructor. Constructs a new GameView object and sets up a new window to show the game contents.
+   * A constructor.
+   * Constructs a new GameView object and sets up
+   * a new window to show the game contents.
    */
   public GameView() {
     add(new GameController());

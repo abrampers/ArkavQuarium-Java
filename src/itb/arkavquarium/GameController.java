@@ -22,8 +22,10 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 /**
- * <h1>GameController! The GameController class controls the state of the game as well as controlling what's going to
- *  be shown by the GameView.</h1>
+ * <h1>GameController! The GameController
+ * class controls the state of the game as
+ * well as controlling what's going to
+ * be shown by the GameView.</h1>
  *
  * @author Abram Situmorang
  * @author Faza Fahleraz
@@ -143,54 +145,59 @@ class GameController extends JPanel implements ActionListener {
 
   private void drawAssets(Graphics graphics) {
 
-    if (gameState == GameState.uninitialized) {
-      drawMainMenu(graphics);
+    switch (gameState) {
+      case uninitialized:
+        drawMainMenu(graphics);
 
-    } else if (gameState == GameState.won) {
-      drawWinMenu(graphics);
+        break;
+      case won:
+        drawWinMenu(graphics);
 
-    } else if (gameState == GameState.lost) {
-      drawLoseMenu(graphics);
+        break;
+      case lost:
+        drawLoseMenu(graphics);
 
-    } else {
-      drawAquarium(graphics);
-      drawTopBar(graphics);
+        break;
+      default:
+        drawAquarium(graphics);
+        drawTopBar(graphics);
 
-      // Draw guppy
-      Iterator<Guppy> guppyIterator = contentGuppy.iterator();
-      while (guppyIterator.hasNext()) {
-        Guppy guppy = guppyIterator.next();
-        drawGuppy(graphics, guppy);
-      }
+        // Draw guppy
+        Iterator<Guppy> guppyIterator = contentGuppy.iterator();
+        while (guppyIterator.hasNext()) {
+          Guppy guppy = guppyIterator.next();
+          drawGuppy(graphics, guppy);
+        }
 
-      // Draw piranha
-      Iterator<Piranha> piranhaIterator = contentPiranha.iterator();
-      while (piranhaIterator.hasNext()) {
-        Piranha piranha = piranhaIterator.next();
-        drawPiranha(graphics, piranha);
-      }
+        // Draw piranha
+        Iterator<Piranha> piranhaIterator = contentPiranha.iterator();
+        while (piranhaIterator.hasNext()) {
+          Piranha piranha = piranhaIterator.next();
+          drawPiranha(graphics, piranha);
+        }
 
-      // Draw snail
-      Iterator<Snail> snailIterator = contentSnail.iterator();
-      while (snailIterator.hasNext()) {
-        Snail snail = snailIterator.next();
-        drawSnail(graphics, snail);
-      }
+        // Draw snail
+        Iterator<Snail> snailIterator = contentSnail.iterator();
+        while (snailIterator.hasNext()) {
+          Snail snail = snailIterator.next();
+          drawSnail(graphics, snail);
+        }
 
-      // Draw coin
-      Iterator<Coin> coinIterator = contentCoin.iterator();
-      while (coinIterator.hasNext()) {
-        Coin coin = coinIterator.next();
-        drawCoin(graphics, coin);
-      }
+        // Draw coin
+        Iterator<Coin> coinIterator = contentCoin.iterator();
+        while (coinIterator.hasNext()) {
+          Coin coin = coinIterator.next();
+          drawCoin(graphics, coin);
+        }
 
-      // Draw pellet
-      Iterator<Pellet> pelletIterator = contentPellet.iterator();
-      while (pelletIterator.hasNext()) {
-        Pellet pellet = pelletIterator.next();
-        drawPellet(graphics, pellet);
-      }
+        // Draw pellet
+        Iterator<Pellet> pelletIterator = contentPellet.iterator();
+        while (pelletIterator.hasNext()) {
+          Pellet pellet = pelletIterator.next();
+          drawPellet(graphics, pellet);
+        }
 
+        break;
     }
   }
 
@@ -278,6 +285,7 @@ class GameController extends JPanel implements ActionListener {
     graphics.drawImage(loseMenuImage, -5, 0, this);
   }
 
+  @SuppressWarnings("CheckStyle")
   private void drawGuppy(Graphics graphics, Guppy guppy) {
     int level = guppy.getLevel();
     boolean hungry = guppy.getHungry();
@@ -286,38 +294,51 @@ class GameController extends JPanel implements ActionListener {
     String assetPath = "assets/graphics/sprites/guppy";
 
     // Check level
-    if (level == 1) {
-      assetPath += "/small";
-    } else if (level == 2) {
-      assetPath += "/medium";
-    } else {
-      assetPath += "/large";
+    switch (level) {
+      case 1:
+        assetPath += "/small";
+        break;
+      case 2:
+        assetPath += "/medium";
+        break;
+      default:
+        assetPath += "/large";
+        break;
     }
 
     // Check state
-    if (state == State.movingLeft) {
-      assetPath += hungry ? "/move/hungry/left" : "/move/normal/left";
+    switch (state) {
+      case movingLeft:
+        assetPath += hungry ? "/move/hungry/left" : "/move/normal/left";
 
-    } else if (state == State.movingRight) {
-      assetPath += hungry ? "/move/hungry/right" : "/move/normal/right";
+        break;
+      case movingRight:
+        assetPath += hungry ? "/move/hungry/right" : "/move/normal/right";
 
-    } else if (state == State.turningLeft) {
-      assetPath += hungry ? "/turn/hungry/left" : "/turn/normal/left";
+        break;
+      case turningLeft:
+        assetPath += hungry ? "/turn/hungry/left" : "/turn/normal/left";
 
-    } else if (state == State.turningRight) {
-      assetPath += hungry ? "/turn/hungry/right" : "/turn/normal/right";
+        break;
+      case turningRight:
+        assetPath += hungry ? "/turn/hungry/right" : "/turn/normal/right";
 
-    } else if (state == State.eatingLeft) {
-      assetPath += hungry ? "/eat/hungry/left" : "/eat/normal/left";
+        break;
+      case eatingLeft:
+        assetPath += hungry ? "/eat/hungry/left" : "/eat/normal/left";
 
-    } else if (state == State.eatingRight) {
-      assetPath += hungry ? "/eat/hungry/right" : "/eat/normal/right";
+        break;
+      case eatingRight:
+        assetPath += hungry ? "/eat/hungry/right" : "/eat/normal/right";
 
-    } else if (state == State.deadLeft) {
-      assetPath += "/dead/left";
+        break;
+      case deadLeft:
+        assetPath += "/dead/left";
 
-    } else if (state == State.deadRight) {
-      assetPath += "/dead/right";
+        break;
+      case deadRight:
+        assetPath += "/dead/right";
+        break;
     }
 
     // Draw asset
@@ -326,6 +347,7 @@ class GameController extends JPanel implements ActionListener {
     graphics.drawImage(guppyImage, (int) guppy.getX(), (int) guppy.getY(), this);
   }
 
+  @SuppressWarnings("CheckStyle")
   private void drawPiranha(Graphics graphics, Piranha piranha) {
     boolean hungry = piranha.getHungry();
     int progress = piranha.getProgress();
@@ -333,29 +355,38 @@ class GameController extends JPanel implements ActionListener {
     String assetPath = "assets/graphics/sprites/piranha";
 
     // Check state
-    if (state == State.movingLeft) {
-      assetPath += hungry ? "/move/hungry/left" : "/move/normal/left";
+    switch (state) {
+      case movingLeft:
+        assetPath += hungry ? "/move/hungry/left" : "/move/normal/left";
 
-    } else if (state == State.movingRight) {
-      assetPath += hungry ? "/move/hungry/right" : "/move/normal/right";
+        break;
+      case movingRight:
+        assetPath += hungry ? "/move/hungry/right" : "/move/normal/right";
 
-    } else if (state == State.turningLeft) {
-      assetPath += hungry ? "/turn/hungry/left" : "/turn/normal/left";
+        break;
+      case turningLeft:
+        assetPath += hungry ? "/turn/hungry/left" : "/turn/normal/left";
 
-    } else if (state == State.turningRight) {
-      assetPath += hungry ? "/turn/hungry/right" : "/turn/normal/right";
+        break;
+      case turningRight:
+        assetPath += hungry ? "/turn/hungry/right" : "/turn/normal/right";
 
-    } else if (state == State.eatingLeft) {
-      assetPath += hungry ? "/eat/hungry/left" : "/eat/normal/left";
+        break;
+      case eatingLeft:
+        assetPath += hungry ? "/eat/hungry/left" : "/eat/normal/left";
 
-    } else if (state == State.eatingRight) {
-      assetPath += hungry ? "/eat/hungry/right" : "/eat/normal/right";
+        break;
+      case eatingRight:
+        assetPath += hungry ? "/eat/hungry/right" : "/eat/normal/right";
 
-    } else if (state == State.deadLeft) {
-      assetPath += "/dead/left";
+        break;
+      case deadLeft:
+        assetPath += "/dead/left";
 
-    } else if (state == State.deadRight) {
-      assetPath += "/dead/right";
+        break;
+      case deadRight:
+        assetPath += "/dead/right";
+        break;
     }
 
     // Draw asset
@@ -364,29 +395,37 @@ class GameController extends JPanel implements ActionListener {
     graphics.drawImage(piranhaImage, (int) piranha.getX(), (int) piranha.getY(), this);
   }
 
+  @SuppressWarnings("CheckStyle")
   private void drawSnail(Graphics graphics, Snail snail) {
     int progress = snail.getProgress();
     State state = snail.getState();
     String assetPath = "assets/graphics/sprites/snail";
 
     // Check state
-    if (state == State.movingLeft) {
-      assetPath += "/move/left";
+    switch (state) {
+      case movingLeft:
+        assetPath += "/move/left";
 
-    } else if (state == State.movingRight) {
-      assetPath += "/move/right";
+        break;
+      case movingRight:
+        assetPath += "/move/right";
 
-    } else if (state == State.turningLeft) {
-      assetPath += "/turn/left";
+        break;
+      case turningLeft:
+        assetPath += "/turn/left";
 
-    } else if (state == State.turningRight) {
-      assetPath += "/turn/right";
+        break;
+      case turningRight:
+        assetPath += "/turn/right";
 
-    } else if (state == State.stillRight) {
-      assetPath += "/move/right";
+        break;
+      case stillRight:
+        assetPath += "/move/right";
 
-    } else if (state == State.stillLeft) {
-      assetPath += "/move/left";
+        break;
+      case stillLeft:
+        assetPath += "/move/left";
+        break;
     }
 
     // Draw asset
@@ -420,94 +459,99 @@ class GameController extends JPanel implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent e) {
 
-    if (gameState == GameState.uninitialized) {
-      // Check if start button clicked
-      if (areaClicked(Constants.MAIN_START_BUTTON_X_START, Constants.MAIN_START_BUTTON_X_END,
-          Constants.MAIN_START_BUTTON_Y_START, Constants.MAIN_START_BUTTON_Y_END)) {
-        gameState = GameState.running;
-        initGameState();
-      }
-
-    } else if (gameState == GameState.won) {
-      // Check if start button clicked
-      if (areaClicked(Constants.WIN_START_BUTTON_X_START, Constants.WIN_START_BUTTON_X_END,
-          Constants.WIN_START_BUTTON_Y_START, Constants.WIN_START_BUTTON_Y_END)) {
-        gameState = GameState.running;
-        initGameState();
-      }
-
-    } else if (gameState == GameState.lost) {
-      // Check if start button clicked
-      if (areaClicked(Constants.LOSE_START_BUTTON_X_START, Constants.LOSE_START_BUTTON_X_END,
-          Constants.LOSE_START_BUTTON_Y_START, Constants.LOSE_START_BUTTON_Y_END)) {
-        gameState = GameState.running;
-        initGameState();
-      }
-
-    } else {
-      // Update game state
-      updateGameState();
-
-      // Handle buy guppy button click
-      if (areaClicked(Constants.BUY_GUPPY_BUTTON_X_START, Constants.BUY_GUPPY_BUTTON_X_END,
-          Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
-        if (coinCount >= Constants.GUPPY_PRICE) {
-          aquarium.createGuppy();
-          coinCount -= Constants.GUPPY_PRICE;
+    switch (gameState) {
+      case uninitialized:
+        // Check if start button clicked
+        if (areaClicked(Constants.MAIN_START_BUTTON_X_START, Constants.MAIN_START_BUTTON_X_END,
+            Constants.MAIN_START_BUTTON_Y_START, Constants.MAIN_START_BUTTON_Y_END)) {
+          gameState = GameState.running;
+          initGameState();
         }
-      }
 
-      // Handle buy piranha button click
-      if (areaClicked(Constants.BUY_PIRANHA_BUTTON_X_START, Constants.BUY_PIRANHA_BUTTON_X_END,
-          Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
-        if (coinCount >= Constants.PIRANHA_PRICE) {
-          aquarium.createPiranha();
-          coinCount -= Constants.PIRANHA_PRICE;
+        break;
+      case won:
+        // Check if start button clicked
+        if (areaClicked(Constants.WIN_START_BUTTON_X_START, Constants.WIN_START_BUTTON_X_END,
+            Constants.WIN_START_BUTTON_Y_START, Constants.WIN_START_BUTTON_Y_END)) {
+          gameState = GameState.running;
+          initGameState();
         }
-      }
 
-      // Handle buy snail button click
-      if (areaClicked(Constants.BUY_SNAIL_BUTTON_X_START, Constants.BUY_SNAIL_BUTTON_X_END,
-          Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
-        if (coinCount >= Constants.SNAIL_PRICE) {
-          aquarium.createSnail();
-          coinCount -= Constants.SNAIL_PRICE;
+        break;
+      case lost:
+        // Check if start button clicked
+        if (areaClicked(Constants.LOSE_START_BUTTON_X_START, Constants.LOSE_START_BUTTON_X_END,
+            Constants.LOSE_START_BUTTON_Y_START, Constants.LOSE_START_BUTTON_Y_END)) {
+          gameState = GameState.running;
+          initGameState();
         }
-      }
 
-      // Handle buy egg button click
-      if (areaClicked(Constants.BUY_EGG_BUTTON_X_START, Constants.BUY_EGG_BUTTON_X_END,
-          Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
-        if (coinCount >= Constants.EGG_PRICE) {
-          eggCount += 1;
-          coinCount -= Constants.EGG_PRICE;
+        break;
+      default:
+        // Update game state
+        updateGameState();
+
+        // Handle buy guppy button click
+        if (areaClicked(Constants.BUY_GUPPY_BUTTON_X_START, Constants.BUY_GUPPY_BUTTON_X_END,
+            Constants.BUY_GUPPY_BUTTON_Y_START, Constants.BUY_GUPPY_BUTTON_Y_END)) {
+          if (coinCount >= Constants.GUPPY_PRICE) {
+            aquarium.createGuppy();
+            coinCount -= Constants.GUPPY_PRICE;
+          }
         }
-      }
 
-      // Handle coin taking click
-      Iterator<Coin> coinIterator = contentCoin.iterator();
-      while (coinIterator.hasNext()) {
-        Coin coin = coinIterator.next();
-        if (areaClicked((int) coin.getX(),
-            (int) coin.getX() + Constants.COIN_CLICK_AREA_WIDTH,
-            (int) coin.getY(),
-            (int) coin.getY() + Constants.COIN_CLICK_AREA_HEIGHT)) {
-          coinCount += coin.getValue();
-          aquarium.deleteCoin(coin);
+        // Handle buy piranha button click
+        if (areaClicked(Constants.BUY_PIRANHA_BUTTON_X_START, Constants.BUY_PIRANHA_BUTTON_X_END,
+            Constants.BUY_PIRANHA_BUTTON_Y_START, Constants.BUY_PIRANHA_BUTTON_Y_END)) {
+          if (coinCount >= Constants.PIRANHA_PRICE) {
+            aquarium.createPiranha();
+            coinCount -= Constants.PIRANHA_PRICE;
+          }
         }
-      }
 
-      // Handle pellet buying click
-      if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING,
-          Constants.GRAPHICS_WIN_WIDTH - Constants.GAME_SCREEN_RIGHT_PADDING,
-          Constants.GAME_SCREEN_TOP_PADDING,
-          Constants.GRAPHICS_WIN_HEIGHT - Constants.GAME_SCREEN_BOTTOM_PADDING)) {
-        if (coinCount >= Constants.PELLET_PRICE) {
-          aquarium.createPellet(mouseClickX, mouseClickY);
-          coinCount -= Constants.PELLET_PRICE;
+        // Handle buy snail button click
+        if (areaClicked(Constants.BUY_SNAIL_BUTTON_X_START, Constants.BUY_SNAIL_BUTTON_X_END,
+            Constants.BUY_SNAIL_BUTTON_Y_START, Constants.BUY_SNAIL_BUTTON_Y_END)) {
+          if (coinCount >= Constants.SNAIL_PRICE) {
+            aquarium.createSnail();
+            coinCount -= Constants.SNAIL_PRICE;
+          }
         }
-      }
 
+        // Handle buy egg button click
+        if (areaClicked(Constants.BUY_EGG_BUTTON_X_START, Constants.BUY_EGG_BUTTON_X_END,
+            Constants.BUY_EGG_BUTTON_Y_START, Constants.BUY_EGG_BUTTON_Y_END)) {
+          if (coinCount >= Constants.EGG_PRICE) {
+            eggCount += 1;
+            coinCount -= Constants.EGG_PRICE;
+          }
+        }
+
+        // Handle coin taking click
+        Iterator<Coin> coinIterator = contentCoin.iterator();
+        while (coinIterator.hasNext()) {
+          Coin coin = coinIterator.next();
+          if (areaClicked((int) coin.getX(),
+              (int) coin.getX() + Constants.COIN_CLICK_AREA_WIDTH,
+              (int) coin.getY(),
+              (int) coin.getY() + Constants.COIN_CLICK_AREA_HEIGHT)) {
+            coinCount += coin.getValue();
+            aquarium.deleteCoin(coin);
+          }
+        }
+
+        // Handle pellet buying click
+        if (areaClicked(Constants.GAME_SCREEN_LEFT_PADDING,
+            Constants.GRAPHICS_WIN_WIDTH - Constants.GAME_SCREEN_RIGHT_PADDING,
+            Constants.GAME_SCREEN_TOP_PADDING,
+            Constants.GRAPHICS_WIN_HEIGHT - Constants.GAME_SCREEN_BOTTOM_PADDING)) {
+          if (coinCount >= Constants.PELLET_PRICE) {
+            aquarium.createPellet(mouseClickX, mouseClickY);
+            coinCount -= Constants.PELLET_PRICE;
+          }
+        }
+
+        break;
     }
 
     // Render frame
