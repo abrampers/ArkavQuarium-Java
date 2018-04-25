@@ -10,6 +10,21 @@
 # When a single line is too long, use \<return> to split lines that then will be
 # considered as a single line. For example:
 
+CLASSESCOMPLETE = src/itb/arkavquarium/Aquarium.java \
+        src/itb/arkavquarium/Aquatic.java \
+        src/itb/arkavquarium/Coin.java \
+        src/itb/arkavquarium/Constants.java \
+        src/itb/arkavquarium/Fish.java \
+        src/itb/arkavquarium/GameController.java \
+        src/itb/arkavquarium/GameState.java \
+        src/itb/arkavquarium/GameView.java \
+        src/itb/arkavquarium/Guppy.java \
+        src/itb/arkavquarium/LinkedList.java \
+        src/itb/arkavquarium/Pellet.java \
+        src/itb/arkavquarium/Piranha.java \
+        src/itb/arkavquarium/Snail.java \
+        src/itb/arkavquarium/State.java
+
 CLASSES = Aquarium.java \
         Aquatic.java \
         Coin.java \
@@ -27,7 +42,17 @@ CLASSES = Aquarium.java \
 
 CLASSIN = src/itb/arkavquarium
 
-CLASSOUT = out/production/ITB-Java-ArkavQuarium/itb/arkavquarium
+CLASSOUT = out/production/ITB-Java-ArkavQuarium/
+
+TESTSCOMPLETE = test/itb/arkavquarium/AquariumTest.java \
+        test/itb/arkavquarium/CoinTest.java \
+        test/itb/arkavquarium/FishTest.java \
+        test/itb/arkavquarium/GuppyTest.java \
+        test/itb/arkavquarium/LinkedListTest.java \
+        test/itb/arkavquarium/PelletTest.java \
+        test/itb/arkavquarium/PiranhaTest.java \
+        test/itb/arkavquarium/SnailTest.java 
+        # test/itb/arkavquarium/TestAll.java
 
 TESTS = AquariumTest.java \
         CoinTest.java \
@@ -43,9 +68,8 @@ TESTIN = test/itb/arkavquarium
 
 TESTOUT = out/test/ITB-Java-ArkavQuarium/itb/arkavquarium
 
-COMPILECLASSFLAGS = -g -sourcepath $(CLASSIN) -d $(CLASSOUT)
-
-TESTCLASSFLAGS = -g -sourcepath $(TESTIN) -d $(TESTOUT)
+COMPILECLASSFLAGS = -g -d $(CLASSOUT)
+TESTCLASSFLAGS = -g -d $(TESTOUT) -cp "lib/*:out/production/ITB-Java-ArkavQuarium/itb/arkavquarium/*" 
 
 JC = javac
 JVM= java
@@ -54,7 +78,8 @@ JVM= java
 # MAIN is a variable with the name of the file containing the main method
 #
 
-MAIN = itb.arkavquarium.GameController
+CLASSMAIN = itb.arkavquarium.GameController
+TESTMAIN = itb.arkavquarium.TestAll
 
 #
 # Clear any default targets for building .class files from .java files; we
@@ -81,14 +106,18 @@ MAIN = itb.arkavquarium.GameController
 # Remember that there must be a < tab > before the command line ('rule')
 #
 
-compile: $(CLASSES)
-	$(JC) $(COMPILECLASSFLAGS) $(CLASSES)
+compileclass: $(CLASSESCOMPLETE)
+	$(JC) $(COMPILECLASSFLAGS) $(CLASSESCOMPLETE)
+
+compiletest: $(TESTSCOMPLETE)
+	$(JC) $(TESTCLASSFLAGS) $(TESTSCOMPLETE)
 
 #
 # the default make target entry
 # for this example it is the target classes
 
-default: compile
+default:
+	compileclass && compiletest
 
 
 # Next line is a target dependency line
@@ -106,8 +135,11 @@ default: compile
 # Remember the tab in the second line.
 # $(JMV) y $(MAIN) are replaced by their values
 
-run: $(MAIN).class
-	$(JVM) $(MAIN)
+run: out/production/ITB-Java-ArkavQuarium/itb/arkavquarium/GameController.class
+	$(JVM) -classpath out/production/ITB-Java-ArkavQuarium $(CLASSMAIN)
+
+test: out/production/ITB-Java-ArkavQuarium/itb/arkavquarium/TestAll.class
+	$(JVM) -classpath out/test/ITB-Java-ArkavQuarium org.junit.runner.JUnitCore $(TESTS)
 
 # this line is to remove all unneeded files from
 # the directory when we are finished executing(saves space)
@@ -116,4 +148,4 @@ run: $(MAIN).class
 #
 
 clean:
-	$(RM) *.class
+	find . -type f -name "*.class" -delete

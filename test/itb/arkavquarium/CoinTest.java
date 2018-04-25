@@ -40,7 +40,7 @@ public class CoinTest {
     Coin c = new Coin(50, 99, 50, a);
     a.getContentCoin().add(c);
     a.updateState(8 + 2); // less than coin deletion interval
-    assertEquals("Coin falls through the aquarium",  c.getY(), a.getYMax(), 0.01);
+    assertEquals("Coin falls through the aquarium",  c.getY(), a.getYMax(), 1);
   }
 
   @Test
