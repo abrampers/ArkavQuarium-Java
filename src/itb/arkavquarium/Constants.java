@@ -76,10 +76,10 @@ class Constants {
   public static final int BUY_EGG_BUTTON_Y_START = 7;
   public static final int BUY_EGG_BUTTON_Y_END = 72;
 
-  public static final int MAIN_START_BUTTON_X_START = 560;
-  public static final int MAIN_START_BUTTON_X_END = 900;
-  public static final int MAIN_START_BUTTON_Y_START = 80;
-  public static final int MAIN_START_BUTTON_Y_END = 185;
+  public static final int MAIN_START_BUTTON_X_START = 15;
+  public static final int MAIN_START_BUTTON_X_END = 184;
+  public static final int MAIN_START_BUTTON_Y_START = 13;
+  public static final int MAIN_START_BUTTON_Y_END = 115;
 
   public static final int WIN_START_BUTTON_X_START = 406;
   public static final int WIN_START_BUTTON_X_END = 621;
@@ -92,7 +92,11 @@ class Constants {
   public static final int LOSE_START_BUTTON_Y_END = 666;
 
   /* Game constants */
+<<<<<<< HEAD
   public static final int GAME_INITIAL_COIN = 20000000;
+=======
+  public static final int GAME_INITIAL_COIN = 200;
+>>>>>>> origin/large_files
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
   public static final int GAME_SCREEN_RIGHT_PADDING = 60;
   public static final int GAME_SCREEN_TOP_PADDING = 170;
