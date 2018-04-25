@@ -1,0 +1,414 @@
+commit 50f6b1383506973f2be9cf73246e38fc008ec5ba
+Author: diwangs <27280516+diwangs@users.noreply.github.com>
+Date:   Wed Apr 25 13:36:10 2018 +0700
+
+    Implemented Fish JUnit and cleaned Piranha and Guppy JUnit
+
+commit 43841c48639ac3a78ca667f235641cfa5b0e8b20
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Wed Apr 25 12:25:03 2018 +0700
+
+    Fixed javadoc, checkstyle, added readme
+
+commit e7122d957bdebcb84c6c23e6cd80852a839bcc8e
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Wed Apr 25 12:00:42 2018 +0700
+
+    Fixed javadoc
+
+commit fd2d6816b0e198e0c904ad530320eb4e8294ae08
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Wed Apr 25 11:34:53 2018 +0700
+
+    Update JavaDoc to include only protected to public path
+
+commit f63b8bb26d96c83492bd97e1c68b4073ab9400fd
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Wed Apr 25 10:13:30 2018 +0700
+
+    Fix typo
+
+commit 3cc413abe1fbee165905aec8364b73284c6047cd
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Wed Apr 25 09:59:01 2018 +0700
+
+    Update docs based on recent comment description input. Update docs to include private methods and attributes. Update PiranhaTest based on CheckStyle recommendation
+
+commit 568505aca0a2d8fbbc28ba7d917d65b1f2c1b49f
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Wed Apr 25 00:06:48 2018 +0700
+
+    Add docs for GameController and GameView
+
+commit cbfb8d13ce3d88baf7c12af35df06ccd99b827ec
+Author: Abram Perdanaputra Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 24 11:59:08 2018 +0700
+
+    Delete .DS_Store
+
+commit a3c6cac8031b08566bf8d3318afe5526c4d63ae9
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 24 11:57:21 2018 +0700
+
+    Fixed some warnings
+
+commit f187837b18bdc16d96ac0edc85e51ba92cd2b83c
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 24 11:12:18 2018 +0700
+
+    Fixed chasing implementation and create cheat
+
+commit 6ec03035209cfca1bda6df0defb699be3b64c04e
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 24 10:42:13 2018 +0700
+
+    Fixed guppy and piranha dead test
+
+commit 36d04e7e517f03ebb38d4d904c96de3995dddcd8
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Tue Apr 24 08:10:12 2018 +0700
+
+    Change deletion time on deletecoin unit test to be on the border of deletion
+
+commit 5b43dadadab6f9ee0a868b2f0c22f2e590c8f0fc
+Author: diwangs <27280516+diwangs@users.noreply.github.com>
+Date:   Tue Apr 24 02:47:10 2018 +0700
+
+    Added Piranha and Guppy JUnit test bre
+
+commit ab41fec36f706f7b859e88f0a20714787a99895f
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Mon Apr 23 18:55:02 2018 +0700
+
+    Added doc and jdepend
+
+commit 53f0b9274e4e6429097d16c45f26ecffe1939c86
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Mon Apr 23 17:26:25 2018 +0700
+
+    Add comment description for Node class implementation inside LinkedList class
+
+commit 1bdc257e0a4c554bc7b2a3800a8dbbd474baf941
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Mon Apr 23 17:25:39 2018 +0700
+
+    Move aquarium object declaration inside method to avoid collision between testing in unit testing for Aquarium Class
+
+commit d254bb06fb004afa3f71653f4824179ceebe9856
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Mon Apr 23 17:22:27 2018 +0700
+
+    Add unit testing implementation for class LinkedList
+
+commit 517360de46c9917cd128d48ae6692b1d3ef2f5d0
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Mon Apr 23 10:08:38 2018 +0700
+
+    Generated javadoc
+
+commit 0ef94761a29e68c5b02cefe41ffca4de46ca28ba
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Mon Apr 23 08:58:45 2018 +0700
+
+    Added LinkedList test
+
+commit a3df634f797ecc2d6f111a64061c754f97bcb288
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Mon Apr 23 08:54:57 2018 +0700
+
+    Fixed coin test
+
+commit aca309e62806b45c4b658f6b4161678caa1e4f53
+Merge: cfded4d 3b9e669
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 22:41:52 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit cfded4d675706d6cb1a602311d8cff717fbe808f
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 22:41:25 2018 +0700
+
+    Fixed piranha eating
+
+commit 3b9e6690c2d8cd4dc97bb78a4fb5b99aeefe7d2b
+Merge: 118e77e b8dfa0b
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Sun Apr 22 22:33:07 2018 +0700
+
+    Merge branch 'master' of https://github.com/abrampers/ITB-Java-ArkavQuarium
+
+commit 118e77e10efc4618c4f6c6397aac3192723d9a64
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Sun Apr 22 22:32:51 2018 +0700
+
+    Add AquariumTest implementation, change getLength method in LinkedList to public
+
+commit b8dfa0b20bf8b260088692e58e42c0250831d161
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 21:44:37 2018 +0700
+
+    Fixed styling brok
+
+commit 62cc4d08c14b4e90868ed64aaa97010d904c9d65
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Sun Apr 22 21:09:26 2018 +0700
+
+    Fix assets, consistent pixel size
+
+commit 89bda055cf60728a3f2ef3f5b4d5bd072b93effc
+Merge: 3efa021 d4453f5
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 14:18:50 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       src/itb/arkavquarium/Constants.java
+
+commit d4453f5fdcacb2c2791b1cc2baa4ebe0435ecd80
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 14:17:37 2018 +0700
+
+    Fix gameplay time bug
+
+commit d1b57181471facaf1e8bb40f01025631fb51d04e
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 11:38:28 2018 +0700
+
+    Fix mouse location bug
+
+commit 3efa02123e4ab2186cf627b7a35f8dd1446b2cbc
+Merge: 6b88d92 445894f
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 11:37:51 2018 +0700
+
+    Merge branch 'master' of https://github.com/abrampers/ITB-Java-ArkavQuarium
+
+commit 6b88d929bed1f6e288de1b6ffa22eb1453eead45
+Merge: c78d0f9 a29f0b5
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 11:37:19 2018 +0700
+
+    Merge branch 'master' of https://github.com/abrampers/ITB-Java-ArkavQuarium
+
+commit 445894f1b41be253372235cdc0739656b8840180
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 11:27:20 2018 +0700
+
+    Add assets
+
+commit c78d0f962a8e13d38fd5ad95ffea1c78e0f2f0ef
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 22 11:26:37 2018 +0700
+
+    Fixed some checkstyle issues
+
+commit a29f0b5fd8dac03d41d2da5df01052be591b4f57
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 11:24:46 2018 +0700
+
+    Add win and lose logic
+
+commit 3ba85514419687668900bb8cd58711a33d69275b
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 10:35:19 2018 +0700
+
+    Add all UI texts
+
+commit 35ba84a14bcacc1e5e1dadb36e45e5b882771c28
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 22 10:20:16 2018 +0700
+
+    Add custom fonts support
+
+commit 9114c85363fafe0121a875b0c5bc3446ce8d4817
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sat Apr 21 23:48:37 2018 +0700
+
+    Refactor drawing calls
+
+commit fbfaa4555303f3ff6d78b7c53b28495bbd1cab08
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sat Apr 21 23:36:24 2018 +0700
+
+    Add methods to draw objects
+
+commit 6cc155c90dc7e2c039c8e208a59c39b8979d92f3
+Merge: 9651c51 0e99d66
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sat Apr 21 23:06:34 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 9651c51eed33035fe175caf80f12aeea304cfcff
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sat Apr 21 23:06:15 2018 +0700
+
+    Add assets drawing mechanism
+
+commit 0e99d66c15aca5512b027202ba24fe31f6b0d0c7
+Author: diwangs <27280516+diwangs@users.noreply.github.com>
+Date:   Sat Apr 21 00:39:33 2018 +0700
+
+    Implemented Snail JUnit test and fixed Snail swimming bug
+
+commit 966f62f53dd31ffbb66c9939935f8400ab1dcad3
+Author: diwangs <27280516+diwangs@users.noreply.github.com>
+Date:   Fri Apr 20 20:55:25 2018 +0700
+
+    Implemented Coin and Pellet JUnit test
+
+commit 05b3e034d5c2037cf6308c13a9c50dbbc9bf9072
+Merge: ada2ae0 5946113
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Fri Apr 20 17:21:35 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 59461137a26a1986fcac70822b3b437c5c31de49
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 13:01:53 2018 +0700
+
+    Fixed Aquatic style
+
+commit 6c82d2748bcf6d288ba94c7b0e91f990aeb6ccaa
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 12:59:21 2018 +0700
+
+    Fixed all styles
+
+commit 0ec452b3f61820f3ac371f9404abe3d961b2e3ff
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 08:07:37 2018 +0700
+
+    Fixed Guppy style
+
+commit 4627fb4fa4b5e8abbd16e089dbac8e5aa9b2ca36
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 07:57:58 2018 +0700
+
+    Added editorconfig
+
+commit f3f13972f50c71f09e9781e52709f3bbfd9bbbd0
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 07:57:11 2018 +0700
+
+    Fixed styles
+
+commit 948084563d8df866b1d42c5a3c7807d507ee0864
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 07:24:57 2018 +0700
+
+    Fixed some bug
+
+commit bf6576fa1b063980e06a582fa8a989f6dc9b32f7
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 07:13:33 2018 +0700
+
+    Implemented TODOS: implementasi linkedlist
+
+commit cc18156b443ba987f459d06964870472f0098d9a
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Thu Apr 19 07:03:12 2018 +0700
+
+    Implemented updateState(delta) on Aquarium
+
+commit ada2ae054f71fb8721cff09780e030da2b6fa838
+Merge: f0f749a f1e10ad
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Wed Apr 18 11:06:47 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f1e10adf5bef360b018d6f29f772078a87d97842
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Wed Apr 18 11:06:02 2018 +0700
+
+    Add Node class and Iterator class to Linedlist
+
+commit f0f749a604556ab5c4320c1788604eb3c771e19b
+Merge: 927400e f3323da
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Wed Apr 18 10:46:05 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       src/itb/arkavquarium/LinkedList.java
+
+commit f3323dad3285a35159edaf000ed729b74369b693
+Author: yusufrahmatp <yusufrahmatp@gmail.com>
+Date:   Tue Apr 17 22:56:09 2018 +0700
+
+    Add LinkedList class /w implementation which includes Iterator and Node class implementation
+
+commit cdbf711a0531035b6ca78e9e7ae352195ff2736a
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 17 09:49:28 2018 +0700
+
+    Added JUnit jar and modified tests
+
+commit f338016e8a6af33e16d28363f3092dee85173086
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 17 09:41:21 2018 +0700
+
+    Added tests
+
+commit ac33f5665d4eee7e87ad5bc8af91620c942d0fd1
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Tue Apr 17 00:45:59 2018 +0700
+
+    Implemented most of things
+
+commit 81055ffb4dbe23c56924b9188920d26b7341e264
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 23:56:03 2018 +0700
+
+    Implemented Fish and some of Guppy
+
+commit 927400eab70a6a4d715315a5e12da90c31c30b0e
+Merge: 4ba73f7 3595cb8
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 15 21:56:43 2018 +0700
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       .idea/workspace.xml
+
+commit 4ba73f78f5a9e91601ac22d044771bef9b06f34c
+Author: Faza Fahleraz <ffahleraz@gmail.com>
+Date:   Sun Apr 15 21:56:10 2018 +0700
+
+    Add size to LinkedList
+
+commit 3595cb8b53c8f8450be6821b9e55487a25c6f868
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 21:53:34 2018 +0700
+
+    modified something
+
+commit b79376458d775c5eb90f53aec5d891b60913f7cb
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 21:52:57 2018 +0700
+
+    Created new classes and Implemented some
+
+commit e4ace29a13a2b81549183fd6591b633f32a4d218
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 18:41:16 2018 +0700
+
+    Implemented Aquarium
+
+commit 6ab6c748cfba6c2ec818c55a9110d5de40ba8479
+Author: Abram Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 18:40:10 2018 +0700
+
+    Initial commit
+
+commit 2293c31ef9c876e7b80eb89c3e9c78a5757a6249
+Author: Abram Perdanaputra Situmorang <abram.perdanaputra@gmail.com>
+Date:   Sun Apr 15 18:33:48 2018 +0700
+
+    Initial commit

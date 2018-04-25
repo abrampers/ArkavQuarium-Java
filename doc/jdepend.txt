@@ -1,0 +1,1913 @@
+
+--------------------------------------------------
+- Package: itb.arkavquarium
+--------------------------------------------------
+
+Stats:
+    Total Classes: 28
+    Concrete Classes: 26
+    Abstract Classes: 2
+
+    Ca: 0
+    Ce: 5
+
+    A: 0.07
+    I: 1
+    D: 0.07
+
+Abstract Classes:
+    itb.arkavquarium.Aquatic
+    itb.arkavquarium.Fish
+
+Concrete Classes:
+    itb.arkavquarium.Aquarium
+    itb.arkavquarium.AquariumTest
+    itb.arkavquarium.Coin
+    itb.arkavquarium.CoinTest
+    itb.arkavquarium.Constants
+    itb.arkavquarium.FishTest
+    itb.arkavquarium.GameController$1
+    itb.arkavquarium.GameController$KAdapter
+    itb.arkavquarium.GameController$MAdapter
+    itb.arkavquarium.GameState
+    itb.arkavquarium.GameView
+    itb.arkavquarium.Guppy
+    itb.arkavquarium.Guppy$1
+    itb.arkavquarium.GuppyTest
+    itb.arkavquarium.LinkedList
+    itb.arkavquarium.LinkedList$LlIterator
+    itb.arkavquarium.LinkedList$Node
+    itb.arkavquarium.LinkedListTest
+    itb.arkavquarium.Pellet
+    itb.arkavquarium.PelletTest
+    itb.arkavquarium.Piranha
+    itb.arkavquarium.Piranha$1
+    itb.arkavquarium.PiranhaTest
+    itb.arkavquarium.Snail
+    itb.arkavquarium.SnailTest
+    itb.arkavquarium.State
+
+Depends Upon:
+    java.awt.event
+    java.lang
+    java.util
+    javax.swing
+    org.junit
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: java.awt.event
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.io
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.annotation
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.management
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.reflect
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.text
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent.atomic
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.regex
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: junit.extensions
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 2
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    junit.extensions.ActiveTestSuite
+    junit.extensions.ActiveTestSuite$1
+    junit.extensions.RepeatedTest
+    junit.extensions.TestDecorator
+    junit.extensions.TestSetup
+    junit.extensions.TestSetup$1
+
+Depends Upon:
+    java.lang
+    junit.framework
+
+Used By:
+    org.junit.internal.runners
+
+--------------------------------------------------
+- Package: junit.framework
+--------------------------------------------------
+
+Stats:
+    Total Classes: 17
+    Concrete Classes: 13
+    Abstract Classes: 4
+
+    Ca: 7
+    Ce: 9
+
+    A: 0.24
+    I: 0.56
+    D: 0.2
+
+Abstract Classes:
+    junit.framework.Protectable
+    junit.framework.Test
+    junit.framework.TestCase
+    junit.framework.TestListener
+
+Concrete Classes:
+    junit.framework.Assert
+    junit.framework.AssertionFailedError
+    junit.framework.ComparisonCompactor
+    junit.framework.ComparisonFailure
+    junit.framework.JUnit4TestAdapter
+    junit.framework.JUnit4TestAdapterCache
+    junit.framework.JUnit4TestAdapterCache$1
+    junit.framework.JUnit4TestCaseFacade
+    junit.framework.TestFailure
+    junit.framework.TestResult
+    junit.framework.TestResult$1
+    junit.framework.TestSuite
+    junit.framework.TestSuite$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+
+Used By:
+    junit.extensions
+    junit.runner
+    junit.textui
+    org.junit.experimental.max
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.runner
+
+--------------------------------------------------
+- Package: junit.runner
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 1
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 6
+
+    A: 0.67
+    I: 0.75
+    D: 0.42
+
+Abstract Classes:
+    junit.runner.BaseTestRunner
+    junit.runner.TestRunListener
+
+Concrete Classes:
+    junit.runner.Version
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.text
+    java.util
+    junit.framework
+
+Used By:
+    junit.textui
+    org.junit.runner
+
+--------------------------------------------------
+- Package: junit.textui
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 6
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    junit.textui.ResultPrinter
+    junit.textui.TestRunner
+
+Depends Upon:
+    java.io
+    java.lang
+    java.text
+    java.util
+    junit.framework
+    junit.runner
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.hamcrest
+--------------------------------------------------
+
+Stats:
+    Total Classes: 21
+    Concrete Classes: 7
+    Abstract Classes: 14
+
+    Ca: 8
+    Ce: 6
+
+    A: 0.67
+    I: 0.43
+    D: 0.1
+
+Abstract Classes:
+    org.hamcrest.BaseDescription
+    org.hamcrest.BaseMatcher
+    org.hamcrest.Condition
+    org.hamcrest.Condition$Step
+    org.hamcrest.CustomMatcher
+    org.hamcrest.CustomTypeSafeMatcher
+    org.hamcrest.Description
+    org.hamcrest.DiagnosingMatcher
+    org.hamcrest.Factory
+    org.hamcrest.FeatureMatcher
+    org.hamcrest.Matcher
+    org.hamcrest.SelfDescribing
+    org.hamcrest.TypeSafeDiagnosingMatcher
+    org.hamcrest.TypeSafeMatcher
+
+Concrete Classes:
+    org.hamcrest.Condition$1
+    org.hamcrest.Condition$Matched
+    org.hamcrest.Condition$NotMatched
+    org.hamcrest.CoreMatchers
+    org.hamcrest.Description$NullDescription
+    org.hamcrest.MatcherAssert
+    org.hamcrest.StringDescription
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.util
+    org.hamcrest.core
+    org.hamcrest.internal
+
+Used By:
+    org.hamcrest.core
+    org.hamcrest.internal
+    org.junit
+    org.junit.experimental.results
+    org.junit.internal
+    org.junit.internal.matchers
+    org.junit.matchers
+    org.junit.rules
+
+--------------------------------------------------
+- Package: org.hamcrest.core
+--------------------------------------------------
+
+Stats:
+    Total Classes: 20
+    Concrete Classes: 18
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 5
+
+    A: 0.1
+    I: 0.71
+    D: 0.19
+
+Abstract Classes:
+    org.hamcrest.core.ShortcutCombination
+    org.hamcrest.core.SubstringMatcher
+
+Concrete Classes:
+    org.hamcrest.core.AllOf
+    org.hamcrest.core.AnyOf
+    org.hamcrest.core.CombinableMatcher
+    org.hamcrest.core.CombinableMatcher$CombinableBothMatcher
+    org.hamcrest.core.CombinableMatcher$CombinableEitherMatcher
+    org.hamcrest.core.DescribedAs
+    org.hamcrest.core.Every
+    org.hamcrest.core.Is
+    org.hamcrest.core.IsAnything
+    org.hamcrest.core.IsCollectionContaining
+    org.hamcrest.core.IsEqual
+    org.hamcrest.core.IsInstanceOf
+    org.hamcrest.core.IsNot
+    org.hamcrest.core.IsNull
+    org.hamcrest.core.IsSame
+    org.hamcrest.core.StringContains
+    org.hamcrest.core.StringEndsWith
+    org.hamcrest.core.StringStartsWith
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.regex
+    org.hamcrest
+
+Used By:
+    org.hamcrest
+    org.junit.matchers
+
+--------------------------------------------------
+- Package: org.hamcrest.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 4
+
+    A: 0
+    I: 0.8
+    D: 0.2
+
+Abstract Classes:
+
+Concrete Classes:
+    org.hamcrest.internal.ArrayIterator
+    org.hamcrest.internal.ReflectiveTypeFinder
+    org.hamcrest.internal.SelfDescribingValue
+    org.hamcrest.internal.SelfDescribingValueIterator
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.hamcrest
+
+Used By:
+    org.hamcrest
+
+--------------------------------------------------
+- Package: org.junit
+--------------------------------------------------
+
+Stats:
+    Total Classes: 17
+    Concrete Classes: 8
+    Abstract Classes: 9
+
+    Ca: 12
+    Ce: 6
+
+    A: 0.53
+    I: 0.33
+    D: 0.14
+
+Abstract Classes:
+    org.junit.After
+    org.junit.AfterClass
+    org.junit.Before
+    org.junit.BeforeClass
+    org.junit.ClassRule
+    org.junit.FixMethodOrder
+    org.junit.Ignore
+    org.junit.Rule
+    org.junit.Test
+
+Concrete Classes:
+    org.junit.Assert
+    org.junit.Assume
+    org.junit.AssumptionViolatedException
+    org.junit.ComparisonFailure
+    org.junit.ComparisonFailure$1
+    org.junit.ComparisonFailure$ComparisonCompactor
+    org.junit.ComparisonFailure$ComparisonCompactor$DiffExtractor
+    org.junit.Test$None
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    org.hamcrest
+    org.junit.internal
+    org.junit.runners
+
+Used By:
+    itb.arkavquarium
+    junit.framework
+    org.junit.experimental.categories
+    org.junit.experimental.theories
+    org.junit.experimental.theories.internal
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.rules
+    org.junit.rules
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.experimental
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 5
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.experimental.ParallelComputer
+    org.junit.experimental.ParallelComputer$1
+
+Depends Upon:
+    java.lang
+    java.util.concurrent
+    org.junit.runner
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.experimental.categories
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 7
+    Abstract Classes: 4
+
+    Ca: 0
+    Ce: 10
+
+    A: 0.36
+    I: 1
+    D: 0.36
+
+Abstract Classes:
+    org.junit.experimental.categories.Categories$ExcludeCategory
+    org.junit.experimental.categories.Categories$IncludeCategory
+    org.junit.experimental.categories.Category
+    org.junit.experimental.categories.CategoryFilterFactory
+
+Concrete Classes:
+    org.junit.experimental.categories.Categories
+    org.junit.experimental.categories.Categories$CategoryFilter
+    org.junit.experimental.categories.CategoryValidator
+    org.junit.experimental.categories.ExcludeCategories
+    org.junit.experimental.categories.ExcludeCategories$ExcludesAny
+    org.junit.experimental.categories.IncludeCategories
+    org.junit.experimental.categories.IncludeCategories$IncludesAny
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    org.junit
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runners
+    org.junit.runners.model
+    org.junit.validator
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.experimental.max
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 8
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 11
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.experimental.max.CouldNotReadCoreException
+    org.junit.experimental.max.MaxCore
+    org.junit.experimental.max.MaxCore$1
+    org.junit.experimental.max.MaxCore$1$1
+    org.junit.experimental.max.MaxHistory
+    org.junit.experimental.max.MaxHistory$1
+    org.junit.experimental.max.MaxHistory$RememberingListener
+    org.junit.experimental.max.MaxHistory$TestComparator
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.util
+    junit.framework
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.experimental.results
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 7
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.experimental.results.FailureList
+    org.junit.experimental.results.PrintableResult
+    org.junit.experimental.results.ResultMatchers
+    org.junit.experimental.results.ResultMatchers$1
+    org.junit.experimental.results.ResultMatchers$2
+    org.junit.experimental.results.ResultMatchers$3
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.hamcrest
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.notification
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.experimental.runners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 5
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.experimental.runners.Enclosed
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.experimental.theories
+--------------------------------------------------
+
+Stats:
+    Total Classes: 15
+    Concrete Classes: 8
+    Abstract Classes: 7
+
+    Ca: 2
+    Ce: 9
+
+    A: 0.47
+    I: 0.82
+    D: 0.28
+
+Abstract Classes:
+    org.junit.experimental.theories.DataPoint
+    org.junit.experimental.theories.DataPoints
+    org.junit.experimental.theories.FromDataPoints
+    org.junit.experimental.theories.ParameterSupplier
+    org.junit.experimental.theories.ParametersSuppliedBy
+    org.junit.experimental.theories.PotentialAssignment
+    org.junit.experimental.theories.Theory
+
+Concrete Classes:
+    org.junit.experimental.theories.ParameterSignature
+    org.junit.experimental.theories.PotentialAssignment$1
+    org.junit.experimental.theories.PotentialAssignment$CouldNotGenerateValueException
+    org.junit.experimental.theories.Theories
+    org.junit.experimental.theories.Theories$TheoryAnchor
+    org.junit.experimental.theories.Theories$TheoryAnchor$1
+    org.junit.experimental.theories.Theories$TheoryAnchor$1$1
+    org.junit.experimental.theories.Theories$TheoryAnchor$2
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.experimental.theories.internal
+    org.junit.internal
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    org.junit.experimental.theories.internal
+    org.junit.experimental.theories.suppliers
+
+--------------------------------------------------
+- Package: org.junit.experimental.theories.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 8
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.experimental.theories.internal.AllMembersSupplier
+    org.junit.experimental.theories.internal.AllMembersSupplier$1
+    org.junit.experimental.theories.internal.AllMembersSupplier$MethodParameterValue
+    org.junit.experimental.theories.internal.Assignments
+    org.junit.experimental.theories.internal.BooleanSupplier
+    org.junit.experimental.theories.internal.EnumSupplier
+    org.junit.experimental.theories.internal.ParameterizedAssertionError
+    org.junit.experimental.theories.internal.SpecificDataPointsSupplier
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.experimental.theories
+    org.junit.runners.model
+
+Used By:
+    org.junit.experimental.theories
+
+--------------------------------------------------
+- Package: org.junit.experimental.theories.suppliers
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 0
+    Ce: 4
+
+    A: 0.5
+    I: 1
+    D: 0.5
+
+Abstract Classes:
+    org.junit.experimental.theories.suppliers.TestedOn
+
+Concrete Classes:
+    org.junit.experimental.theories.suppliers.TestedOnSupplier
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    org.junit.experimental.theories
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.junit.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 11
+    Abstract Classes: 2
+
+    Ca: 13
+    Ce: 10
+
+    A: 0.15
+    I: 0.43
+    D: 0.41
+
+Abstract Classes:
+    org.junit.internal.ComparisonCriteria
+    org.junit.internal.JUnitSystem
+
+Concrete Classes:
+    org.junit.internal.ArrayComparisonFailure
+    org.junit.internal.AssumptionViolatedException
+    org.junit.internal.Classes
+    org.junit.internal.ExactComparisonCriteria
+    org.junit.internal.InexactComparisonCriteria
+    org.junit.internal.MethodSorter
+    org.junit.internal.MethodSorter$1
+    org.junit.internal.MethodSorter$2
+    org.junit.internal.RealSystem
+    org.junit.internal.TextListener
+    org.junit.internal.Throwables
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.text
+    java.util
+    org.hamcrest
+    org.junit
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners
+
+Used By:
+    junit.framework
+    org.junit
+    org.junit.experimental.categories
+    org.junit.experimental.results
+    org.junit.experimental.theories
+    org.junit.internal.matchers
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.internal.runners.statements
+    org.junit.rules
+    org.junit.runner
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.builders
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 8
+    Abstract Classes: 0
+
+    Ca: 3
+    Ce: 10
+
+    A: 0
+    I: 0.77
+    D: 0.23
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.builders.AllDefaultPossibilitiesBuilder
+    org.junit.internal.builders.AnnotatedBuilder
+    org.junit.internal.builders.IgnoredBuilder
+    org.junit.internal.builders.IgnoredClassRunner
+    org.junit.internal.builders.JUnit3Builder
+    org.junit.internal.builders.JUnit4Builder
+    org.junit.internal.builders.NullBuilder
+    org.junit.internal.builders.SuiteMethodBuilder
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    junit.framework
+    org.junit
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    org.junit.internal.requests
+    org.junit.runner
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.internal.matchers
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 3
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 5
+
+    A: 0.25
+    I: 0.71
+    D: 0.04
+
+Abstract Classes:
+    org.junit.internal.matchers.TypeSafeMatcher
+
+Concrete Classes:
+    org.junit.internal.matchers.StacktracePrintingMatcher
+    org.junit.internal.matchers.ThrowableCauseMatcher
+    org.junit.internal.matchers.ThrowableMessageMatcher
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    org.hamcrest
+    org.junit.internal
+
+Used By:
+    org.junit.matchers
+    org.junit.rules
+
+--------------------------------------------------
+- Package: org.junit.internal.requests
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 6
+
+    A: 0
+    I: 0.75
+    D: 0.25
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.requests.ClassRequest
+    org.junit.internal.requests.FilterRequest
+    org.junit.internal.requests.SortingRequest
+
+Depends Upon:
+    java.lang
+    java.util
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runner.manipulation
+
+Used By:
+    org.junit.experimental.max
+    org.junit.runner
+
+--------------------------------------------------
+- Package: org.junit.internal.runners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 18
+    Concrete Classes: 18
+    Abstract Classes: 0
+
+    Ca: 6
+    Ce: 13
+
+    A: 0
+    I: 0.68
+    D: 0.32
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.runners.ClassRoadie
+    org.junit.internal.runners.ErrorReportingRunner
+    org.junit.internal.runners.FailedBefore
+    org.junit.internal.runners.InitializationError
+    org.junit.internal.runners.JUnit38ClassRunner
+    org.junit.internal.runners.JUnit38ClassRunner$1
+    org.junit.internal.runners.JUnit38ClassRunner$OldTestClassAdaptingListener
+    org.junit.internal.runners.JUnit4ClassRunner
+    org.junit.internal.runners.JUnit4ClassRunner$1
+    org.junit.internal.runners.JUnit4ClassRunner$2
+    org.junit.internal.runners.MethodRoadie
+    org.junit.internal.runners.MethodRoadie$1
+    org.junit.internal.runners.MethodRoadie$1$1
+    org.junit.internal.runners.MethodRoadie$2
+    org.junit.internal.runners.MethodValidator
+    org.junit.internal.runners.SuiteMethod
+    org.junit.internal.runners.TestClass
+    org.junit.internal.runners.TestMethod
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    junit.extensions
+    junit.framework
+    org.junit
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners.model
+
+Used By:
+    org.junit.experimental.max
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.runner
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.model
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 2
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 7
+
+    A: 0.33
+    I: 0.78
+    D: 0.11
+
+Abstract Classes:
+    org.junit.internal.runners.model.ReflectiveCallable
+
+Concrete Classes:
+    org.junit.internal.runners.model.EachTestNotifier
+    org.junit.internal.runners.model.MultipleFailureException
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.rules
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 12
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 6
+
+    A: 0.08
+    I: 0.86
+    D: 0.07
+
+Abstract Classes:
+    org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator
+
+Concrete Classes:
+    org.junit.internal.runners.rules.RuleMemberValidator
+    org.junit.internal.runners.rules.RuleMemberValidator$1
+    org.junit.internal.runners.rules.RuleMemberValidator$Builder
+    org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic
+    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule
+    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic
+    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule
+    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule
+    org.junit.internal.runners.rules.ValidationError
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.rules
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.statements
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 9
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 6
+
+    A: 0
+    I: 0.75
+    D: 0.25
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.runners.statements.ExpectException
+    org.junit.internal.runners.statements.Fail
+    org.junit.internal.runners.statements.FailOnTimeout
+    org.junit.internal.runners.statements.FailOnTimeout$1
+    org.junit.internal.runners.statements.FailOnTimeout$Builder
+    org.junit.internal.runners.statements.FailOnTimeout$CallableStatement
+    org.junit.internal.runners.statements.InvokeMethod
+    org.junit.internal.runners.statements.RunAfters
+    org.junit.internal.runners.statements.RunBefores
+
+Depends Upon:
+    java.lang
+    java.lang.management
+    java.util
+    java.util.concurrent
+    org.junit.internal
+    org.junit.runners.model
+
+Used By:
+    org.junit.rules
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.matchers
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 4
+
+    A: 0
+    I: 0.8
+    D: 0.2
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.matchers.JUnitMatchers
+
+Depends Upon:
+    java.lang
+    org.hamcrest
+    org.hamcrest.core
+    org.junit.internal.matchers
+
+Used By:
+    org.junit.rules
+
+--------------------------------------------------
+- Package: org.junit.rules
+--------------------------------------------------
+
+Stats:
+    Total Classes: 27
+    Concrete Classes: 21
+    Abstract Classes: 6
+
+    Ca: 2
+    Ce: 13
+
+    A: 0.22
+    I: 0.87
+    D: 0.09
+
+Abstract Classes:
+    org.junit.rules.ExternalResource
+    org.junit.rules.MethodRule
+    org.junit.rules.Stopwatch
+    org.junit.rules.TestRule
+    org.junit.rules.TestWatcher
+    org.junit.rules.Verifier
+
+Concrete Classes:
+    org.junit.rules.DisableOnDebug
+    org.junit.rules.ErrorCollector
+    org.junit.rules.ErrorCollector$1
+    org.junit.rules.ExpectedException
+    org.junit.rules.ExpectedException$ExpectedExceptionStatement
+    org.junit.rules.ExpectedExceptionMatcherBuilder
+    org.junit.rules.ExternalResource$1
+    org.junit.rules.RuleChain
+    org.junit.rules.RunRules
+    org.junit.rules.Stopwatch$1
+    org.junit.rules.Stopwatch$Clock
+    org.junit.rules.Stopwatch$InternalWatcher
+    org.junit.rules.TemporaryFolder
+    org.junit.rules.TestName
+    org.junit.rules.TestWatcher$1
+    org.junit.rules.TestWatchman
+    org.junit.rules.TestWatchman$1
+    org.junit.rules.Timeout
+    org.junit.rules.Timeout$1
+    org.junit.rules.Timeout$Builder
+    org.junit.rules.Verifier$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.management
+    java.util
+    java.util.concurrent
+    org.hamcrest
+    org.junit
+    org.junit.internal
+    org.junit.internal.matchers
+    org.junit.internal.runners.statements
+    org.junit.matchers
+    org.junit.runner
+    org.junit.runners.model
+
+Used By:
+    org.junit.internal.runners.rules
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.runner
+--------------------------------------------------
+
+Stats:
+    Total Classes: 19
+    Concrete Classes: 14
+    Abstract Classes: 5
+
+    Ca: 16
+    Ce: 18
+
+    A: 0.26
+    I: 0.53
+    D: 0.21
+
+Abstract Classes:
+    org.junit.runner.Describable
+    org.junit.runner.FilterFactory
+    org.junit.runner.Request
+    org.junit.runner.RunWith
+    org.junit.runner.Runner
+
+Concrete Classes:
+    org.junit.runner.Computer
+    org.junit.runner.Computer$1
+    org.junit.runner.Description
+    org.junit.runner.FilterFactories
+    org.junit.runner.FilterFactory$FilterNotCreatedException
+    org.junit.runner.FilterFactoryParams
+    org.junit.runner.JUnitCommandLineParseResult
+    org.junit.runner.JUnitCommandLineParseResult$CommandLineParserError
+    org.junit.runner.JUnitCore
+    org.junit.runner.Request$1
+    org.junit.runner.Result
+    org.junit.runner.Result$1
+    org.junit.runner.Result$Listener
+    org.junit.runner.Result$SerializedForm
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    java.util.concurrent.atomic
+    java.util.regex
+    junit.framework
+    junit.runner
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    junit.framework
+    org.junit.experimental
+    org.junit.experimental.categories
+    org.junit.experimental.max
+    org.junit.experimental.results
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.rules
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+    org.junit.runners.parameterized
+
+--------------------------------------------------
+- Package: org.junit.runner.manipulation
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 6
+    Abstract Classes: 3
+
+    Ca: 6
+    Ce: 3
+
+    A: 0.33
+    I: 0.33
+    D: 0.33
+
+Abstract Classes:
+    org.junit.runner.manipulation.Filter
+    org.junit.runner.manipulation.Filterable
+    org.junit.runner.manipulation.Sortable
+
+Concrete Classes:
+    org.junit.runner.manipulation.Filter$1
+    org.junit.runner.manipulation.Filter$2
+    org.junit.runner.manipulation.Filter$3
+    org.junit.runner.manipulation.NoTestsRemainException
+    org.junit.runner.manipulation.Sorter
+    org.junit.runner.manipulation.Sorter$1
+
+Depends Upon:
+    java.lang
+    java.util
+    org.junit.runner
+
+Used By:
+    junit.framework
+    org.junit.experimental.categories
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.runner.notification
+--------------------------------------------------
+
+Stats:
+    Total Classes: 14
+    Concrete Classes: 12
+    Abstract Classes: 2
+
+    Ca: 10
+    Ce: 6
+
+    A: 0.14
+    I: 0.38
+    D: 0.48
+
+Abstract Classes:
+    org.junit.runner.notification.RunListener$ThreadSafe
+    org.junit.runner.notification.RunNotifier$SafeNotifier
+
+Concrete Classes:
+    org.junit.runner.notification.Failure
+    org.junit.runner.notification.RunListener
+    org.junit.runner.notification.RunNotifier
+    org.junit.runner.notification.RunNotifier$1
+    org.junit.runner.notification.RunNotifier$2
+    org.junit.runner.notification.RunNotifier$3
+    org.junit.runner.notification.RunNotifier$4
+    org.junit.runner.notification.RunNotifier$5
+    org.junit.runner.notification.RunNotifier$6
+    org.junit.runner.notification.RunNotifier$7
+    org.junit.runner.notification.StoppedByUserException
+    org.junit.runner.notification.SynchronizedRunListener
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent
+    org.junit.runner
+
+Used By:
+    junit.framework
+    org.junit.experimental.max
+    org.junit.experimental.results
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.runner
+    org.junit.runners
+    org.junit.runners.parameterized
+
+--------------------------------------------------
+- Package: org.junit.runners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 16
+    Concrete Classes: 11
+    Abstract Classes: 5
+
+    Ca: 10
+    Ce: 20
+
+    A: 0.31
+    I: 0.67
+    D: 0.02
+
+Abstract Classes:
+    org.junit.runners.Parameterized$Parameter
+    org.junit.runners.Parameterized$Parameters
+    org.junit.runners.Parameterized$UseParametersRunnerFactory
+    org.junit.runners.ParentRunner
+    org.junit.runners.Suite$SuiteClasses
+
+Concrete Classes:
+    org.junit.runners.AllTests
+    org.junit.runners.BlockJUnit4ClassRunner
+    org.junit.runners.BlockJUnit4ClassRunner$1
+    org.junit.runners.JUnit4
+    org.junit.runners.MethodSorters
+    org.junit.runners.Parameterized
+    org.junit.runners.ParentRunner$1
+    org.junit.runners.ParentRunner$2
+    org.junit.runners.ParentRunner$3
+    org.junit.runners.ParentRunner$4
+    org.junit.runners.Suite
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.text
+    java.util
+    java.util.concurrent
+    org.junit
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.internal.runners.rules
+    org.junit.internal.runners.statements
+    org.junit.rules
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners.model
+    org.junit.runners.parameterized
+    org.junit.validator
+
+Used By:
+    org.junit
+    org.junit.experimental
+    org.junit.experimental.categories
+    org.junit.experimental.max
+    org.junit.experimental.runners
+    org.junit.experimental.theories
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.runner
+    org.junit.runners.parameterized
+
+--------------------------------------------------
+- Package: org.junit.runners.model
+--------------------------------------------------
+
+Stats:
+    Total Classes: 16
+    Concrete Classes: 11
+    Abstract Classes: 5
+
+    Ca: 16
+    Ce: 10
+
+    A: 0.31
+    I: 0.38
+    D: 0.3
+
+Abstract Classes:
+    org.junit.runners.model.Annotatable
+    org.junit.runners.model.FrameworkMember
+    org.junit.runners.model.RunnerBuilder
+    org.junit.runners.model.RunnerScheduler
+    org.junit.runners.model.Statement
+
+Concrete Classes:
+    org.junit.runners.model.FrameworkField
+    org.junit.runners.model.FrameworkMethod
+    org.junit.runners.model.FrameworkMethod$1
+    org.junit.runners.model.InitializationError
+    org.junit.runners.model.MultipleFailureException
+    org.junit.runners.model.NoGenericTypeParametersValidator
+    org.junit.runners.model.TestClass
+    org.junit.runners.model.TestClass$1
+    org.junit.runners.model.TestClass$FieldComparator
+    org.junit.runners.model.TestClass$MethodComparator
+    org.junit.runners.model.TestTimedOutException
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    org.junit
+    org.junit.internal
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.runner
+
+Used By:
+    org.junit.experimental
+    org.junit.experimental.categories
+    org.junit.experimental.max
+    org.junit.experimental.runners
+    org.junit.experimental.theories
+    org.junit.experimental.theories.internal
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.internal.runners.rules
+    org.junit.internal.runners.statements
+    org.junit.rules
+    org.junit.runner
+    org.junit.runners
+    org.junit.runners.parameterized
+    org.junit.validator
+
+--------------------------------------------------
+- Package: org.junit.runners.parameterized
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 3
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 8
+
+    A: 0.25
+    I: 0.89
+    D: 0.14
+
+Abstract Classes:
+    org.junit.runners.parameterized.ParametersRunnerFactory
+
+Concrete Classes:
+    org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParameters
+    org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParametersFactory
+    org.junit.runners.parameterized.TestWithParameters
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.validator
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 7
+    Abstract Classes: 4
+
+    Ca: 2
+    Ce: 5
+
+    A: 0.36
+    I: 0.71
+    D: 0.08
+
+Abstract Classes:
+    org.junit.validator.AnnotationValidator
+    org.junit.validator.AnnotationsValidator$AnnotatableValidator
+    org.junit.validator.TestClassValidator
+    org.junit.validator.ValidateWith
+
+Concrete Classes:
+    org.junit.validator.AnnotationValidatorFactory
+    org.junit.validator.AnnotationsValidator
+    org.junit.validator.AnnotationsValidator$1
+    org.junit.validator.AnnotationsValidator$ClassValidator
+    org.junit.validator.AnnotationsValidator$FieldValidator
+    org.junit.validator.AnnotationsValidator$MethodValidator
+    org.junit.validator.PublicClassValidator
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent
+    org.junit.runners.model
+
+Used By:
+    org.junit.experimental.categories
+    org.junit.runners
+
+
+--------------------------------------------------
+- Package Dependency Cycles:
+--------------------------------------------------
+
+itb.arkavquarium
+    |
+    |-> org.junit
+    |   org.junit.internal
+    |-> org.junit
+
+junit.extensions
+    |
+    |   junit.framework
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+junit.framework
+    |
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+junit.runner
+    |
+    |   junit.framework
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+junit.textui
+    |
+    |   junit.runner
+    |   junit.framework
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.hamcrest
+    |
+    |   org.hamcrest.internal
+    |-> org.hamcrest
+
+org.hamcrest.core
+    |
+    |-> org.hamcrest
+    |   org.hamcrest.internal
+    |-> org.hamcrest
+
+org.hamcrest.internal
+    |
+    |   org.hamcrest
+    |-> org.hamcrest.internal
+
+org.junit
+    |
+    |   org.junit.internal
+    |-> org.junit
+
+org.junit.experimental
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.experimental.categories
+    |
+    |-> org.junit.runner.manipulation
+    |   org.junit.runner
+    |-> org.junit.runner.manipulation
+
+org.junit.experimental.max
+    |
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.experimental.results
+    |
+    |-> org.hamcrest
+    |   org.hamcrest.internal
+    |-> org.hamcrest
+
+org.junit.experimental.runners
+    |
+    |   org.junit.runners
+    |   org.junit.internal.runners
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.experimental.theories
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.experimental.theories.internal
+    |
+    |   org.junit.experimental.theories
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.experimental.theories.suppliers
+    |
+    |   org.junit.experimental.theories
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.internal
+    |
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.internal.builders
+    |
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.internal.matchers
+    |
+    |-> org.hamcrest
+    |   org.hamcrest.internal
+    |-> org.hamcrest
+
+org.junit.internal.requests
+    |
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.internal.runners
+    |
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.internal.runners.model
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.internal.runners.rules
+    |
+    |   org.junit.rules
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.internal.runners.statements
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.matchers
+    |
+    |   org.hamcrest.core
+    |-> org.hamcrest
+    |   org.hamcrest.internal
+    |-> org.hamcrest
+
+org.junit.rules
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.runner
+    |
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.runner.manipulation
+    |
+    |   org.junit.runner
+    |-> org.junit.runner.manipulation
+
+org.junit.runner.notification
+    |
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.runners
+    |
+    |   org.junit.internal.runners
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+    |   org.junit.runner.manipulation
+    |-> org.junit.runner
+
+org.junit.runners.model
+    |
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.runners.parameterized
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+org.junit.validator
+    |
+    |   org.junit.runners.model
+    |-> org.junit.internal
+    |   org.junit
+    |-> org.junit.internal
+
+
+--------------------------------------------------
+- Summary:
+--------------------------------------------------
+
+Name, Class Count, Abstract Class Count, Ca, Ce, A, I, D, V:
+
+itb.arkavquarium,28,2,0,5,0.07,1,0.07,1
+java.awt.event,0,0,1,0,0,0,1,1
+java.io,0,0,11,0,0,0,1,1
+java.lang,0,0,34,0,0,0,1,1
+java.lang.annotation,0,0,13,0,0,0,1,1
+java.lang.management,0,0,2,0,0,0,1,1
+java.lang.reflect,0,0,17,0,0,0,1,1
+java.text,0,0,4,0,0,0,1,1
+java.util,0,0,30,0,0,0,1,1
+java.util.concurrent,0,0,9,0,0,0,1,1
+java.util.concurrent.atomic,0,0,1,0,0,0,1,1
+java.util.regex,0,0,2,0,0,0,1,1
+javax.swing,0,0,1,0,0,0,1,1
+junit.extensions,6,0,1,2,0,0.67,0.33,1
+junit.framework,17,4,7,9,0.24,0.56,0.2,1
+junit.runner,3,2,2,6,0.67,0.75,0.42,1
+junit.textui,2,0,0,6,0,1,0,1
+org.hamcrest,21,14,8,6,0.67,0.43,0.1,1
+org.hamcrest.core,20,2,2,5,0.1,0.71,0.19,1
+org.hamcrest.internal,4,0,1,4,0,0.8,0.2,1
+org.junit,17,9,12,6,0.53,0.33,0.14,1
+org.junit.experimental,2,0,0,5,0,1,0,1
+org.junit.experimental.categories,11,4,0,10,0.36,1,0.36,1
+org.junit.experimental.max,8,0,0,11,0,1,0,1
+org.junit.experimental.results,6,0,0,7,0,1,0,1
+org.junit.experimental.runners,1,0,0,5,0,1,0,1
+org.junit.experimental.theories,15,7,2,9,0.47,0.82,0.28,1
+org.junit.experimental.theories.internal,8,0,1,6,0,0.86,0.14,1
+org.junit.experimental.theories.suppliers,2,1,0,4,0.5,1,0.5,1
+org.junit.internal,13,2,13,10,0.15,0.43,0.41,1
+org.junit.internal.builders,8,0,3,10,0,0.77,0.23,1
+org.junit.internal.matchers,4,1,2,5,0.25,0.71,0.04,1
+org.junit.internal.requests,3,0,2,6,0,0.75,0.25,1
+org.junit.internal.runners,18,0,6,13,0,0.68,0.32,1
+org.junit.internal.runners.model,3,1,2,7,0.33,0.78,0.11,1
+org.junit.internal.runners.rules,13,1,1,6,0.08,0.86,0.07,1
+org.junit.internal.runners.statements,9,0,2,6,0,0.75,0.25,1
+org.junit.matchers,1,0,1,4,0,0.8,0.2,1
+org.junit.rules,27,6,2,13,0.22,0.87,0.09,1
+org.junit.runner,19,5,16,18,0.26,0.53,0.21,1
+org.junit.runner.manipulation,9,3,6,3,0.33,0.33,0.33,1
+org.junit.runner.notification,14,2,10,6,0.14,0.38,0.48,1
+org.junit.runners,16,5,10,20,0.31,0.67,0.02,1
+org.junit.runners.model,16,5,16,10,0.31,0.38,0.3,1
+org.junit.runners.parameterized,4,1,1,8,0.25,0.89,0.14,1
+org.junit.validator,11,4,2,5,0.36,0.71,0.08,1
