@@ -48,7 +48,7 @@ public class PiranhaTest {
     a.getContentPiranha().add(p);
     a.getContentGuppy().add(g);
     a.updateState(0.1);
-    assertTrue("Piranha didn't eat the Guppy", a.getContentGuppy().getLength() == 1);
+    assertEquals("Piranha didn't eat the Guppy", 1, a.getContentGuppy().getLength(), 0.01);
   }
 
   @Test
