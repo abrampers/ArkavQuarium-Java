@@ -20,20 +20,17 @@ public class SnailTest {
 
   @Test
   public void chaseCoinTest() {
-    Coin c = new Coin(45, a.getYMax(), 50, a);
+    Coin c = new Coin(45, 45, 50, a);
     Snail s = new Snail(a);
-    /* Delete the first guppy */
-    Guppy g = a.getContentGuppy().iterator().next();
-    a.getContentGuppy().remove(g);
 
     s.setX(15);
     a.getContentCoin().add(c);
     a.getContentSnail().add(s);
 
     double distBefore = Math.sqrt((c.getX() - s.getX()) * (c.getX() - s.getX()) + (c.getY() - s.getY()) * (c.getY() - s.getY()));
-    a.updateState(0.2);
+    a.updateState(1);
     double distAfter = Math.sqrt((c.getX() - s.getX()) * (c.getX() - s.getX()) + (c.getY() - s.getY()) * (c.getY() - s.getY()));
-    assertTrue("Snail didn't correctly chase coin", distAfter < distBefore);
+    assertTrue("Snail didn't correctly chase coin", distAfter < distBefore || s.getState() == State.turningLeft || s.getState() == State.turningRight);
   }
 
   @Test
