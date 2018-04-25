@@ -99,6 +99,15 @@ public class Aquarium {
   }
 
   /**
+   * Setter for currentTime.
+   *
+   * @param currTime new current time
+   */
+  public void setCurrTime(double currTime) {
+    this.currTime = currTime;
+  }
+
+  /**
    * Getter for currentTime.
    *
    * @return The value of currentTime
