@@ -12,6 +12,9 @@ public class GuppyTest {
   @Before
   public void setUp() {
     a = new Aquarium(0, 0, 100, 100);
+    // Purge the aquarium
+    Guppy g1 = a.getContentGuppy().iterator().next();
+    a.getContentGuppy().remove(g1);
   }
 
   @Test
@@ -23,11 +26,8 @@ public class GuppyTest {
     g.setHungry(true);
     a.getContentPellet().add(p);
     a.getContentGuppy().add(g);
-
     double distBefore = Math.sqrt((p.getX() - g.getX()) * (p.getX() - g.getX()) + (p.getY() - g.getY()) * (p.getY() - g.getY()));
-
     a.updateState(0.1);
-
     double distAfter = Math.sqrt((p.getX() - g.getX()) * (p.getX() - g.getX()) + (p.getY() - g.getY()) * (p.getY() - g.getY()));
     // if the test is negative, it's definitely wrong
     // if the test is positive, it's probably right. Test it repeatedly
@@ -59,11 +59,6 @@ public class GuppyTest {
   public void deadTest() {
     Guppy g = new Guppy(a);
     g.setHungry(true);
-
-    /* Delete the first guppy */
-    Guppy g1 = a.getContentGuppy().iterator().next();
-    a.getContentGuppy().remove(g1);
-
     a.getContentGuppy().add(g);
     a.updateState(g.getHungerTimeout() + g.getFullInterval());
     a.updateState(g.getHungerTimeout() + 1);

@@ -99,7 +99,7 @@ public class LinkedList<E> {
   /**
    * Returns an iterator over the elements in the list in proper sequence.
    *
-   * @return an iterator for the linkedlist.
+   * @return an iterator for the linked list.
    */
   public Iterator<E> iterator() {
     return new LlIterator();
