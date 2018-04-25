@@ -92,11 +92,7 @@ class Constants {
   public static final int LOSE_START_BUTTON_Y_END = 666;
 
   /* Game constants */
-<<<<<<< HEAD
-  public static final int GAME_INITIAL_COIN = 20000000;
-=======
   public static final int GAME_INITIAL_COIN = 200;
->>>>>>> origin/large_files
   public static final int GAME_SCREEN_LEFT_PADDING = 20;
   public static final int GAME_SCREEN_RIGHT_PADDING = 60;
   public static final int GAME_SCREEN_TOP_PADDING = 170;

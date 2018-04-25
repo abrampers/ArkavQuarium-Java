@@ -51,13 +51,10 @@ class GameController extends JPanel implements ActionListener {
   private GameState gameState;
   private int coinCount;
   private int eggCount;
-<<<<<<< HEAD
-=======
   // Audio
   private boolean musicPlayed;
   private Clip musicClip;
   private GameState gameMusicState;
->>>>>>> origin/large_files
 
   /**
    * A constructor. Constructs a new GameController object.
@@ -78,10 +75,7 @@ class GameController extends JPanel implements ActionListener {
 
     // Init game state
     gameState = GameState.uninitialized;
-<<<<<<< HEAD
-=======
     musicPlayed = false;
->>>>>>> origin/large_files
 
     // Init game timer, choose framerate
     Timer timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
@@ -469,13 +463,8 @@ class GameController extends JPanel implements ActionListener {
   }
 
   @Override
-<<<<<<< HEAD
-  public void actionPerformed(ActionEvent e) {
-=======
   public void actionPerformed(ActionEvent event) {
-
     playMusic();
->>>>>>> origin/large_files
 
     switch (gameState) {
       case uninitialized:
@@ -568,19 +557,12 @@ class GameController extends JPanel implements ActionListener {
             coinCount -= Constants.PELLET_PRICE;
           }
         }
-<<<<<<< HEAD
-
         break;
-=======
->>>>>>> origin/large_files
     }
 
     // Render frame
     repaint();
   }
-
-<<<<<<< HEAD
-=======
   private void playMusic() {
     if (gameMusicState == null || gameMusicState != gameState) {
       gameMusicState = gameState;
@@ -627,7 +609,6 @@ class GameController extends JPanel implements ActionListener {
     }
   }
 
->>>>>>> origin/large_files
   private boolean areaClicked(int startX, int endX, int startY, int endY) {
 
     if (mouseClickX >= startX && mouseClickX <= endX && mouseClickY >= startY && mouseClickY <= endY
