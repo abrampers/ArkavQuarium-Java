@@ -81,15 +81,15 @@ class Constants {
   public static final int MAIN_START_BUTTON_Y_START = 13;
   public static final int MAIN_START_BUTTON_Y_END = 115;
 
-  public static final int WIN_START_BUTTON_X_START = 406;
-  public static final int WIN_START_BUTTON_X_END = 621;
-  public static final int WIN_START_BUTTON_Y_START = 598;
-  public static final int WIN_START_BUTTON_Y_END = 666;
+  public static final int WIN_START_BUTTON_X_START = 444;
+  public static final int WIN_START_BUTTON_X_END = 518;
+  public static final int WIN_START_BUTTON_Y_START = 440;
+  public static final int WIN_START_BUTTON_Y_END = 460;
 
-  public static final int LOSE_START_BUTTON_X_START = 406;
-  public static final int LOSE_START_BUTTON_X_END = 621;
-  public static final int LOSE_START_BUTTON_Y_START = 598;
-  public static final int LOSE_START_BUTTON_Y_END = 666;
+  public static final int LOSE_START_BUTTON_X_START = 444;
+  public static final int LOSE_START_BUTTON_X_END = 518;
+  public static final int LOSE_START_BUTTON_Y_START = 440;
+  public static final int LOSE_START_BUTTON_Y_END = 460;
 
   /* Game constants */
   public static final int GAME_INITIAL_COIN = 200;

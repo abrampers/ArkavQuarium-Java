@@ -12,6 +12,8 @@ public class CoinTest {
   @Before
   public void setUp() {
     a = new Aquarium(0, 0, 100, 100);
+    Snail s1 = a.getContentSnail().iterator().next();
+    a.getContentSnail().remove(s1);
   }
 
   /*
