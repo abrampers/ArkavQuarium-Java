@@ -55,6 +55,7 @@ public class Aquarium {
     this.contentPellet = new LinkedList<>();
 
     this.createGuppy();
+    this.createSnail();
   }
 
   /*------------------------------------------*/
