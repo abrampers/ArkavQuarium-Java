@@ -36,7 +36,7 @@ and enjoy the game.
 * [Java Swing](https://docs.oracle.com/javase/9/docs/api/javax/swing/package-summary.html) - GUI Library
 * [JavaDoc](https://docs.oracle.com/javase/9/docs/api/jdk.javadoc-summary.html) - Documentation Tool
 * [JUnit] (https://junit.org/junit4/javadoc/latest/) - Unit Testing
-* [JDepend] (https://github.com/clarkware/jdepend) - Design Quality Metrics Analyzer
+* [JDepend] (http://mcs.une.edu.au/doc/jdepend/docs/JDepend.html) - Design Quality Metrics Analyzer
 
 ## Authors
 
