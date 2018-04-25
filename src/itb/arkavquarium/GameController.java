@@ -16,6 +16,7 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
+import javax.sound.sampled.*;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -48,6 +49,10 @@ class GameController extends JPanel implements ActionListener {
   private GameState gameState;
   private int coinCount;
   private int eggCount;
+  // Audio
+  private boolean musicPlayed;
+  private Clip musicClip;
+  private GameState gameMusicState;
 
   /**
    * A constructor. Constructs a new GameController object.
@@ -68,6 +73,7 @@ class GameController extends JPanel implements ActionListener {
 
     // Init game state
     gameState = GameState.uninitialized;
+    musicPlayed = false;
 
     // Init game timer, choose framerate
     Timer timer = new Timer(Constants.GRAPHICS_FRAME_DELAY, this);
@@ -418,7 +424,9 @@ class GameController extends JPanel implements ActionListener {
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
+  public void actionPerformed(ActionEvent event) {
+
+    playMusic();
 
     if (gameState == GameState.uninitialized) {
       // Check if start button clicked
@@ -507,11 +515,56 @@ class GameController extends JPanel implements ActionListener {
           coinCount -= Constants.PELLET_PRICE;
         }
       }
-
     }
 
     // Render frame
     repaint();
+  }
+
+  private void playMusic() {
+    if (gameMusicState == null || gameMusicState != gameState) {
+      gameMusicState = gameState;
+
+      if (musicPlayed) {
+        musicClip.stop();
+        musicPlayed = false;
+      }
+      try {
+        File soundFile;
+        if (gameMusicState == GameState.uninitialized) {
+          soundFile = new File("assets/sounds/main_menu_bgm.wav");
+          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+          musicClip = AudioSystem.getClip();
+          musicClip.open(audioIn);
+          musicClip.start();
+        } else if (gameMusicState == GameState.won) {
+            soundFile = new File("assets/sounds/win_menu_bgm.wav");
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            musicClip = AudioSystem.getClip();
+            musicClip.open(audioIn);
+            musicClip.start();
+        } else if (gameMusicState == GameState.lost) {
+          soundFile = new File("assets/sounds/lose_menu_bgm.wav");
+          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+          musicClip = AudioSystem.getClip();
+          musicClip.open(audioIn);
+          musicClip.start();
+        } else {
+          soundFile = new File("assets/sounds/game_bgm.wav");
+          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+          musicClip = AudioSystem.getClip();
+          musicClip.open(audioIn);
+          musicClip.start();
+        }
+        musicPlayed = true;
+      } catch (UnsupportedAudioFileException e) {
+        e.printStackTrace();
+      } catch (IOException e) {
+        e.printStackTrace();
+      } catch (LineUnavailableException e) {
+        e.printStackTrace();
+      }
+    }
   }
 
   private boolean areaClicked(int startX, int endX, int startY, int endY) {
