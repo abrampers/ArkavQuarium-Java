@@ -232,7 +232,7 @@ abstract class Fish {
   }
 
   /**
-   * Setter for hungru.
+   * Setter for hungry.
    *
    * @param hungry The new hunger state of the Fish
    */
