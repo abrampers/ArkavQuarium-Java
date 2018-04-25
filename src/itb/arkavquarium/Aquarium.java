@@ -107,15 +107,6 @@ public class Aquarium {
   }
 
   /**
-   * Setter for currentTime.
-   *
-   * @param currTime The value of the new current time
-   */
-  public void setCurrTime(double currTime) {
-    this.currTime = currTime;
-  }
-
-  /**
    * Getter for contentPiranha.
    *
    * @return The contentPiranha list

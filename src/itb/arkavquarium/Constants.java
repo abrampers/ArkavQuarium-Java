@@ -149,8 +149,6 @@ class Constants {
   public static final double SNAIL_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double PELLET_MOVE_PROGRESS_INCREMENT_TIME = 0.05;
   public static final double COIN_PROGRESS_INCREMENT_TIME = 0.05;
-  public static final double COIN_FADE_PROGRESS_INCREMENT_TIME =
-      COIN_DELETION_INTERVAL / PROGRESS_PERIOD;
 
   /*------------------------------------------*/
   /* ---------------- Methods --------------- */

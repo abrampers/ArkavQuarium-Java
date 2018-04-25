@@ -77,7 +77,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The Aquarium the Aquatic is in.
    */
-  @Override
   public Aquarium getAquarium() {
     return this.aquarium;
   }
@@ -87,7 +86,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The Aquatic's move speed.
    */
-  @Override
   public double getMoveSpeed() {
     return this.moveSpeed;
   }
@@ -97,7 +95,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The x-axis position of the Aquatic.
    */
-  @Override
   public double getX() {
     return this.abscissa;
   }
@@ -107,7 +104,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param x The new x-axis position of the Aquatic.
    */
-  @Override
   public void setX(double x) {
     this.abscissa = x;
   }
@@ -117,7 +113,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return y-axis position of the Aquatic.
    */
-  @Override
   public double getY() {
     return this.ordinate;
   }
@@ -127,7 +122,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param y The new y-axis position of the Aquatic.
    */
-  @Override
   public void setY(double y) {
     this.ordinate = y;
   }
@@ -137,7 +131,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The last update time of the Aquatic.
    */
-  @Override
   public double getLastCurrTime() {
     return this.lastCurrTime;
   }
@@ -147,7 +140,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param time The last update time of the Aquatic.
    */
-  @Override
   public void setLastCurrTime(double time) {
     this.lastCurrTime = time;
   }
@@ -157,7 +149,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The Aquatic's current State.
    */
-  @Override
   public State getState() {
     return this.currState;
   }
@@ -167,7 +158,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param state The new state of the Aquatic.
    */
-  @Override
   public void setState(State state) {
     this.currState = state;
   }
@@ -177,7 +167,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @return The Aquatic's current State Progress.
    */
-  @Override
   public int getProgress() {
     return this.progress;
   }
@@ -187,7 +176,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param progress The new progress of the Aquatic.
    */
-  @Override
   public void setProgress(int progress) {
     this.progress = progress;
   }
@@ -197,7 +185,6 @@ public class Guppy extends Fish implements Aquatic {
    *
    * @param time The new last update progress of the Aquatic.
    */
-  @Override
   public void setLastProgressTime(double time) {
     this.lastProgressTime = time;
   }
@@ -240,7 +227,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Moves the object independently.
    */
-  @Override
   public void move() {
     double currentTime = this.getAquarium().getCurrTime();
     if (this.getState() != State.turningRight && this.getState() != State.turningLeft) {
@@ -328,7 +314,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Updates the object position and eating mechanism independently.
    */
-  @Override
   public void updateState() {
     double currentTime = this.getAquarium().getCurrTime();
     if (this.getState() == State.deadLeft
@@ -351,7 +336,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Updates the object progress independently.
    */
-  @Override
   public void updateProgress() {
     double currentTime = this.getAquarium().getCurrTime();
     double progressIncrementTime;
@@ -416,7 +400,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Executing dead progress.
    */
-  @Override
   public void dead() {
     if (this.getState() == State.movingRight
         || (this.getState() == State.turningRight && this.getProgress() >= 5)
@@ -440,7 +423,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Drop coin. Implements abstract method dropCoin() from Fish. Drop coin every c time.
    */
-  @Override
   void dropCoin() {
     double currentTime = this.getAquarium().getCurrTime();
     if (currentTime - this.lastDropCoin > Constants.GUPPY_COIN_INTERVAL) {
@@ -453,7 +435,6 @@ public class Guppy extends Fish implements Aquatic {
   /**
    * Eat object. Implements abstract method eat() from Fish. Eat food if the food is in range
    */
-  @Override
   void eat() {
     double currentTime = this.getAquarium().getCurrTime();
     if (!this.getHungry() && (currentTime - this.getLastEatTime() > this.getFullInterval())) {
