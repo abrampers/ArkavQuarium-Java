@@ -16,7 +16,11 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
-import javax.sound.sampled.*;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -563,6 +567,7 @@ class GameController extends JPanel implements ActionListener {
     // Render frame
     repaint();
   }
+
   private void playMusic() {
     if (gameMusicState == null || gameMusicState != gameState) {
       gameMusicState = gameState;
@@ -573,37 +578,42 @@ class GameController extends JPanel implements ActionListener {
       }
       try {
         File soundFile;
-        if (gameMusicState == GameState.uninitialized) {
-          soundFile = new File("assets/sounds/main_menu_bgm.wav");
-          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-          musicClip = AudioSystem.getClip();
-          musicClip.open(audioIn);
-          musicClip.start();
-        } else if (gameMusicState == GameState.won) {
+        switch (gameMusicState) {
+          case uninitialized: {
+            soundFile = new File("assets/sounds/main_menu_bgm.wav");
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            musicClip = AudioSystem.getClip();
+            musicClip.open(audioIn);
+            musicClip.start();
+            break;
+          }
+          case won: {
             soundFile = new File("assets/sounds/win_menu_bgm.wav");
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
             musicClip = AudioSystem.getClip();
             musicClip.open(audioIn);
             musicClip.start();
-        } else if (gameMusicState == GameState.lost) {
-          soundFile = new File("assets/sounds/lose_menu_bgm.wav");
-          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-          musicClip = AudioSystem.getClip();
-          musicClip.open(audioIn);
-          musicClip.start();
-        } else {
-          soundFile = new File("assets/sounds/game_bgm.wav");
-          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-          musicClip = AudioSystem.getClip();
-          musicClip.open(audioIn);
-          musicClip.start();
+            break;
+          }
+          case lost: {
+            soundFile = new File("assets/sounds/lose_menu_bgm.wav");
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            musicClip = AudioSystem.getClip();
+            musicClip.open(audioIn);
+            musicClip.start();
+            break;
+          }
+          default: {
+            soundFile = new File("assets/sounds/game_bgm.wav");
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            musicClip = AudioSystem.getClip();
+            musicClip.open(audioIn);
+            musicClip.start();
+            break;
+          }
         }
         musicPlayed = true;
-      } catch (UnsupportedAudioFileException e) {
-        e.printStackTrace();
-      } catch (IOException e) {
-        e.printStackTrace();
-      } catch (LineUnavailableException e) {
+      } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
         e.printStackTrace();
       }
     }

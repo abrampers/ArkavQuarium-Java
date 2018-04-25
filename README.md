@@ -6,27 +6,21 @@ ArkavQuarium 2.0 is a simplified version of the most famous **InsaniQuarium** ga
 
 These instructions will tell you how to compile and play the game.
 
-### Testing
+### Build
 
-To build the test, execute
-```sh-session
-$ make test
-```
-
-To run the test, execute
-```sh-session
-$ make runTest
-```
-
-### Compiling
-To build the game, execute
+To build the project, execute
 ```sh-session
 $ make
 ```
 
+To run the test, execute
+```sh-session
+$ make test
+```
+
 Next, run the game by executing this command
 ```
-$ ./arkavquarium
+$ make run
 ```
 
 and enjoy the game.
