@@ -1,12 +1,22 @@
 package itb.arkavquarium;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class SnailTest {
-  // Stub Aquarium
-  private final Aquarium a = new Aquarium(0, 0, 100, 100);
+  private Aquarium a;
+
+  @Before
+  public void setUp() {
+    a = new Aquarium(0, 0, 100, 100);
+    // Purge the aquarium
+    Guppy g1 = a.getContentGuppy().iterator().next();
+    a.getContentGuppy().remove(g1);
+    Snail s1 = a.getContentSnail().iterator().next();
+    a.getContentSnail().remove(s1);
+  }
 
   @Test
   public void chaseCoinTest() {

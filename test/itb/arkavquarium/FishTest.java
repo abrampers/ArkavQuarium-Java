@@ -15,6 +15,8 @@ public class FishTest {
     // Purge the aquarium
     Guppy g1 = a.getContentGuppy().iterator().next();
     a.getContentGuppy().remove(g1);
+    Snail s1 = a.getContentSnail().iterator().next();
+    a.getContentSnail().remove(s1);
   }
 
   @Test
