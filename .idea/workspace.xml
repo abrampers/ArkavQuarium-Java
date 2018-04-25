@@ -4,401 +4,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Production Files" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="493e24aa-d606-4ebc-9aba-274b26f77827" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/coin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Gold/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Coin/Silver/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Dead/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Hungry/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Large Guppy/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Dead/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Hungry/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Medium Guppy/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Pellet/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Dead/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Hungry/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Move_OLD/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Piranha/Turn_OLD/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Dead/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Eat/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Hungry/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Small Guppy/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Move_OLD/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/new/Sprites/Snail/Turn_OLD/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/aquarium.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/aquarium_small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_large_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_large_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_medium_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_medium_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_small_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/guppy_small_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/pellet.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_large_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_large_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_medium_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_medium_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_small_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/piranha_small_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/snail_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/old/snail_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/statics/92334-insaniquarium-deluxe-windows-screenshot-main-menu.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/graphics/statics/main_menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/graphics/statics/main_menu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/itb/arkavquarium/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/itb/arkavquarium/GameController.java" afterDir="false" />
-    </list>
+    <list default="true" id="493e24aa-d606-4ebc-9aba-274b26f77827" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -416,29 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CoinTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/itb/arkavquarium/CoinTest.java">
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AquariumTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/itb/arkavquarium/AquariumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="155" column="3" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/State.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="76" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="76" />
+            <state relative-caret-position="2490">
+              <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -446,21 +34,26 @@
       <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="556" column="28" lean-forward="true" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524648682450" expanded="true" signature="18440:18681" ph="..." />
-              </folding>
+            <state relative-caret-position="8145">
+              <caret line="563" column="44" lean-forward="true" selection-start-line="563" selection-start-column="44" selection-end-line="563" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fish.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Fish.java">
+      <file leaf-file-name="Aquatic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+            <state relative-caret-position="300">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -468,35 +61,44 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+            <state relative-caret-position="1342">
+              <caret line="150" column="65" selection-start-line="150" selection-start-column="65" selection-end-line="150" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameState.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="78" />
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquarium.java">
+      <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.editorconfig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-821">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="53" />
+            <state relative-caret-position="135">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameView.java">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="104" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="104" />
+            <state relative-caret-position="720">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Guppy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -635,6 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -646,6 +249,11 @@
               <item name="ITB-Java-ArkavQuarium" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITB-Java-ArkavQuarium" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITB-Java-ArkavQuarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITB-Java-ArkavQuarium" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITB-Java-ArkavQuarium" type="b2602c69:ProjectViewProjectNode" />
@@ -673,9 +281,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1032,8 +639,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="826" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1043,26 +649,46 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50238097" side_tool="true" weight="0.32958034" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32665095" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32712767" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32958034" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17708333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20694445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918116" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" weight="0.32958034" />
       <window_info anchor="bottom" id="CheckStyle" order="12" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49761903" weight="0.32958034" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32958034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32665095" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49761903" weight="0.32958034" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918116" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Designer" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50238097" side_tool="true" weight="0.32958034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17708333" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1070,29 +696,29 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32665095" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49761903" weight="0.32958034" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17708333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32958034" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="6" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918116" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50238097" side_tool="true" weight="0.32958034" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32958034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32753327" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1124,10 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524648682450" expanded="true" signature="18440:18681" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1253,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1268,8 +890,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Aquatic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+        <state relative-caret-position="300">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1289,32 +911,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="230" column="7" lean-forward="true" selection-start-line="230" selection-start-column="7" selection-end-line="230" selection-end-column="7" />
+        <state relative-caret-position="2490">
+          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Coin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="275" column="2" selection-start-line="275" selection-start-column="2" selection-end-line="275" selection-end-column="2" />
-          <folding>
-            <element signature="e#6223#6224#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Guppy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5194">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="1350">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1426,19 +1045,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="556" column="28" lean-forward="true" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524648682450" expanded="true" signature="18440:18681" ph="..." />
-          </folding>
+        <state relative-caret-position="8145">
+          <caret line="563" column="44" lean-forward="true" selection-start-line="563" selection-start-column="44" selection-end-line="563" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itb/arkavquarium/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+        <state relative-caret-position="1342">
+          <caret line="150" column="65" selection-start-line="150" selection-start-column="65" selection-end-line="150" selection-end-column="65" />
         </state>
       </provider>
     </entry>
