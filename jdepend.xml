@@ -1,0 +1,2558 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="itb.arkavquarium">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AquariumTest.java">
+                    itb.arkavquarium.AquariumTest
+                </Class>
+                <Class sourceFile="CoinTest.java">
+                    itb.arkavquarium.CoinTest
+                </Class>
+                <Class sourceFile="FishTest.java">
+                    itb.arkavquarium.FishTest
+                </Class>
+                <Class sourceFile="GuppyTest.java">
+                    itb.arkavquarium.GuppyTest
+                </Class>
+                <Class sourceFile="LinkedListTest.java">
+                    itb.arkavquarium.LinkedListTest
+                </Class>
+                <Class sourceFile="PelletTest.java">
+                    itb.arkavquarium.PelletTest
+                </Class>
+                <Class sourceFile="PiranhaTest.java">
+                    itb.arkavquarium.PiranhaTest
+                </Class>
+                <Class sourceFile="SnailTest.java">
+                    itb.arkavquarium.SnailTest
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.annotation">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.management">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.reflect">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.text">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent.atomic">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.regex">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="junit.extensions">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>0.67</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ActiveTestSuite.java">
+                    junit.extensions.ActiveTestSuite
+                </Class>
+                <Class sourceFile="ActiveTestSuite.java">
+                    junit.extensions.ActiveTestSuite$1
+                </Class>
+                <Class sourceFile="RepeatedTest.java">
+                    junit.extensions.RepeatedTest
+                </Class>
+                <Class sourceFile="TestDecorator.java">
+                    junit.extensions.TestDecorator
+                </Class>
+                <Class sourceFile="TestSetup.java">
+                    junit.extensions.TestSetup
+                </Class>
+                <Class sourceFile="TestSetup.java">
+                    junit.extensions.TestSetup$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>junit.framework</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.internal.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="junit.framework">
+            <Stats>
+                <TotalClasses>17</TotalClasses>
+                <ConcreteClasses>13</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>7</Ca>
+                <Ce>9</Ce>
+                <A>0.24</A>
+                <I>0.56</I>
+                <D>0.2</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Protectable.java">
+                    junit.framework.Protectable
+                </Class>
+                <Class sourceFile="Test.java">
+                    junit.framework.Test
+                </Class>
+                <Class sourceFile="TestCase.java">
+                    junit.framework.TestCase
+                </Class>
+                <Class sourceFile="TestListener.java">
+                    junit.framework.TestListener
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Assert.java">
+                    junit.framework.Assert
+                </Class>
+                <Class sourceFile="AssertionFailedError.java">
+                    junit.framework.AssertionFailedError
+                </Class>
+                <Class sourceFile="ComparisonCompactor.java">
+                    junit.framework.ComparisonCompactor
+                </Class>
+                <Class sourceFile="ComparisonFailure.java">
+                    junit.framework.ComparisonFailure
+                </Class>
+                <Class sourceFile="JUnit4TestAdapter.java">
+                    junit.framework.JUnit4TestAdapter
+                </Class>
+                <Class sourceFile="JUnit4TestAdapterCache.java">
+                    junit.framework.JUnit4TestAdapterCache
+                </Class>
+                <Class sourceFile="JUnit4TestAdapterCache.java">
+                    junit.framework.JUnit4TestAdapterCache$1
+                </Class>
+                <Class sourceFile="JUnit4TestCaseFacade.java">
+                    junit.framework.JUnit4TestCaseFacade
+                </Class>
+                <Class sourceFile="TestFailure.java">
+                    junit.framework.TestFailure
+                </Class>
+                <Class sourceFile="TestResult.java">
+                    junit.framework.TestResult
+                </Class>
+                <Class sourceFile="TestResult.java">
+                    junit.framework.TestResult$1
+                </Class>
+                <Class sourceFile="TestSuite.java">
+                    junit.framework.TestSuite
+                </Class>
+                <Class sourceFile="TestSuite.java">
+                    junit.framework.TestSuite$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runner.notification</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.extensions</Package>
+                <Package>junit.runner</Package>
+                <Package>junit.textui</Package>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="junit.runner">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>6</Ce>
+                <A>0.67</A>
+                <I>0.75</I>
+                <D>0.42</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="BaseTestRunner.java">
+                    junit.runner.BaseTestRunner
+                </Class>
+                <Class sourceFile="TestRunListener.java">
+                    junit.runner.TestRunListener
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Version.java">
+                    junit.runner.Version
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>junit.framework</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.textui</Package>
+                <Package>org.junit.runner</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="junit.textui">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>6</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ResultPrinter.java">
+                    junit.textui.ResultPrinter
+                </Class>
+                <Class sourceFile="TestRunner.java">
+                    junit.textui.TestRunner
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>junit.framework</Package>
+                <Package>junit.runner</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.hamcrest">
+            <Stats>
+                <TotalClasses>21</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>14</AbstractClasses>
+                <Ca>8</Ca>
+                <Ce>6</Ce>
+                <A>0.67</A>
+                <I>0.43</I>
+                <D>0.1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="BaseDescription.java">
+                    org.hamcrest.BaseDescription
+                </Class>
+                <Class sourceFile="BaseMatcher.java">
+                    org.hamcrest.BaseMatcher
+                </Class>
+                <Class sourceFile="Condition.java">
+                    org.hamcrest.Condition
+                </Class>
+                <Class sourceFile="Condition.java">
+                    org.hamcrest.Condition$Step
+                </Class>
+                <Class sourceFile="CustomMatcher.java">
+                    org.hamcrest.CustomMatcher
+                </Class>
+                <Class sourceFile="CustomTypeSafeMatcher.java">
+                    org.hamcrest.CustomTypeSafeMatcher
+                </Class>
+                <Class sourceFile="Description.java">
+                    org.hamcrest.Description
+                </Class>
+                <Class sourceFile="DiagnosingMatcher.java">
+                    org.hamcrest.DiagnosingMatcher
+                </Class>
+                <Class sourceFile="Factory.java">
+                    org.hamcrest.Factory
+                </Class>
+                <Class sourceFile="FeatureMatcher.java">
+                    org.hamcrest.FeatureMatcher
+                </Class>
+                <Class sourceFile="Matcher.java">
+                    org.hamcrest.Matcher
+                </Class>
+                <Class sourceFile="SelfDescribing.java">
+                    org.hamcrest.SelfDescribing
+                </Class>
+                <Class sourceFile="TypeSafeDiagnosingMatcher.java">
+                    org.hamcrest.TypeSafeDiagnosingMatcher
+                </Class>
+                <Class sourceFile="TypeSafeMatcher.java">
+                    org.hamcrest.TypeSafeMatcher
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Condition.java">
+                    org.hamcrest.Condition$1
+                </Class>
+                <Class sourceFile="Condition.java">
+                    org.hamcrest.Condition$Matched
+                </Class>
+                <Class sourceFile="Condition.java">
+                    org.hamcrest.Condition$NotMatched
+                </Class>
+                <Class sourceFile="CoreMatchers.java">
+                    org.hamcrest.CoreMatchers
+                </Class>
+                <Class sourceFile="Description.java">
+                    org.hamcrest.Description$NullDescription
+                </Class>
+                <Class sourceFile="MatcherAssert.java">
+                    org.hamcrest.MatcherAssert
+                </Class>
+                <Class sourceFile="StringDescription.java">
+                    org.hamcrest.StringDescription
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>org.hamcrest.core</Package>
+                <Package>org.hamcrest.internal</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.hamcrest.core</Package>
+                <Package>org.hamcrest.internal</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.experimental.results</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.matchers</Package>
+                <Package>org.junit.matchers</Package>
+                <Package>org.junit.rules</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.hamcrest.core">
+            <Stats>
+                <TotalClasses>20</TotalClasses>
+                <ConcreteClasses>18</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>5</Ce>
+                <A>0.1</A>
+                <I>0.71</I>
+                <D>0.19</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ShortcutCombination.java">
+                    org.hamcrest.core.ShortcutCombination
+                </Class>
+                <Class sourceFile="SubstringMatcher.java">
+                    org.hamcrest.core.SubstringMatcher
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllOf.java">
+                    org.hamcrest.core.AllOf
+                </Class>
+                <Class sourceFile="AnyOf.java">
+                    org.hamcrest.core.AnyOf
+                </Class>
+                <Class sourceFile="CombinableMatcher.java">
+                    org.hamcrest.core.CombinableMatcher
+                </Class>
+                <Class sourceFile="CombinableMatcher.java">
+                    org.hamcrest.core.CombinableMatcher$CombinableBothMatcher
+                </Class>
+                <Class sourceFile="CombinableMatcher.java">
+                    org.hamcrest.core.CombinableMatcher$CombinableEitherMatcher
+                </Class>
+                <Class sourceFile="DescribedAs.java">
+                    org.hamcrest.core.DescribedAs
+                </Class>
+                <Class sourceFile="Every.java">
+                    org.hamcrest.core.Every
+                </Class>
+                <Class sourceFile="Is.java">
+                    org.hamcrest.core.Is
+                </Class>
+                <Class sourceFile="IsAnything.java">
+                    org.hamcrest.core.IsAnything
+                </Class>
+                <Class sourceFile="IsCollectionContaining.java">
+                    org.hamcrest.core.IsCollectionContaining
+                </Class>
+                <Class sourceFile="IsEqual.java">
+                    org.hamcrest.core.IsEqual
+                </Class>
+                <Class sourceFile="IsInstanceOf.java">
+                    org.hamcrest.core.IsInstanceOf
+                </Class>
+                <Class sourceFile="IsNot.java">
+                    org.hamcrest.core.IsNot
+                </Class>
+                <Class sourceFile="IsNull.java">
+                    org.hamcrest.core.IsNull
+                </Class>
+                <Class sourceFile="IsSame.java">
+                    org.hamcrest.core.IsSame
+                </Class>
+                <Class sourceFile="StringContains.java">
+                    org.hamcrest.core.StringContains
+                </Class>
+                <Class sourceFile="StringEndsWith.java">
+                    org.hamcrest.core.StringEndsWith
+                </Class>
+                <Class sourceFile="StringStartsWith.java">
+                    org.hamcrest.core.StringStartsWith
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>java.util.regex</Package>
+                <Package>org.hamcrest</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit.matchers</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.hamcrest.internal">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>0.8</I>
+                <D>0.2</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ArrayIterator.java">
+                    org.hamcrest.internal.ArrayIterator
+                </Class>
+                <Class sourceFile="ReflectiveTypeFinder.java">
+                    org.hamcrest.internal.ReflectiveTypeFinder
+                </Class>
+                <Class sourceFile="SelfDescribingValue.java">
+                    org.hamcrest.internal.SelfDescribingValue
+                </Class>
+                <Class sourceFile="SelfDescribingValueIterator.java">
+                    org.hamcrest.internal.SelfDescribingValueIterator
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.hamcrest</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.hamcrest</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit">
+            <Stats>
+                <TotalClasses>17</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>9</AbstractClasses>
+                <Ca>12</Ca>
+                <Ce>6</Ce>
+                <A>0.53</A>
+                <I>0.33</I>
+                <D>0.14</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="After.java">
+                    org.junit.After
+                </Class>
+                <Class sourceFile="AfterClass.java">
+                    org.junit.AfterClass
+                </Class>
+                <Class sourceFile="Before.java">
+                    org.junit.Before
+                </Class>
+                <Class sourceFile="BeforeClass.java">
+                    org.junit.BeforeClass
+                </Class>
+                <Class sourceFile="ClassRule.java">
+                    org.junit.ClassRule
+                </Class>
+                <Class sourceFile="FixMethodOrder.java">
+                    org.junit.FixMethodOrder
+                </Class>
+                <Class sourceFile="Ignore.java">
+                    org.junit.Ignore
+                </Class>
+                <Class sourceFile="Rule.java">
+                    org.junit.Rule
+                </Class>
+                <Class sourceFile="Test.java">
+                    org.junit.Test
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Assert.java">
+                    org.junit.Assert
+                </Class>
+                <Class sourceFile="Assume.java">
+                    org.junit.Assume
+                </Class>
+                <Class sourceFile="AssumptionViolatedException.java">
+                    org.junit.AssumptionViolatedException
+                </Class>
+                <Class sourceFile="ComparisonFailure.java">
+                    org.junit.ComparisonFailure
+                </Class>
+                <Class sourceFile="ComparisonFailure.java">
+                    org.junit.ComparisonFailure$1
+                </Class>
+                <Class sourceFile="ComparisonFailure.java">
+                    org.junit.ComparisonFailure$ComparisonCompactor
+                </Class>
+                <Class sourceFile="ComparisonFailure.java">
+                    org.junit.ComparisonFailure$ComparisonCompactor$DiffExtractor
+                </Class>
+                <Class sourceFile="Test.java">
+                    org.junit.Test$None
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runners</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>itb.arkavquarium</Package>
+                <Package>junit.framework</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.experimental.theories</Package>
+                <Package>org.junit.experimental.theories.internal</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.rules</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ParallelComputer.java">
+                    org.junit.experimental.ParallelComputer
+                </Class>
+                <Class sourceFile="ParallelComputer.java">
+                    org.junit.experimental.ParallelComputer$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.categories">
+            <Stats>
+                <TotalClasses>11</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>10</Ce>
+                <A>0.36</A>
+                <I>1</I>
+                <D>0.36</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Categories.java">
+                    org.junit.experimental.categories.Categories$ExcludeCategory
+                </Class>
+                <Class sourceFile="Categories.java">
+                    org.junit.experimental.categories.Categories$IncludeCategory
+                </Class>
+                <Class sourceFile="Category.java">
+                    org.junit.experimental.categories.Category
+                </Class>
+                <Class sourceFile="CategoryFilterFactory.java">
+                    org.junit.experimental.categories.CategoryFilterFactory
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Categories.java">
+                    org.junit.experimental.categories.Categories
+                </Class>
+                <Class sourceFile="Categories.java">
+                    org.junit.experimental.categories.Categories$CategoryFilter
+                </Class>
+                <Class sourceFile="CategoryValidator.java">
+                    org.junit.experimental.categories.CategoryValidator
+                </Class>
+                <Class sourceFile="ExcludeCategories.java">
+                    org.junit.experimental.categories.ExcludeCategories
+                </Class>
+                <Class sourceFile="ExcludeCategories.java">
+                    org.junit.experimental.categories.ExcludeCategories$ExcludesAny
+                </Class>
+                <Class sourceFile="IncludeCategories.java">
+                    org.junit.experimental.categories.IncludeCategories
+                </Class>
+                <Class sourceFile="IncludeCategories.java">
+                    org.junit.experimental.categories.IncludeCategories$IncludesAny
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+                <Package>org.junit.validator</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.max">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>11</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CouldNotReadCoreException.java">
+                    org.junit.experimental.max.CouldNotReadCoreException
+                </Class>
+                <Class sourceFile="MaxCore.java">
+                    org.junit.experimental.max.MaxCore
+                </Class>
+                <Class sourceFile="MaxCore.java">
+                    org.junit.experimental.max.MaxCore$1
+                </Class>
+                <Class sourceFile="MaxCore.java">
+                    org.junit.experimental.max.MaxCore$1$1
+                </Class>
+                <Class sourceFile="MaxHistory.java">
+                    org.junit.experimental.max.MaxHistory
+                </Class>
+                <Class sourceFile="MaxHistory.java">
+                    org.junit.experimental.max.MaxHistory$1
+                </Class>
+                <Class sourceFile="MaxHistory.java">
+                    org.junit.experimental.max.MaxHistory$RememberingListener
+                </Class>
+                <Class sourceFile="MaxHistory.java">
+                    org.junit.experimental.max.MaxHistory$TestComparator
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>junit.framework</Package>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.results">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>7</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="FailureList.java">
+                    org.junit.experimental.results.FailureList
+                </Class>
+                <Class sourceFile="PrintableResult.java">
+                    org.junit.experimental.results.PrintableResult
+                </Class>
+                <Class sourceFile="ResultMatchers.java">
+                    org.junit.experimental.results.ResultMatchers
+                </Class>
+                <Class sourceFile="ResultMatchers.java">
+                    org.junit.experimental.results.ResultMatchers$1
+                </Class>
+                <Class sourceFile="ResultMatchers.java">
+                    org.junit.experimental.results.ResultMatchers$2
+                </Class>
+                <Class sourceFile="ResultMatchers.java">
+                    org.junit.experimental.results.ResultMatchers$3
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.runners">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Enclosed.java">
+                    org.junit.experimental.runners.Enclosed
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.theories">
+            <Stats>
+                <TotalClasses>15</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>7</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>9</Ce>
+                <A>0.47</A>
+                <I>0.82</I>
+                <D>0.28</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="DataPoint.java">
+                    org.junit.experimental.theories.DataPoint
+                </Class>
+                <Class sourceFile="DataPoints.java">
+                    org.junit.experimental.theories.DataPoints
+                </Class>
+                <Class sourceFile="FromDataPoints.java">
+                    org.junit.experimental.theories.FromDataPoints
+                </Class>
+                <Class sourceFile="ParameterSupplier.java">
+                    org.junit.experimental.theories.ParameterSupplier
+                </Class>
+                <Class sourceFile="ParametersSuppliedBy.java">
+                    org.junit.experimental.theories.ParametersSuppliedBy
+                </Class>
+                <Class sourceFile="PotentialAssignment.java">
+                    org.junit.experimental.theories.PotentialAssignment
+                </Class>
+                <Class sourceFile="Theory.java">
+                    org.junit.experimental.theories.Theory
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ParameterSignature.java">
+                    org.junit.experimental.theories.ParameterSignature
+                </Class>
+                <Class sourceFile="PotentialAssignment.java">
+                    org.junit.experimental.theories.PotentialAssignment$1
+                </Class>
+                <Class sourceFile="PotentialAssignment.java">
+                    org.junit.experimental.theories.PotentialAssignment$CouldNotGenerateValueException
+                </Class>
+                <Class sourceFile="Theories.java">
+                    org.junit.experimental.theories.Theories
+                </Class>
+                <Class sourceFile="Theories.java">
+                    org.junit.experimental.theories.Theories$TheoryAnchor
+                </Class>
+                <Class sourceFile="Theories.java">
+                    org.junit.experimental.theories.Theories$TheoryAnchor$1
+                </Class>
+                <Class sourceFile="Theories.java">
+                    org.junit.experimental.theories.Theories$TheoryAnchor$1$1
+                </Class>
+                <Class sourceFile="Theories.java">
+                    org.junit.experimental.theories.Theories$TheoryAnchor$2
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.experimental.theories.internal</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental.theories.internal</Package>
+                <Package>org.junit.experimental.theories.suppliers</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.theories.internal">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>6</Ce>
+                <A>0</A>
+                <I>0.86</I>
+                <D>0.14</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllMembersSupplier.java">
+                    org.junit.experimental.theories.internal.AllMembersSupplier
+                </Class>
+                <Class sourceFile="AllMembersSupplier.java">
+                    org.junit.experimental.theories.internal.AllMembersSupplier$1
+                </Class>
+                <Class sourceFile="AllMembersSupplier.java">
+                    org.junit.experimental.theories.internal.AllMembersSupplier$MethodParameterValue
+                </Class>
+                <Class sourceFile="Assignments.java">
+                    org.junit.experimental.theories.internal.Assignments
+                </Class>
+                <Class sourceFile="BooleanSupplier.java">
+                    org.junit.experimental.theories.internal.BooleanSupplier
+                </Class>
+                <Class sourceFile="EnumSupplier.java">
+                    org.junit.experimental.theories.internal.EnumSupplier
+                </Class>
+                <Class sourceFile="ParameterizedAssertionError.java">
+                    org.junit.experimental.theories.internal.ParameterizedAssertionError
+                </Class>
+                <Class sourceFile="SpecificDataPointsSupplier.java">
+                    org.junit.experimental.theories.internal.SpecificDataPointsSupplier
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.experimental.theories</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental.theories</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.experimental.theories.suppliers">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>4</Ce>
+                <A>0.5</A>
+                <I>1</I>
+                <D>0.5</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="TestedOn.java">
+                    org.junit.experimental.theories.suppliers.TestedOn
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="TestedOnSupplier.java">
+                    org.junit.experimental.theories.suppliers.TestedOnSupplier
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.experimental.theories</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal">
+            <Stats>
+                <TotalClasses>13</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>13</Ca>
+                <Ce>10</Ce>
+                <A>0.15</A>
+                <I>0.43</I>
+                <D>0.41</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ComparisonCriteria.java">
+                    org.junit.internal.ComparisonCriteria
+                </Class>
+                <Class sourceFile="JUnitSystem.java">
+                    org.junit.internal.JUnitSystem
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ArrayComparisonFailure.java">
+                    org.junit.internal.ArrayComparisonFailure
+                </Class>
+                <Class sourceFile="AssumptionViolatedException.java">
+                    org.junit.internal.AssumptionViolatedException
+                </Class>
+                <Class sourceFile="Classes.java">
+                    org.junit.internal.Classes
+                </Class>
+                <Class sourceFile="ExactComparisonCriteria.java">
+                    org.junit.internal.ExactComparisonCriteria
+                </Class>
+                <Class sourceFile="InexactComparisonCriteria.java">
+                    org.junit.internal.InexactComparisonCriteria
+                </Class>
+                <Class sourceFile="MethodSorter.java">
+                    org.junit.internal.MethodSorter
+                </Class>
+                <Class sourceFile="MethodSorter.java">
+                    org.junit.internal.MethodSorter$1
+                </Class>
+                <Class sourceFile="MethodSorter.java">
+                    org.junit.internal.MethodSorter$2
+                </Class>
+                <Class sourceFile="RealSystem.java">
+                    org.junit.internal.RealSystem
+                </Class>
+                <Class sourceFile="TextListener.java">
+                    org.junit.internal.TextListener
+                </Class>
+                <Class sourceFile="Throwables.java">
+                    org.junit.internal.Throwables
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.framework</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.experimental.results</Package>
+                <Package>org.junit.experimental.theories</Package>
+                <Package>org.junit.internal.matchers</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.internal.runners.statements</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.builders">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>10</Ce>
+                <A>0</A>
+                <I>0.77</I>
+                <D>0.23</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllDefaultPossibilitiesBuilder.java">
+                    org.junit.internal.builders.AllDefaultPossibilitiesBuilder
+                </Class>
+                <Class sourceFile="AnnotatedBuilder.java">
+                    org.junit.internal.builders.AnnotatedBuilder
+                </Class>
+                <Class sourceFile="IgnoredBuilder.java">
+                    org.junit.internal.builders.IgnoredBuilder
+                </Class>
+                <Class sourceFile="IgnoredClassRunner.java">
+                    org.junit.internal.builders.IgnoredClassRunner
+                </Class>
+                <Class sourceFile="JUnit3Builder.java">
+                    org.junit.internal.builders.JUnit3Builder
+                </Class>
+                <Class sourceFile="JUnit4Builder.java">
+                    org.junit.internal.builders.JUnit4Builder
+                </Class>
+                <Class sourceFile="NullBuilder.java">
+                    org.junit.internal.builders.NullBuilder
+                </Class>
+                <Class sourceFile="SuiteMethodBuilder.java">
+                    org.junit.internal.builders.SuiteMethodBuilder
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>junit.framework</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.matchers">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>5</Ce>
+                <A>0.25</A>
+                <I>0.71</I>
+                <D>0.04</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="TypeSafeMatcher.java">
+                    org.junit.internal.matchers.TypeSafeMatcher
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="StacktracePrintingMatcher.java">
+                    org.junit.internal.matchers.StacktracePrintingMatcher
+                </Class>
+                <Class sourceFile="ThrowableCauseMatcher.java">
+                    org.junit.internal.matchers.ThrowableCauseMatcher
+                </Class>
+                <Class sourceFile="ThrowableMessageMatcher.java">
+                    org.junit.internal.matchers.ThrowableMessageMatcher
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit.internal</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.matchers</Package>
+                <Package>org.junit.rules</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.requests">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>6</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ClassRequest.java">
+                    org.junit.internal.requests.ClassRequest
+                </Class>
+                <Class sourceFile="FilterRequest.java">
+                    org.junit.internal.requests.FilterRequest
+                </Class>
+                <Class sourceFile="SortingRequest.java">
+                    org.junit.internal.requests.SortingRequest
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.manipulation</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.runner</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.runners">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>18</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>6</Ca>
+                <Ce>13</Ce>
+                <A>0</A>
+                <I>0.68</I>
+                <D>0.32</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ClassRoadie.java">
+                    org.junit.internal.runners.ClassRoadie
+                </Class>
+                <Class sourceFile="ErrorReportingRunner.java">
+                    org.junit.internal.runners.ErrorReportingRunner
+                </Class>
+                <Class sourceFile="FailedBefore.java">
+                    org.junit.internal.runners.FailedBefore
+                </Class>
+                <Class sourceFile="InitializationError.java">
+                    org.junit.internal.runners.InitializationError
+                </Class>
+                <Class sourceFile="JUnit38ClassRunner.java">
+                    org.junit.internal.runners.JUnit38ClassRunner
+                </Class>
+                <Class sourceFile="JUnit38ClassRunner.java">
+                    org.junit.internal.runners.JUnit38ClassRunner$1
+                </Class>
+                <Class sourceFile="JUnit38ClassRunner.java">
+                    org.junit.internal.runners.JUnit38ClassRunner$OldTestClassAdaptingListener
+                </Class>
+                <Class sourceFile="JUnit4ClassRunner.java">
+                    org.junit.internal.runners.JUnit4ClassRunner
+                </Class>
+                <Class sourceFile="JUnit4ClassRunner.java">
+                    org.junit.internal.runners.JUnit4ClassRunner$1
+                </Class>
+                <Class sourceFile="JUnit4ClassRunner.java">
+                    org.junit.internal.runners.JUnit4ClassRunner$2
+                </Class>
+                <Class sourceFile="MethodRoadie.java">
+                    org.junit.internal.runners.MethodRoadie
+                </Class>
+                <Class sourceFile="MethodRoadie.java">
+                    org.junit.internal.runners.MethodRoadie$1
+                </Class>
+                <Class sourceFile="MethodRoadie.java">
+                    org.junit.internal.runners.MethodRoadie$1$1
+                </Class>
+                <Class sourceFile="MethodRoadie.java">
+                    org.junit.internal.runners.MethodRoadie$2
+                </Class>
+                <Class sourceFile="MethodValidator.java">
+                    org.junit.internal.runners.MethodValidator
+                </Class>
+                <Class sourceFile="SuiteMethod.java">
+                    org.junit.internal.runners.SuiteMethod
+                </Class>
+                <Class sourceFile="TestClass.java">
+                    org.junit.internal.runners.TestClass
+                </Class>
+                <Class sourceFile="TestMethod.java">
+                    org.junit.internal.runners.TestMethod
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>junit.extensions</Package>
+                <Package>junit.framework</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.runners.model">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>7</Ce>
+                <A>0.33</A>
+                <I>0.78</I>
+                <D>0.11</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ReflectiveCallable.java">
+                    org.junit.internal.runners.model.ReflectiveCallable
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="EachTestNotifier.java">
+                    org.junit.internal.runners.model.EachTestNotifier
+                </Class>
+                <Class sourceFile="MultipleFailureException.java">
+                    org.junit.internal.runners.model.MultipleFailureException
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.runners.rules">
+            <Stats>
+                <TotalClasses>13</TotalClasses>
+                <ConcreteClasses>12</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>6</Ce>
+                <A>0.08</A>
+                <I>0.86</I>
+                <D>0.07</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$1
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$Builder
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule
+                </Class>
+                <Class sourceFile="RuleMemberValidator.java">
+                    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule
+                </Class>
+                <Class sourceFile="ValidationError.java">
+                    org.junit.internal.runners.rules.ValidationError
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.internal.runners.statements">
+            <Stats>
+                <TotalClasses>9</TotalClasses>
+                <ConcreteClasses>9</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>6</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ExpectException.java">
+                    org.junit.internal.runners.statements.ExpectException
+                </Class>
+                <Class sourceFile="Fail.java">
+                    org.junit.internal.runners.statements.Fail
+                </Class>
+                <Class sourceFile="FailOnTimeout.java">
+                    org.junit.internal.runners.statements.FailOnTimeout
+                </Class>
+                <Class sourceFile="FailOnTimeout.java">
+                    org.junit.internal.runners.statements.FailOnTimeout$1
+                </Class>
+                <Class sourceFile="FailOnTimeout.java">
+                    org.junit.internal.runners.statements.FailOnTimeout$Builder
+                </Class>
+                <Class sourceFile="FailOnTimeout.java">
+                    org.junit.internal.runners.statements.FailOnTimeout$CallableStatement
+                </Class>
+                <Class sourceFile="InvokeMethod.java">
+                    org.junit.internal.runners.statements.InvokeMethod
+                </Class>
+                <Class sourceFile="RunAfters.java">
+                    org.junit.internal.runners.statements.RunAfters
+                </Class>
+                <Class sourceFile="RunBefores.java">
+                    org.junit.internal.runners.statements.RunBefores
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.management</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.matchers">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>0.8</I>
+                <D>0.2</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="JUnitMatchers.java">
+                    org.junit.matchers.JUnitMatchers
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.hamcrest.core</Package>
+                <Package>org.junit.internal.matchers</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.rules</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.rules">
+            <Stats>
+                <TotalClasses>27</TotalClasses>
+                <ConcreteClasses>21</ConcreteClasses>
+                <AbstractClasses>6</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>13</Ce>
+                <A>0.22</A>
+                <I>0.87</I>
+                <D>0.09</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ExternalResource.java">
+                    org.junit.rules.ExternalResource
+                </Class>
+                <Class sourceFile="MethodRule.java">
+                    org.junit.rules.MethodRule
+                </Class>
+                <Class sourceFile="Stopwatch.java">
+                    org.junit.rules.Stopwatch
+                </Class>
+                <Class sourceFile="TestRule.java">
+                    org.junit.rules.TestRule
+                </Class>
+                <Class sourceFile="TestWatcher.java">
+                    org.junit.rules.TestWatcher
+                </Class>
+                <Class sourceFile="Verifier.java">
+                    org.junit.rules.Verifier
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DisableOnDebug.java">
+                    org.junit.rules.DisableOnDebug
+                </Class>
+                <Class sourceFile="ErrorCollector.java">
+                    org.junit.rules.ErrorCollector
+                </Class>
+                <Class sourceFile="ErrorCollector.java">
+                    org.junit.rules.ErrorCollector$1
+                </Class>
+                <Class sourceFile="ExpectedException.java">
+                    org.junit.rules.ExpectedException
+                </Class>
+                <Class sourceFile="ExpectedException.java">
+                    org.junit.rules.ExpectedException$ExpectedExceptionStatement
+                </Class>
+                <Class sourceFile="ExpectedExceptionMatcherBuilder.java">
+                    org.junit.rules.ExpectedExceptionMatcherBuilder
+                </Class>
+                <Class sourceFile="ExternalResource.java">
+                    org.junit.rules.ExternalResource$1
+                </Class>
+                <Class sourceFile="RuleChain.java">
+                    org.junit.rules.RuleChain
+                </Class>
+                <Class sourceFile="RunRules.java">
+                    org.junit.rules.RunRules
+                </Class>
+                <Class sourceFile="Stopwatch.java">
+                    org.junit.rules.Stopwatch$1
+                </Class>
+                <Class sourceFile="Stopwatch.java">
+                    org.junit.rules.Stopwatch$Clock
+                </Class>
+                <Class sourceFile="Stopwatch.java">
+                    org.junit.rules.Stopwatch$InternalWatcher
+                </Class>
+                <Class sourceFile="TemporaryFolder.java">
+                    org.junit.rules.TemporaryFolder
+                </Class>
+                <Class sourceFile="TestName.java">
+                    org.junit.rules.TestName
+                </Class>
+                <Class sourceFile="TestWatcher.java">
+                    org.junit.rules.TestWatcher$1
+                </Class>
+                <Class sourceFile="TestWatchman.java">
+                    org.junit.rules.TestWatchman
+                </Class>
+                <Class sourceFile="TestWatchman.java">
+                    org.junit.rules.TestWatchman$1
+                </Class>
+                <Class sourceFile="Timeout.java">
+                    org.junit.rules.Timeout
+                </Class>
+                <Class sourceFile="Timeout.java">
+                    org.junit.rules.Timeout$1
+                </Class>
+                <Class sourceFile="Timeout.java">
+                    org.junit.rules.Timeout$Builder
+                </Class>
+                <Class sourceFile="Verifier.java">
+                    org.junit.rules.Verifier$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.management</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.hamcrest</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.matchers</Package>
+                <Package>org.junit.internal.runners.statements</Package>
+                <Package>org.junit.matchers</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.internal.runners.rules</Package>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runner">
+            <Stats>
+                <TotalClasses>19</TotalClasses>
+                <ConcreteClasses>14</ConcreteClasses>
+                <AbstractClasses>5</AbstractClasses>
+                <Ca>16</Ca>
+                <Ce>18</Ce>
+                <A>0.26</A>
+                <I>0.53</I>
+                <D>0.21</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Describable.java">
+                    org.junit.runner.Describable
+                </Class>
+                <Class sourceFile="FilterFactory.java">
+                    org.junit.runner.FilterFactory
+                </Class>
+                <Class sourceFile="Request.java">
+                    org.junit.runner.Request
+                </Class>
+                <Class sourceFile="RunWith.java">
+                    org.junit.runner.RunWith
+                </Class>
+                <Class sourceFile="Runner.java">
+                    org.junit.runner.Runner
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Computer.java">
+                    org.junit.runner.Computer
+                </Class>
+                <Class sourceFile="Computer.java">
+                    org.junit.runner.Computer$1
+                </Class>
+                <Class sourceFile="Description.java">
+                    org.junit.runner.Description
+                </Class>
+                <Class sourceFile="FilterFactories.java">
+                    org.junit.runner.FilterFactories
+                </Class>
+                <Class sourceFile="FilterFactory.java">
+                    org.junit.runner.FilterFactory$FilterNotCreatedException
+                </Class>
+                <Class sourceFile="FilterFactoryParams.java">
+                    org.junit.runner.FilterFactoryParams
+                </Class>
+                <Class sourceFile="JUnitCommandLineParseResult.java">
+                    org.junit.runner.JUnitCommandLineParseResult
+                </Class>
+                <Class sourceFile="JUnitCommandLineParseResult.java">
+                    org.junit.runner.JUnitCommandLineParseResult$CommandLineParserError
+                </Class>
+                <Class sourceFile="JUnitCore.java">
+                    org.junit.runner.JUnitCore
+                </Class>
+                <Class sourceFile="Request.java">
+                    org.junit.runner.Request$1
+                </Class>
+                <Class sourceFile="Result.java">
+                    org.junit.runner.Result
+                </Class>
+                <Class sourceFile="Result.java">
+                    org.junit.runner.Result$1
+                </Class>
+                <Class sourceFile="Result.java">
+                    org.junit.runner.Result$Listener
+                </Class>
+                <Class sourceFile="Result.java">
+                    org.junit.runner.Result$SerializedForm
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>java.util.concurrent.atomic</Package>
+                <Package>java.util.regex</Package>
+                <Package>junit.framework</Package>
+                <Package>junit.runner</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.framework</Package>
+                <Package>org.junit.experimental</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.experimental.results</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+                <Package>org.junit.runners.parameterized</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runner.manipulation">
+            <Stats>
+                <TotalClasses>9</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>6</Ca>
+                <Ce>3</Ce>
+                <A>0.33</A>
+                <I>0.33</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Filter.java">
+                    org.junit.runner.manipulation.Filter
+                </Class>
+                <Class sourceFile="Filterable.java">
+                    org.junit.runner.manipulation.Filterable
+                </Class>
+                <Class sourceFile="Sortable.java">
+                    org.junit.runner.manipulation.Sortable
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Filter.java">
+                    org.junit.runner.manipulation.Filter$1
+                </Class>
+                <Class sourceFile="Filter.java">
+                    org.junit.runner.manipulation.Filter$2
+                </Class>
+                <Class sourceFile="Filter.java">
+                    org.junit.runner.manipulation.Filter$3
+                </Class>
+                <Class sourceFile="NoTestsRemainException.java">
+                    org.junit.runner.manipulation.NoTestsRemainException
+                </Class>
+                <Class sourceFile="Sorter.java">
+                    org.junit.runner.manipulation.Sorter
+                </Class>
+                <Class sourceFile="Sorter.java">
+                    org.junit.runner.manipulation.Sorter$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.runner</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.framework</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.internal.requests</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runner.notification">
+            <Stats>
+                <TotalClasses>14</TotalClasses>
+                <ConcreteClasses>12</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>10</Ca>
+                <Ce>6</Ce>
+                <A>0.14</A>
+                <I>0.38</I>
+                <D>0.48</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="RunListener.java">
+                    org.junit.runner.notification.RunListener$ThreadSafe
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$SafeNotifier
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Failure.java">
+                    org.junit.runner.notification.Failure
+                </Class>
+                <Class sourceFile="RunListener.java">
+                    org.junit.runner.notification.RunListener
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$1
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$2
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$3
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$4
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$5
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$6
+                </Class>
+                <Class sourceFile="RunNotifier.java">
+                    org.junit.runner.notification.RunNotifier$7
+                </Class>
+                <Class sourceFile="StoppedByUserException.java">
+                    org.junit.runner.notification.StoppedByUserException
+                </Class>
+                <Class sourceFile="SynchronizedRunListener.java">
+                    org.junit.runner.notification.SynchronizedRunListener
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit.runner</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>junit.framework</Package>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.experimental.results</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.parameterized</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runners">
+            <Stats>
+                <TotalClasses>16</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>5</AbstractClasses>
+                <Ca>10</Ca>
+                <Ce>20</Ce>
+                <A>0.31</A>
+                <I>0.67</I>
+                <D>0.02</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Parameterized.java">
+                    org.junit.runners.Parameterized$Parameter
+                </Class>
+                <Class sourceFile="Parameterized.java">
+                    org.junit.runners.Parameterized$Parameters
+                </Class>
+                <Class sourceFile="Parameterized.java">
+                    org.junit.runners.Parameterized$UseParametersRunnerFactory
+                </Class>
+                <Class sourceFile="ParentRunner.java">
+                    org.junit.runners.ParentRunner
+                </Class>
+                <Class sourceFile="Suite.java">
+                    org.junit.runners.Suite$SuiteClasses
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllTests.java">
+                    org.junit.runners.AllTests
+                </Class>
+                <Class sourceFile="BlockJUnit4ClassRunner.java">
+                    org.junit.runners.BlockJUnit4ClassRunner
+                </Class>
+                <Class sourceFile="BlockJUnit4ClassRunner.java">
+                    org.junit.runners.BlockJUnit4ClassRunner$1
+                </Class>
+                <Class sourceFile="JUnit4.java">
+                    org.junit.runners.JUnit4
+                </Class>
+                <Class sourceFile="MethodSorters.java">
+                    org.junit.runners.MethodSorters
+                </Class>
+                <Class sourceFile="Parameterized.java">
+                    org.junit.runners.Parameterized
+                </Class>
+                <Class sourceFile="ParentRunner.java">
+                    org.junit.runners.ParentRunner$1
+                </Class>
+                <Class sourceFile="ParentRunner.java">
+                    org.junit.runners.ParentRunner$2
+                </Class>
+                <Class sourceFile="ParentRunner.java">
+                    org.junit.runners.ParentRunner$3
+                </Class>
+                <Class sourceFile="ParentRunner.java">
+                    org.junit.runners.ParentRunner$4
+                </Class>
+                <Class sourceFile="Suite.java">
+                    org.junit.runners.Suite
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.internal.runners.rules</Package>
+                <Package>org.junit.internal.runners.statements</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.manipulation</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners.model</Package>
+                <Package>org.junit.runners.parameterized</Package>
+                <Package>org.junit.validator</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit</Package>
+                <Package>org.junit.experimental</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.experimental.runners</Package>
+                <Package>org.junit.experimental.theories</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners.parameterized</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runners.model">
+            <Stats>
+                <TotalClasses>16</TotalClasses>
+                <ConcreteClasses>11</ConcreteClasses>
+                <AbstractClasses>5</AbstractClasses>
+                <Ca>16</Ca>
+                <Ce>10</Ce>
+                <A>0.31</A>
+                <I>0.38</I>
+                <D>0.3</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Annotatable.java">
+                    org.junit.runners.model.Annotatable
+                </Class>
+                <Class sourceFile="FrameworkMember.java">
+                    org.junit.runners.model.FrameworkMember
+                </Class>
+                <Class sourceFile="RunnerBuilder.java">
+                    org.junit.runners.model.RunnerBuilder
+                </Class>
+                <Class sourceFile="RunnerScheduler.java">
+                    org.junit.runners.model.RunnerScheduler
+                </Class>
+                <Class sourceFile="Statement.java">
+                    org.junit.runners.model.Statement
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="FrameworkField.java">
+                    org.junit.runners.model.FrameworkField
+                </Class>
+                <Class sourceFile="FrameworkMethod.java">
+                    org.junit.runners.model.FrameworkMethod
+                </Class>
+                <Class sourceFile="FrameworkMethod.java">
+                    org.junit.runners.model.FrameworkMethod$1
+                </Class>
+                <Class sourceFile="InitializationError.java">
+                    org.junit.runners.model.InitializationError
+                </Class>
+                <Class sourceFile="MultipleFailureException.java">
+                    org.junit.runners.model.MultipleFailureException
+                </Class>
+                <Class sourceFile="NoGenericTypeParametersValidator.java">
+                    org.junit.runners.model.NoGenericTypeParametersValidator
+                </Class>
+                <Class sourceFile="TestClass.java">
+                    org.junit.runners.model.TestClass
+                </Class>
+                <Class sourceFile="TestClass.java">
+                    org.junit.runners.model.TestClass$1
+                </Class>
+                <Class sourceFile="TestClass.java">
+                    org.junit.runners.model.TestClass$FieldComparator
+                </Class>
+                <Class sourceFile="TestClass.java">
+                    org.junit.runners.model.TestClass$MethodComparator
+                </Class>
+                <Class sourceFile="TestTimedOutException.java">
+                    org.junit.runners.model.TestTimedOutException
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit</Package>
+                <Package>org.junit.internal</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.runner</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental</Package>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.experimental.max</Package>
+                <Package>org.junit.experimental.runners</Package>
+                <Package>org.junit.experimental.theories</Package>
+                <Package>org.junit.experimental.theories.internal</Package>
+                <Package>org.junit.internal.builders</Package>
+                <Package>org.junit.internal.runners</Package>
+                <Package>org.junit.internal.runners.model</Package>
+                <Package>org.junit.internal.runners.rules</Package>
+                <Package>org.junit.internal.runners.statements</Package>
+                <Package>org.junit.rules</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.parameterized</Package>
+                <Package>org.junit.validator</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.runners.parameterized">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>8</Ce>
+                <A>0.25</A>
+                <I>0.89</I>
+                <D>0.14</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ParametersRunnerFactory.java">
+                    org.junit.runners.parameterized.ParametersRunnerFactory
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BlockJUnit4ClassRunnerWithParameters.java">
+                    org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParameters
+                </Class>
+                <Class sourceFile="BlockJUnit4ClassRunnerWithParametersFactory.java">
+                    org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParametersFactory
+                </Class>
+                <Class sourceFile="TestWithParameters.java">
+                    org.junit.runners.parameterized.TestWithParameters
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.util</Package>
+                <Package>org.junit.runner</Package>
+                <Package>org.junit.runner.notification</Package>
+                <Package>org.junit.runners</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.junit.validator">
+            <Stats>
+                <TotalClasses>11</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>5</Ce>
+                <A>0.36</A>
+                <I>0.71</I>
+                <D>0.08</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AnnotationValidator.java">
+                    org.junit.validator.AnnotationValidator
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator$AnnotatableValidator
+                </Class>
+                <Class sourceFile="TestClassValidator.java">
+                    org.junit.validator.TestClassValidator
+                </Class>
+                <Class sourceFile="ValidateWith.java">
+                    org.junit.validator.ValidateWith
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AnnotationValidatorFactory.java">
+                    org.junit.validator.AnnotationValidatorFactory
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator$1
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator$ClassValidator
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator$FieldValidator
+                </Class>
+                <Class sourceFile="AnnotationsValidator.java">
+                    org.junit.validator.AnnotationsValidator$MethodValidator
+                </Class>
+                <Class sourceFile="PublicClassValidator.java">
+                    org.junit.validator.PublicClassValidator
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.annotation</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.junit.runners.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.junit.experimental.categories</Package>
+                <Package>org.junit.runners</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="itb.arkavquarium">
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+        </Package>
+
+        <Package Name="junit.extensions">
+            <Package>junit.framework</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="junit.framework">
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="junit.runner">
+            <Package>junit.framework</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="junit.textui">
+            <Package>junit.runner</Package>
+            <Package>junit.framework</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.hamcrest">
+            <Package>org.hamcrest.internal</Package>
+            <Package>org.hamcrest</Package>
+        </Package>
+
+        <Package Name="org.hamcrest.core">
+            <Package>org.hamcrest</Package>
+            <Package>org.hamcrest.internal</Package>
+            <Package>org.hamcrest</Package>
+        </Package>
+
+        <Package Name="org.hamcrest.internal">
+            <Package>org.hamcrest</Package>
+            <Package>org.hamcrest.internal</Package>
+        </Package>
+
+        <Package Name="org.junit">
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.categories">
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.max">
+            <Package>org.junit.runner.notification</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.results">
+            <Package>org.hamcrest</Package>
+            <Package>org.hamcrest.internal</Package>
+            <Package>org.hamcrest</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.runners">
+            <Package>org.junit.runners</Package>
+            <Package>org.junit.internal.runners</Package>
+            <Package>org.junit.runner.notification</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.theories">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.theories.internal">
+            <Package>org.junit.experimental.theories</Package>
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.experimental.theories.suppliers">
+            <Package>org.junit.experimental.theories</Package>
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.internal">
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.builders">
+            <Package>org.junit.runner.notification</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.matchers">
+            <Package>org.hamcrest</Package>
+            <Package>org.hamcrest.internal</Package>
+            <Package>org.hamcrest</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.requests">
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.runners">
+            <Package>org.junit.runner.notification</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.runners.model">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.runners.rules">
+            <Package>org.junit.rules</Package>
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.internal.runners.statements">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.matchers">
+            <Package>org.hamcrest.core</Package>
+            <Package>org.hamcrest</Package>
+            <Package>org.hamcrest.internal</Package>
+            <Package>org.hamcrest</Package>
+        </Package>
+
+        <Package Name="org.junit.rules">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.runner">
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.runner.manipulation">
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+        </Package>
+
+        <Package Name="org.junit.runner.notification">
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.runners">
+            <Package>org.junit.internal.runners</Package>
+            <Package>org.junit.runner.notification</Package>
+            <Package>org.junit.runner</Package>
+            <Package>org.junit.runner.manipulation</Package>
+            <Package>org.junit.runner</Package>
+        </Package>
+
+        <Package Name="org.junit.runners.model">
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.runners.parameterized">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+        <Package Name="org.junit.validator">
+            <Package>org.junit.runners.model</Package>
+            <Package>org.junit.internal</Package>
+            <Package>org.junit</Package>
+            <Package>org.junit.internal</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

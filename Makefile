@@ -1,46 +1,119 @@
-# Masukkan semua file cpp Anda
-OBJS = src/common/Helper.cpp \
-src/graphics/Graphics.cpp \
-src/game/Game.cpp \
-src/aquarium/Aquarium.cpp \
-src/aquatic/Aquatic.cpp \
-src/fish/Fish.cpp \
-src/piranha/Piranha.cpp \
-src/guppy/Guppy.cpp \
-src/coin/Coin.cpp \
-src/pellet/Pellet.cpp \
-src/snail/Snail.cpp
+# makkefile begins
+# define a variable for compiler flags (JFLAGS)
+# define a variable for the compiler (JC)
+# define a variable for the Java Virtual Machine (JVM)
+# define a variable for a parameter. When you run make, you could use:
+# make run FILE="Algo.csv" para sobre escribir el valor de FILE.
 
-CC = g++
-COMPILER_FLAGS = -std=c++11 -Wall -O2 -Isrc/
-LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf
-OBJ_NAME = arkavquarium
-all : src/main.cpp $(OBJS)
-	$(CC) src/main.cpp $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+#
+# CLASSES is a macro consisting of N words (one for each java source file)
+# When a single line is too long, use \<return> to split lines that then will be
+# considered as a single line. For example:
 
-test :
-	make testAquarium && make testCoin && make testGuppy && make testPellet && make testPiranha && make testSnail
+CLASSES = Aquarium.java \
+        Aquatic.java \
+        Coin.java \
+        Constants.java \
+        Fish.java \
+        GameController.java \
+        GameState.java \
+        GameView.java \
+        Guppy.java \
+        LinkedList.java \
+        Pellet.java \
+        Piranha.java \
+        Snail.java \
+        State.java
 
-runTest :
-	./testAquarium && ./testCoin && ./testGuppy && ./testPellet && ./testPiranha && ./testSnail
+CLASSIN = src/itb/arkavquarium
 
-clean :
-	rm testAquarium && rm testCoin && rm testGuppy && rm testPellet && rm testPiranha && rm testSnail
+CLASSOUT = out/production/ITB-Java-ArkavQuarium/itb/arkavquarium
 
-testAquarium : src/aquarium/testaquarium.cpp $(OBJS)
-	$(CC) src/aquarium/testaquarium.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testAquarium
+TESTS = AquariumTest.java \
+        CoinTest.java \
+        FishTest.java \
+        GuppyTest.java \
+        LinkedListTest.java \
+        PelletTest.java \
+        PiranhaTest.java \
+        SnailTest.java \
+        TestAll.java
 
-testCoin : src/coin/testcoin.cpp $(OBJS)
-	$(CC) src/coin/testcoin.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testCoin
+TESTIN = test/itb/arkavquarium
 
-testGuppy : src/guppy/testguppy.cpp $(OBJS)
-	$(CC) src/guppy/testguppy.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testGuppy
+TESTOUT = out/test/ITB-Java-ArkavQuarium/itb/arkavquarium
 
-testPellet : src/pellet/testpellet.cpp $(OBJS)
-	$(CC) src/pellet/testpellet.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testPellet
+COMPILECLASSFLAGS = -g -sourcepath $(CLASSIN) -d $(CLASSOUT)
 
-testPiranha : src/piranha/testpiranha.cpp $(OBJS)
-	$(CC) src/piranha/testpiranha.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testPiranha
+TESTCLASSFLAGS = -g -sourcepath $(TESTIN) -d $(TESTOUT)
 
-testSnail : src/snail/testsnail.cpp $(OBJS)
-	$(CC) src/snail/testsnail.cpp  src/common/Helper.cpp src/aquarium/Aquarium.cpp src/aquatic/Aquatic.cpp src/fish/Fish.cpp src/piranha/Piranha.cpp src/guppy/Guppy.cpp src/coin/Coin.cpp src/pellet/Pellet.cpp \src/snail/Snail.cpp $(COMPILER_FLAGS) -o testSnail
+JC = javac
+JVM= java
+
+#
+# MAIN is a variable with the name of the file containing the main method
+#
+
+MAIN = itb.arkavquarium.GameController
+
+#
+# Clear any default targets for building .class files from .java files; we
+# will provide our own target entry to do this in this makefile.
+# make has a set of default targets for different suffixes (like .c.o)
+# Currently, clearing the default for .java.class is not necessary since
+# make does not have a definition for this target, but later versions of
+# make may, so it doesn't hurt to make sure that we clear any default
+# definitions for these
+#
+
+.SUFFIXES: .java .class
+
+
+#
+# Here is our target entry for creating .class files from .java files
+# This is a target entry that uses the suffix rule syntax:
+#	DSTS:
+#		rule
+# DSTS (Dependency Suffix     Target Suffix)
+# 'TS' is the suffix of the target file, 'DS' is the suffix of the dependency
+#  file, and 'rule'  is the rule for building a target
+# '$*' is a built-in macro that gets the basename of the current target
+# Remember that there must be a < tab > before the command line ('rule')
+#
+
+compile: $(CLASSES)
+	$(JC) $(COMPILECLASSFLAGS) $(CLASSES)
+
+#
+# the default make target entry
+# for this example it is the target classes
+
+default: compile
+
+
+# Next line is a target dependency line
+# This target entry uses Suffix Replacement within a macro:
+# $(macroname:string1=string2)
+# In the words in the macro named 'macroname' replace 'string1' with 'string2'
+# Below we are replacing the suffix .java of all words in the macro CLASSES
+# with the .class suffix
+#
+
+#classes: $(CLASSES:.java=.class)
+
+
+# Next two lines contain a target for running the program
+# Remember the tab in the second line.
+# $(JMV) y $(MAIN) are replaced by their values
+
+run: $(MAIN).class
+	$(JVM) $(MAIN)
+
+# this line is to remove all unneeded files from
+# the directory when we are finished executing(saves space)
+# and "cleans up" the directory of unneeded .class files
+# RM is a predefined macro in make (RM = rm -f)
+#
+
+clean:
+	$(RM) *.class
